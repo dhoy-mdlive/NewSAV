@@ -69,7 +69,7 @@
             cell.containerView.layer.borderColor = color.CGColor;
             cell.providerTypeLabel.text = @"Psychiatry";
             cell.priceLabel.text = @"$259";
-            cell.priceBasisLabel.text = @"First Visit\n$99 follup ups";
+            cell.priceBasisLabel.text = @"First Visit\n$99 follow ups";
             break;
             
         case 3:
@@ -85,6 +85,7 @@
     }
     
     CALayer *borderLayer = [cell.containerView createLeftBorderWithWidth:6 andColor:color];
+    borderLayer.cornerRadius = 5;
     [cell.containerView.layer addSublayer:borderLayer];
  
     return cell;
@@ -98,10 +99,10 @@
         NSIndexPath *thisPath = [NSIndexPath indexPathForRow:row inSection:0];
         ProviderTypeCell *cell = [tableView cellForRowAtIndexPath:thisPath];
         if (cell.selected) {
-            cell.containerView.layer.borderWidth = 3;
+            cell.containerView.layer.borderWidth = 2;
             cell.radioButton.image = [UIImage imageNamed:@"selected-radio-button"];
         } else {
-            cell.containerView.layer.borderWidth = 1;
+            cell.containerView.layer.borderWidth = 0;
             cell.radioButton.image = [UIImage imageNamed:@"unselected-radio-button"];
         }
     }
