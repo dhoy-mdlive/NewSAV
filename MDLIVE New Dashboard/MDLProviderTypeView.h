@@ -6,7 +6,6 @@
 //  Copyright © 2018 David Hoy. All rights reserved.
 //
 
-#import "DesignableUIView.h"
 #import "UIView+IBDesignable.h"
 
 NS_ASSUME_NONNULL_BEGIN
