@@ -27,9 +27,9 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    NSLog(@"%s: seque=%@, sender=%@", __func__, segue, sender);
-    UIViewController *vc = [segue destinationViewController];
-    NSLog(@"%s: destination=%@", __func__, vc);
+    //NSLog(@"%s: seque=%@, sender=%@", __func__, segue, sender);
+    //UIViewController *vc = [segue destinationViewController];
+    //NSLog(@"%s: destination=%@", __func__, vc);
 }
     
     

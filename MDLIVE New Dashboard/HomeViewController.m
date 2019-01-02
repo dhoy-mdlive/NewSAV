@@ -43,20 +43,20 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    NSLog(@"%s: seque=%@, sender=%@", __func__, segue, sender);
-    UIViewController *vc = [segue destinationViewController];
-    NSLog(@"%s: destination=%@", __func__, vc);
+    //NSLog(@"%s: seque=%@, sender=%@", __func__, segue, sender);
+    //UIViewController *vc = [segue destinationViewController];
+    //NSLog(@"%s: destination=%@", __func__, vc);
 }
 
 - (IBAction)unwindSegueAction:(UIStoryboardSegue *)segue {
-    NSLog(@"%s: segue=%@", __func__, segue);
+    //NSLog(@"%s: segue=%@", __func__, segue);
     [self.collectionView flashScrollIndicators];
 }
     
     
 - (IBAction)getStartedButtonTapped:(id)sender
 {
-    NSLog(@"User tapped 'Get Started' button");
+    //NSLog(@"User tapped 'Get Started' button");
 }
 
 
