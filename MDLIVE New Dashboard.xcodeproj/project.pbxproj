@@ -24,6 +24,8 @@
 		D79E4D3321DA6564004A8A53 /* ProviderTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E4D3221DA6564004A8A53 /* ProviderTypeCell.m */; };
 		D79E4D3621DA6AAE004A8A53 /* SelectProviderController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E4D3521DA6AAE004A8A53 /* SelectProviderController.m */; };
 		D7A3E4A821D5323C0053D086 /* MDLProviderTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A3E4A721D5323C0053D086 /* MDLProviderTypeView.m */; };
+		D7E4FD9921DD198C00DCAB30 /* ReasonForVisitController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E4FD9821DD198C00DCAB30 /* ReasonForVisitController.m */; };
+		D7E4FD9D21DD1A3800DCAB30 /* ReasonForVisitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E4FD9C21DD1A3800DCAB30 /* ReasonForVisitCell.m */; };
 		D7F67BFA21D42A6E0006CCB3 /* EMKRoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F67BF821D42A6E0006CCB3 /* EMKRoundButton.m */; };
 		D7F67BFD21D42B340006CCB3 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F67BFC21D42B340006CCB3 /* HomeViewController.m */; };
 		D7F67C0921D512630006CCB3 /* MDLPatientImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F67C0721D512620006CCB3 /* MDLPatientImageCell.m */; };
@@ -61,6 +63,10 @@
 		D79E4D3521DA6AAE004A8A53 /* SelectProviderController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectProviderController.m; sourceTree = "<group>"; };
 		D7A3E4A621D5323C0053D086 /* MDLProviderTypeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDLProviderTypeView.h; sourceTree = "<group>"; };
 		D7A3E4A721D5323C0053D086 /* MDLProviderTypeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDLProviderTypeView.m; sourceTree = "<group>"; };
+		D7E4FD9821DD198C00DCAB30 /* ReasonForVisitController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReasonForVisitController.m; sourceTree = "<group>"; };
+		D7E4FD9A21DD19CD00DCAB30 /* ReasonForVisitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReasonForVisitController.h; sourceTree = "<group>"; };
+		D7E4FD9B21DD1A3800DCAB30 /* ReasonForVisitCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReasonForVisitCell.h; sourceTree = "<group>"; };
+		D7E4FD9C21DD1A3800DCAB30 /* ReasonForVisitCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReasonForVisitCell.m; sourceTree = "<group>"; };
 		D7F67BF821D42A6E0006CCB3 /* EMKRoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMKRoundButton.m; sourceTree = "<group>"; };
 		D7F67BF921D42A6E0006CCB3 /* EMKRoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMKRoundButton.h; sourceTree = "<group>"; };
 		D7F67BFB21D42B340006CCB3 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -159,6 +165,10 @@
 				D79E4D3221DA6564004A8A53 /* ProviderTypeCell.m */,
 				D79E4D3421DA6AAE004A8A53 /* SelectProviderController.h */,
 				D79E4D3521DA6AAE004A8A53 /* SelectProviderController.m */,
+				D7E4FD9A21DD19CD00DCAB30 /* ReasonForVisitController.h */,
+				D7E4FD9821DD198C00DCAB30 /* ReasonForVisitController.m */,
+				D7E4FD9B21DD1A3800DCAB30 /* ReasonForVisitCell.h */,
+				D7E4FD9C21DD1A3800DCAB30 /* ReasonForVisitCell.m */,
 			);
 			path = "MDLIVE New Dashboard";
 			sourceTree = "<group>";
@@ -304,7 +314,9 @@
 				D74B9BCB21D66C7100E9FD1F /* ScheduleVisitController.m in Sources */,
 				D79E4D3321DA6564004A8A53 /* ProviderTypeCell.m in Sources */,
 				D79E4D2721DA4C6E004A8A53 /* MessagesCell.m in Sources */,
+				D7E4FD9921DD198C00DCAB30 /* ReasonForVisitController.m in Sources */,
 				D79E4D3621DA6AAE004A8A53 /* SelectProviderController.m in Sources */,
+				D7E4FD9D21DD1A3800DCAB30 /* ReasonForVisitCell.m in Sources */,
 				D709BBFC21DD083C002461E7 /* UIView+IBDesignable.m in Sources */,
 				D7F67BFD21D42B340006CCB3 /* HomeViewController.m in Sources */,
 			);
