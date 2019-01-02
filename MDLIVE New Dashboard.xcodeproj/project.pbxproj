@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		BCB09453FC10B2E320CCF48B /* libPods-MDLIVE New Dashboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E39A7FAFFAB5599C182FBF /* libPods-MDLIVE New Dashboard.a */; };
+		D709BBFC21DD083C002461E7 /* UIView+IBDesignable.m in Sources */ = {isa = PBXBuildFile; fileRef = D709BBF921DD083C002461E7 /* UIView+IBDesignable.m */; };
+		D709BBFD21DD083C002461E7 /* UIColor+mdl.m in Sources */ = {isa = PBXBuildFile; fileRef = D709BBFB21DD083C002461E7 /* UIColor+mdl.m */; };
 		D74B9B9E21D5556200E9FD1F /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D74B9B9D21D5556200E9FD1F /* Montserrat-Bold.ttf */; };
 		D74B9BA021D5556B00E9FD1F /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D74B9B9F21D5556B00E9FD1F /* Montserrat-Regular.ttf */; };
 		D74B9BA321D56B5600E9FD1F /* GetStartedController.m in Sources */ = {isa = PBXBuildFile; fileRef = D74B9BA221D56B5600E9FD1F /* GetStartedController.m */; };
 		D74B9BCB21D66C7100E9FD1F /* ScheduleVisitController.m in Sources */ = {isa = PBXBuildFile; fileRef = D74B9BCA21D66C7100E9FD1F /* ScheduleVisitController.m */; };
-		D7617C4021D6A037002063AE /* UIView+IBDesignable.m in Sources */ = {isa = PBXBuildFile; fileRef = D7617C3F21D6A037002063AE /* UIView+IBDesignable.m */; };
 		D7617C4621D6B80D002063AE /* UpcomingApptCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7617C4521D6B80D002063AE /* UpcomingApptCell.m */; };
 		D777F7BC21D3E73F00B45D24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D777F7BB21D3E73F00B45D24 /* AppDelegate.m */; };
 		D777F7BF21D3E73F00B45D24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D777F7BE21D3E73F00B45D24 /* ViewController.m */; };
@@ -22,8 +23,7 @@
 		D777F7CA21D3E74100B45D24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D777F7C921D3E74100B45D24 /* main.m */; };
 		D79E4D2721DA4C6E004A8A53 /* MessagesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E4D2621DA4C6E004A8A53 /* MessagesCell.m */; };
 		D79E4D3321DA6564004A8A53 /* ProviderTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E4D3221DA6564004A8A53 /* ProviderTypeCell.m */; };
-		D79E4D3621DA6AAE004A8A53 /* SelectProviderControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E4D3521DA6AAE004A8A53 /* SelectProviderControllerViewController.m */; };
-		D79E4D3921DA6F01004A8A53 /* UIColor+mdl.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E4D3821DA6F01004A8A53 /* UIColor+mdl.m */; };
+		D79E4D3621DA6AAE004A8A53 /* SelectProviderController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E4D3521DA6AAE004A8A53 /* SelectProviderController.m */; };
 		D7A3E4A821D5323C0053D086 /* MDLProviderTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A3E4A721D5323C0053D086 /* MDLProviderTypeView.m */; };
 		D7F67BFA21D42A6E0006CCB3 /* EMKRoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F67BF821D42A6E0006CCB3 /* EMKRoundButton.m */; };
 		D7F67BFD21D42B340006CCB3 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F67BFC21D42B340006CCB3 /* HomeViewController.m */; };
@@ -34,14 +34,16 @@
 		32073B535B741F2EE0B1B644 /* Pods-MDLIVE New Dashboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDLIVE New Dashboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MDLIVE New Dashboard/Pods-MDLIVE New Dashboard.debug.xcconfig"; sourceTree = "<group>"; };
 		92E39A7FAFFAB5599C182FBF /* libPods-MDLIVE New Dashboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MDLIVE New Dashboard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDC0E85D4EDC0EA44516445F /* Pods-MDLIVE New Dashboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDLIVE New Dashboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-MDLIVE New Dashboard/Pods-MDLIVE New Dashboard.release.xcconfig"; sourceTree = "<group>"; };
+		D709BBF821DD083C002461E7 /* UIColor+mdl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+mdl.h"; sourceTree = "<group>"; };
+		D709BBF921DD083C002461E7 /* UIView+IBDesignable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+IBDesignable.m"; sourceTree = "<group>"; };
+		D709BBFA21DD083C002461E7 /* UIView+IBDesignable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+IBDesignable.h"; sourceTree = "<group>"; };
+		D709BBFB21DD083C002461E7 /* UIColor+mdl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+mdl.m"; sourceTree = "<group>"; };
 		D74B9B9D21D5556200E9FD1F /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		D74B9B9F21D5556B00E9FD1F /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		D74B9BA121D56B5600E9FD1F /* GetStartedController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetStartedController.h; sourceTree = "<group>"; };
 		D74B9BA221D56B5600E9FD1F /* GetStartedController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetStartedController.m; sourceTree = "<group>"; };
 		D74B9BC921D66C7100E9FD1F /* ScheduleVisitController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleVisitController.h; sourceTree = "<group>"; };
 		D74B9BCA21D66C7100E9FD1F /* ScheduleVisitController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleVisitController.m; sourceTree = "<group>"; };
-		D7617C3E21D6A037002063AE /* UIView+IBDesignable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+IBDesignable.h"; sourceTree = "<group>"; };
-		D7617C3F21D6A037002063AE /* UIView+IBDesignable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+IBDesignable.m"; sourceTree = "<group>"; };
 		D7617C4421D6B80D002063AE /* UpcomingApptCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpcomingApptCell.h; sourceTree = "<group>"; };
 		D7617C4521D6B80D002063AE /* UpcomingApptCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpcomingApptCell.m; sourceTree = "<group>"; };
 		D777F7B721D3E73F00B45D24 /* MDLIVE New Dashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MDLIVE New Dashboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,14 +60,10 @@
 		D79E4D2621DA4C6E004A8A53 /* MessagesCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessagesCell.m; sourceTree = "<group>"; };
 		D79E4D3121DA6564004A8A53 /* ProviderTypeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProviderTypeCell.h; sourceTree = "<group>"; };
 		D79E4D3221DA6564004A8A53 /* ProviderTypeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProviderTypeCell.m; sourceTree = "<group>"; };
-		D79E4D3421DA6AAE004A8A53 /* SelectProviderControllerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectProviderControllerViewController.h; sourceTree = "<group>"; };
-		D79E4D3521DA6AAE004A8A53 /* SelectProviderControllerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectProviderControllerViewController.m; sourceTree = "<group>"; };
-		D79E4D3721DA6F01004A8A53 /* UIColor+mdl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+mdl.h"; sourceTree = "<group>"; };
-		D79E4D3821DA6F01004A8A53 /* UIColor+mdl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+mdl.m"; sourceTree = "<group>"; };
+		D79E4D3421DA6AAE004A8A53 /* SelectProviderController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectProviderController.h; sourceTree = "<group>"; };
+		D79E4D3521DA6AAE004A8A53 /* SelectProviderController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectProviderController.m; sourceTree = "<group>"; };
 		D7A3E4A621D5323C0053D086 /* MDLProviderTypeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDLProviderTypeView.h; sourceTree = "<group>"; };
 		D7A3E4A721D5323C0053D086 /* MDLProviderTypeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDLProviderTypeView.m; sourceTree = "<group>"; };
-		D7F67BF521D41E9B0006CCB3 /* DesignableUIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DesignableUIView.h; sourceTree = "<group>"; };
-		D7F67BF621D41E9B0006CCB3 /* DesignableUIView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignableUIView.m; sourceTree = "<group>"; };
 		D7F67BF821D42A6E0006CCB3 /* EMKRoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMKRoundButton.m; sourceTree = "<group>"; };
 		D7F67BF921D42A6E0006CCB3 /* EMKRoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMKRoundButton.h; sourceTree = "<group>"; };
 		D7F67BFB21D42B340006CCB3 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -92,6 +90,17 @@
 				92E39A7FAFFAB5599C182FBF /* libPods-MDLIVE New Dashboard.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D709BBF721DD083C002461E7 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D709BBF821DD083C002461E7 /* UIColor+mdl.h */,
+				D709BBF921DD083C002461E7 /* UIView+IBDesignable.m */,
+				D709BBFA21DD083C002461E7 /* UIView+IBDesignable.h */,
+				D709BBFB21DD083C002461E7 /* UIColor+mdl.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		D74B9B9C21D5554A00E9FD1F /* Custom Fonts */ = {
@@ -124,6 +133,7 @@
 		D777F7B921D3E73F00B45D24 /* MDLIVE New Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				D709BBF721DD083C002461E7 /* Categories */,
 				D7F67C0821D512630006CCB3 /* MDLPatientImageCell.h */,
 				D7F67C0721D512620006CCB3 /* MDLPatientImageCell.m */,
 				D7F67BF921D42A6E0006CCB3 /* EMKRoundButton.h */,
@@ -137,8 +147,6 @@
 				D777F7C521D3E74100B45D24 /* LaunchScreen.storyboard */,
 				D777F7C821D3E74100B45D24 /* Info.plist */,
 				D777F7C921D3E74100B45D24 /* main.m */,
-				D7F67BF521D41E9B0006CCB3 /* DesignableUIView.h */,
-				D7F67BF621D41E9B0006CCB3 /* DesignableUIView.m */,
 				D7F67BFB21D42B340006CCB3 /* HomeViewController.h */,
 				D7F67BFC21D42B340006CCB3 /* HomeViewController.m */,
 				D7A3E4A621D5323C0053D086 /* MDLProviderTypeView.h */,
@@ -147,8 +155,6 @@
 				D74B9BA221D56B5600E9FD1F /* GetStartedController.m */,
 				D74B9BC921D66C7100E9FD1F /* ScheduleVisitController.h */,
 				D74B9BCA21D66C7100E9FD1F /* ScheduleVisitController.m */,
-				D7617C3E21D6A037002063AE /* UIView+IBDesignable.h */,
-				D7617C3F21D6A037002063AE /* UIView+IBDesignable.m */,
 				D7617C4421D6B80D002063AE /* UpcomingApptCell.h */,
 				D7617C4521D6B80D002063AE /* UpcomingApptCell.m */,
 				D74B9B9C21D5554A00E9FD1F /* Custom Fonts */,
@@ -156,10 +162,8 @@
 				D79E4D2621DA4C6E004A8A53 /* MessagesCell.m */,
 				D79E4D3121DA6564004A8A53 /* ProviderTypeCell.h */,
 				D79E4D3221DA6564004A8A53 /* ProviderTypeCell.m */,
-				D79E4D3421DA6AAE004A8A53 /* SelectProviderControllerViewController.h */,
-				D79E4D3521DA6AAE004A8A53 /* SelectProviderControllerViewController.m */,
-				D79E4D3721DA6F01004A8A53 /* UIColor+mdl.h */,
-				D79E4D3821DA6F01004A8A53 /* UIColor+mdl.m */,
+				D79E4D3421DA6AAE004A8A53 /* SelectProviderController.h */,
+				D79E4D3521DA6AAE004A8A53 /* SelectProviderController.m */,
 			);
 			path = "MDLIVE New Dashboard";
 			sourceTree = "<group>";
@@ -298,16 +302,16 @@
 				D74B9BA321D56B5600E9FD1F /* GetStartedController.m in Sources */,
 				D777F7BF21D3E73F00B45D24 /* ViewController.m in Sources */,
 				D777F7CA21D3E74100B45D24 /* main.m in Sources */,
-				D79E4D3921DA6F01004A8A53 /* UIColor+mdl.m in Sources */,
 				D777F7BC21D3E73F00B45D24 /* AppDelegate.m in Sources */,
 				D7A3E4A821D5323C0053D086 /* MDLProviderTypeView.m in Sources */,
 				D7617C4621D6B80D002063AE /* UpcomingApptCell.m in Sources */,
 				D7F67C0921D512630006CCB3 /* MDLPatientImageCell.m in Sources */,
+				D709BBFD21DD083C002461E7 /* UIColor+mdl.m in Sources */,
 				D74B9BCB21D66C7100E9FD1F /* ScheduleVisitController.m in Sources */,
 				D79E4D3321DA6564004A8A53 /* ProviderTypeCell.m in Sources */,
 				D79E4D2721DA4C6E004A8A53 /* MessagesCell.m in Sources */,
-				D79E4D3621DA6AAE004A8A53 /* SelectProviderControllerViewController.m in Sources */,
-				D7617C4021D6A037002063AE /* UIView+IBDesignable.m in Sources */,
+				D79E4D3621DA6AAE004A8A53 /* SelectProviderController.m in Sources */,
+				D709BBFC21DD083C002461E7 /* UIView+IBDesignable.m in Sources */,
 				D7F67BFD21D42B340006CCB3 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

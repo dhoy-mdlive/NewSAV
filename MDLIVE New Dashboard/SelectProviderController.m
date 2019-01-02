@@ -1,21 +1,21 @@
 //
-//  SelectProviderControllerViewController.m
+//  SelectProviderController.m
 //  MDLIVE New Dashboard
 //
 //  Created by David Hoy on 12/31/18.
 //  Copyright © 2018 David Hoy. All rights reserved.
 //
 
-#import "SelectProviderControllerViewController.h"
+#import "SelectProviderController.h"
 #import "ProviderTypeCell.h"
 #import "UIColor+mdl.h"
 #import "UIView-Borders/UIView+Borders.h"
 
-@interface SelectProviderControllerViewController ()
+@interface SelectProviderController ()
 
 @end
 
-@implementation SelectProviderControllerViewController
+@implementation SelectProviderController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

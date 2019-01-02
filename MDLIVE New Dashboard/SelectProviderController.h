@@ -1,5 +1,5 @@
 //
-//  SelectProviderControllerViewController.h
+//  SelectProviderController.h
 //  MDLIVE New Dashboard
 //
 //  Created by David Hoy on 12/31/18.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SelectProviderControllerViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface SelectProviderController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UITableView *providerTableView;
 

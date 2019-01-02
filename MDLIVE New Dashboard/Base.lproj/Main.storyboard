@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7js-sO-0Pz">
-    <device id="retina5_5" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,7 +19,7 @@
             <objects>
                 <viewController id="n1J-Na-IbG" userLabel="Appointments" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Kf-sU-mMn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rw3-kI-bLJ">
@@ -60,7 +56,7 @@
             <objects>
                 <viewController id="wZr-nI-Icf" userLabel="Messages" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q0S-I2-vS5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Messages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0v2-Uu-TfS">
@@ -97,7 +93,7 @@
             <objects>
                 <viewController id="dqz-2t-t9r" userLabel="My Health" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nmO-bd-Og4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="2ay-vI-fEO"/>
@@ -113,7 +109,7 @@
             <objects>
                 <viewController id="vwn-5I-ZJD" userLabel="More" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xdS-JC-1GG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="K5f-p8-MDF"/>
@@ -131,7 +127,7 @@
             <objects>
                 <viewController title="Dashboard" id="sv7-We-PTK" userLabel="Home" customClass="HomeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2RB-9b-ndZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_logo_orange" translatesAutoresizingMaskIntoConstraints="NO" id="gQD-90-qaa">
@@ -541,7 +537,7 @@
             <objects>
                 <viewController id="axu-MH-Txt" userLabel="SeePhysician" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gne-Z6-Iw8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cF-zB-fBc">
@@ -626,7 +622,7 @@
             <objects>
                 <viewController id="dbC-92-aZm" userLabel="Payment" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vCs-sl-Iz9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCc-Mg-I1j">
@@ -711,7 +707,7 @@
             <objects>
                 <viewController title="ScheduleVisitController" id="0Tm-gD-YBF" userLabel="ScheduleVisitController" customClass="ScheduleVisitController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9A0-8i-RJA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWk-Ue-BdG">
@@ -796,7 +792,7 @@
         <!--SelectProviderController-->
         <scene sceneID="Asr-WL-uOi">
             <objects>
-                <viewController id="9PJ-1k-4T2" userLabel="SelectProviderController" customClass="SelectProviderControllerViewController" sceneMemberID="viewController">
+                <viewController id="9PJ-1k-4T2" userLabel="SelectProviderController" customClass="SelectProviderController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U4o-Gd-kJw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="610"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
