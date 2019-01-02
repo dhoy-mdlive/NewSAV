@@ -12,7 +12,6 @@
 		D709BBFD21DD083C002461E7 /* UIColor+mdl.m in Sources */ = {isa = PBXBuildFile; fileRef = D709BBFB21DD083C002461E7 /* UIColor+mdl.m */; };
 		D74B9B9E21D5556200E9FD1F /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D74B9B9D21D5556200E9FD1F /* Montserrat-Bold.ttf */; };
 		D74B9BA021D5556B00E9FD1F /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D74B9B9F21D5556B00E9FD1F /* Montserrat-Regular.ttf */; };
-		D74B9BA321D56B5600E9FD1F /* GetStartedController.m in Sources */ = {isa = PBXBuildFile; fileRef = D74B9BA221D56B5600E9FD1F /* GetStartedController.m */; };
 		D74B9BCB21D66C7100E9FD1F /* ScheduleVisitController.m in Sources */ = {isa = PBXBuildFile; fileRef = D74B9BCA21D66C7100E9FD1F /* ScheduleVisitController.m */; };
 		D7617C4621D6B80D002063AE /* UpcomingApptCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7617C4521D6B80D002063AE /* UpcomingApptCell.m */; };
 		D777F7BC21D3E73F00B45D24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D777F7BB21D3E73F00B45D24 /* AppDelegate.m */; };
@@ -40,8 +39,6 @@
 		D709BBFB21DD083C002461E7 /* UIColor+mdl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+mdl.m"; sourceTree = "<group>"; };
 		D74B9B9D21D5556200E9FD1F /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		D74B9B9F21D5556B00E9FD1F /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
-		D74B9BA121D56B5600E9FD1F /* GetStartedController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetStartedController.h; sourceTree = "<group>"; };
-		D74B9BA221D56B5600E9FD1F /* GetStartedController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetStartedController.m; sourceTree = "<group>"; };
 		D74B9BC921D66C7100E9FD1F /* ScheduleVisitController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleVisitController.h; sourceTree = "<group>"; };
 		D74B9BCA21D66C7100E9FD1F /* ScheduleVisitController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleVisitController.m; sourceTree = "<group>"; };
 		D7617C4421D6B80D002063AE /* UpcomingApptCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpcomingApptCell.h; sourceTree = "<group>"; };
@@ -151,8 +148,6 @@
 				D7F67BFC21D42B340006CCB3 /* HomeViewController.m */,
 				D7A3E4A621D5323C0053D086 /* MDLProviderTypeView.h */,
 				D7A3E4A721D5323C0053D086 /* MDLProviderTypeView.m */,
-				D74B9BA121D56B5600E9FD1F /* GetStartedController.h */,
-				D74B9BA221D56B5600E9FD1F /* GetStartedController.m */,
 				D74B9BC921D66C7100E9FD1F /* ScheduleVisitController.h */,
 				D74B9BCA21D66C7100E9FD1F /* ScheduleVisitController.m */,
 				D7617C4421D6B80D002063AE /* UpcomingApptCell.h */,
@@ -299,7 +294,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7F67BFA21D42A6E0006CCB3 /* EMKRoundButton.m in Sources */,
-				D74B9BA321D56B5600E9FD1F /* GetStartedController.m in Sources */,
 				D777F7BF21D3E73F00B45D24 /* ViewController.m in Sources */,
 				D777F7CA21D3E74100B45D24 /* main.m in Sources */,
 				D777F7BC21D3E73F00B45D24 /* AppDelegate.m in Sources */,

@@ -7,7 +7,6 @@
 //
 
 #import "HomeViewController.h"
-#import "GetStartedController.h"
 #import "MDLPatientImageCell.h"
 #import "UpcomingApptCell.h"
 #import "MessagesCell.h"
