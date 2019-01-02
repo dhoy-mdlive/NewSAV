@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCB09453FC10B2E320CCF48B /* libPods-MDLIVE New Dashboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E39A7FAFFAB5599C182FBF /* libPods-MDLIVE New Dashboard.a */; };
+		D74B9B9E21D5556200E9FD1F /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D74B9B9D21D5556200E9FD1F /* Montserrat-Bold.ttf */; };
+		D74B9BA021D5556B00E9FD1F /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D74B9B9F21D5556B00E9FD1F /* Montserrat-Regular.ttf */; };
+		D74B9BA321D56B5600E9FD1F /* GetStartedController.m in Sources */ = {isa = PBXBuildFile; fileRef = D74B9BA221D56B5600E9FD1F /* GetStartedController.m */; };
+		D74B9BCB21D66C7100E9FD1F /* ScheduleVisitController.m in Sources */ = {isa = PBXBuildFile; fileRef = D74B9BCA21D66C7100E9FD1F /* ScheduleVisitController.m */; };
+		D7617C4021D6A037002063AE /* UIView+IBDesignable.m in Sources */ = {isa = PBXBuildFile; fileRef = D7617C3F21D6A037002063AE /* UIView+IBDesignable.m */; };
+		D7617C4621D6B80D002063AE /* UpcomingApptCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7617C4521D6B80D002063AE /* UpcomingApptCell.m */; };
+		D777F7BC21D3E73F00B45D24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D777F7BB21D3E73F00B45D24 /* AppDelegate.m */; };
+		D777F7BF21D3E73F00B45D24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D777F7BE21D3E73F00B45D24 /* ViewController.m */; };
+		D777F7C221D3E73F00B45D24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D777F7C021D3E73F00B45D24 /* Main.storyboard */; };
+		D777F7C421D3E74100B45D24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D777F7C321D3E74100B45D24 /* Assets.xcassets */; };
+		D777F7C721D3E74100B45D24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D777F7C521D3E74100B45D24 /* LaunchScreen.storyboard */; };
+		D777F7CA21D3E74100B45D24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D777F7C921D3E74100B45D24 /* main.m */; };
+		D79E4D2721DA4C6E004A8A53 /* MessagesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E4D2621DA4C6E004A8A53 /* MessagesCell.m */; };
+		D79E4D3321DA6564004A8A53 /* ProviderTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E4D3221DA6564004A8A53 /* ProviderTypeCell.m */; };
+		D79E4D3621DA6AAE004A8A53 /* SelectProviderControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E4D3521DA6AAE004A8A53 /* SelectProviderControllerViewController.m */; };
+		D79E4D3921DA6F01004A8A53 /* UIColor+mdl.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E4D3821DA6F01004A8A53 /* UIColor+mdl.m */; };
+		D7A3E4A821D5323C0053D086 /* MDLProviderTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A3E4A721D5323C0053D086 /* MDLProviderTypeView.m */; };
+		D7F67BFA21D42A6E0006CCB3 /* EMKRoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F67BF821D42A6E0006CCB3 /* EMKRoundButton.m */; };
+		D7F67BFD21D42B340006CCB3 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F67BFC21D42B340006CCB3 /* HomeViewController.m */; };
+		D7F67C0921D512630006CCB3 /* MDLPatientImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F67C0721D512620006CCB3 /* MDLPatientImageCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		32073B535B741F2EE0B1B644 /* Pods-MDLIVE New Dashboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDLIVE New Dashboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MDLIVE New Dashboard/Pods-MDLIVE New Dashboard.debug.xcconfig"; sourceTree = "<group>"; };
+		92E39A7FAFFAB5599C182FBF /* libPods-MDLIVE New Dashboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MDLIVE New Dashboard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDC0E85D4EDC0EA44516445F /* Pods-MDLIVE New Dashboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDLIVE New Dashboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-MDLIVE New Dashboard/Pods-MDLIVE New Dashboard.release.xcconfig"; sourceTree = "<group>"; };
+		D74B9B9D21D5556200E9FD1F /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		D74B9B9F21D5556B00E9FD1F /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		D74B9BA121D56B5600E9FD1F /* GetStartedController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetStartedController.h; sourceTree = "<group>"; };
+		D74B9BA221D56B5600E9FD1F /* GetStartedController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetStartedController.m; sourceTree = "<group>"; };
+		D74B9BC921D66C7100E9FD1F /* ScheduleVisitController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleVisitController.h; sourceTree = "<group>"; };
+		D74B9BCA21D66C7100E9FD1F /* ScheduleVisitController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleVisitController.m; sourceTree = "<group>"; };
+		D7617C3E21D6A037002063AE /* UIView+IBDesignable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+IBDesignable.h"; sourceTree = "<group>"; };
+		D7617C3F21D6A037002063AE /* UIView+IBDesignable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+IBDesignable.m"; sourceTree = "<group>"; };
+		D7617C4421D6B80D002063AE /* UpcomingApptCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpcomingApptCell.h; sourceTree = "<group>"; };
+		D7617C4521D6B80D002063AE /* UpcomingApptCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpcomingApptCell.m; sourceTree = "<group>"; };
+		D777F7B721D3E73F00B45D24 /* MDLIVE New Dashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MDLIVE New Dashboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D777F7BA21D3E73F00B45D24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D777F7BB21D3E73F00B45D24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D777F7BD21D3E73F00B45D24 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D777F7BE21D3E73F00B45D24 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D777F7C121D3E73F00B45D24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D777F7C321D3E74100B45D24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D777F7C621D3E74100B45D24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D777F7C821D3E74100B45D24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D777F7C921D3E74100B45D24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D79E4D2521DA4C6E004A8A53 /* MessagesCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessagesCell.h; sourceTree = "<group>"; };
+		D79E4D2621DA4C6E004A8A53 /* MessagesCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessagesCell.m; sourceTree = "<group>"; };
+		D79E4D3121DA6564004A8A53 /* ProviderTypeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProviderTypeCell.h; sourceTree = "<group>"; };
+		D79E4D3221DA6564004A8A53 /* ProviderTypeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProviderTypeCell.m; sourceTree = "<group>"; };
+		D79E4D3421DA6AAE004A8A53 /* SelectProviderControllerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectProviderControllerViewController.h; sourceTree = "<group>"; };
+		D79E4D3521DA6AAE004A8A53 /* SelectProviderControllerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectProviderControllerViewController.m; sourceTree = "<group>"; };
+		D79E4D3721DA6F01004A8A53 /* UIColor+mdl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+mdl.h"; sourceTree = "<group>"; };
+		D79E4D3821DA6F01004A8A53 /* UIColor+mdl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+mdl.m"; sourceTree = "<group>"; };
+		D7A3E4A621D5323C0053D086 /* MDLProviderTypeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDLProviderTypeView.h; sourceTree = "<group>"; };
+		D7A3E4A721D5323C0053D086 /* MDLProviderTypeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDLProviderTypeView.m; sourceTree = "<group>"; };
+		D7F67BF521D41E9B0006CCB3 /* DesignableUIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DesignableUIView.h; sourceTree = "<group>"; };
+		D7F67BF621D41E9B0006CCB3 /* DesignableUIView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignableUIView.m; sourceTree = "<group>"; };
+		D7F67BF821D42A6E0006CCB3 /* EMKRoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMKRoundButton.m; sourceTree = "<group>"; };
+		D7F67BF921D42A6E0006CCB3 /* EMKRoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMKRoundButton.h; sourceTree = "<group>"; };
+		D7F67BFB21D42B340006CCB3 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		D7F67BFC21D42B340006CCB3 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		D7F67C0721D512620006CCB3 /* MDLPatientImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDLPatientImageCell.m; sourceTree = "<group>"; };
+		D7F67C0821D512630006CCB3 /* MDLPatientImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDLPatientImageCell.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D777F7B421D3E73F00B45D24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB09453FC10B2E320CCF48B /* libPods-MDLIVE New Dashboard.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		448D757819BB111AC9EF61FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92E39A7FAFFAB5599C182FBF /* libPods-MDLIVE New Dashboard.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D74B9B9C21D5554A00E9FD1F /* Custom Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D74B9B9F21D5556B00E9FD1F /* Montserrat-Regular.ttf */,
+				D74B9B9D21D5556200E9FD1F /* Montserrat-Bold.ttf */,
+			);
+			path = "Custom Fonts";
+			sourceTree = "<group>";
+		};
+		D777F7AE21D3E73F00B45D24 = {
+			isa = PBXGroup;
+			children = (
+				D777F7B921D3E73F00B45D24 /* MDLIVE New Dashboard */,
+				D777F7B821D3E73F00B45D24 /* Products */,
+				F92B74CE0AE11F3E8D7C0EEB /* Pods */,
+				448D757819BB111AC9EF61FB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D777F7B821D3E73F00B45D24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D777F7B721D3E73F00B45D24 /* MDLIVE New Dashboard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D777F7B921D3E73F00B45D24 /* MDLIVE New Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				D7F67C0821D512630006CCB3 /* MDLPatientImageCell.h */,
+				D7F67C0721D512620006CCB3 /* MDLPatientImageCell.m */,
+				D7F67BF921D42A6E0006CCB3 /* EMKRoundButton.h */,
+				D7F67BF821D42A6E0006CCB3 /* EMKRoundButton.m */,
+				D777F7BA21D3E73F00B45D24 /* AppDelegate.h */,
+				D777F7BB21D3E73F00B45D24 /* AppDelegate.m */,
+				D777F7BD21D3E73F00B45D24 /* ViewController.h */,
+				D777F7BE21D3E73F00B45D24 /* ViewController.m */,
+				D777F7C021D3E73F00B45D24 /* Main.storyboard */,
+				D777F7C321D3E74100B45D24 /* Assets.xcassets */,
+				D777F7C521D3E74100B45D24 /* LaunchScreen.storyboard */,
+				D777F7C821D3E74100B45D24 /* Info.plist */,
+				D777F7C921D3E74100B45D24 /* main.m */,
+				D7F67BF521D41E9B0006CCB3 /* DesignableUIView.h */,
+				D7F67BF621D41E9B0006CCB3 /* DesignableUIView.m */,
+				D7F67BFB21D42B340006CCB3 /* HomeViewController.h */,
+				D7F67BFC21D42B340006CCB3 /* HomeViewController.m */,
+				D7A3E4A621D5323C0053D086 /* MDLProviderTypeView.h */,
+				D7A3E4A721D5323C0053D086 /* MDLProviderTypeView.m */,
+				D74B9BA121D56B5600E9FD1F /* GetStartedController.h */,
+				D74B9BA221D56B5600E9FD1F /* GetStartedController.m */,
+				D74B9BC921D66C7100E9FD1F /* ScheduleVisitController.h */,
+				D74B9BCA21D66C7100E9FD1F /* ScheduleVisitController.m */,
+				D7617C3E21D6A037002063AE /* UIView+IBDesignable.h */,
+				D7617C3F21D6A037002063AE /* UIView+IBDesignable.m */,
+				D7617C4421D6B80D002063AE /* UpcomingApptCell.h */,
+				D7617C4521D6B80D002063AE /* UpcomingApptCell.m */,
+				D74B9B9C21D5554A00E9FD1F /* Custom Fonts */,
+				D79E4D2521DA4C6E004A8A53 /* MessagesCell.h */,
+				D79E4D2621DA4C6E004A8A53 /* MessagesCell.m */,
+				D79E4D3121DA6564004A8A53 /* ProviderTypeCell.h */,
+				D79E4D3221DA6564004A8A53 /* ProviderTypeCell.m */,
+				D79E4D3421DA6AAE004A8A53 /* SelectProviderControllerViewController.h */,
+				D79E4D3521DA6AAE004A8A53 /* SelectProviderControllerViewController.m */,
+				D79E4D3721DA6F01004A8A53 /* UIColor+mdl.h */,
+				D79E4D3821DA6F01004A8A53 /* UIColor+mdl.m */,
+			);
+			path = "MDLIVE New Dashboard";
+			sourceTree = "<group>";
+		};
+		F92B74CE0AE11F3E8D7C0EEB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32073B535B741F2EE0B1B644 /* Pods-MDLIVE New Dashboard.debug.xcconfig */,
+				BDC0E85D4EDC0EA44516445F /* Pods-MDLIVE New Dashboard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D777F7B621D3E73F00B45D24 /* MDLIVE New Dashboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D777F7CD21D3E74100B45D24 /* Build configuration list for PBXNativeTarget "MDLIVE New Dashboard" */;
+			buildPhases = (
+				1E120638061639E7970325A2 /* [CP] Check Pods Manifest.lock */,
+				D777F7B321D3E73F00B45D24 /* Sources */,
+				D777F7B421D3E73F00B45D24 /* Frameworks */,
+				D777F7B521D3E73F00B45D24 /* Resources */,
+				24B3C4568A1A7F905AB42CB5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MDLIVE New Dashboard";
+			productName = "MDLIVE New Dashboard";
+			productReference = D777F7B721D3E73F00B45D24 /* MDLIVE New Dashboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D777F7AF21D3E73F00B45D24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "David Hoy";
+				TargetAttributes = {
+					D777F7B621D3E73F00B45D24 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = D777F7B221D3E73F00B45D24 /* Build configuration list for PBXProject "MDLIVE New Dashboard" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D777F7AE21D3E73F00B45D24;
+			productRefGroup = D777F7B821D3E73F00B45D24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D777F7B621D3E73F00B45D24 /* MDLIVE New Dashboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D777F7B521D3E73F00B45D24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D74B9B9E21D5556200E9FD1F /* Montserrat-Bold.ttf in Resources */,
+				D777F7C721D3E74100B45D24 /* LaunchScreen.storyboard in Resources */,
+				D777F7C421D3E74100B45D24 /* Assets.xcassets in Resources */,
+				D74B9BA021D5556B00E9FD1F /* Montserrat-Regular.ttf in Resources */,
+				D777F7C221D3E73F00B45D24 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E120638061639E7970325A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MDLIVE New Dashboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		24B3C4568A1A7F905AB42CB5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MDLIVE New Dashboard/Pods-MDLIVE New Dashboard-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Montserrat/Montserrat.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Montserrat.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MDLIVE New Dashboard/Pods-MDLIVE New Dashboard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D777F7B321D3E73F00B45D24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7F67BFA21D42A6E0006CCB3 /* EMKRoundButton.m in Sources */,
+				D74B9BA321D56B5600E9FD1F /* GetStartedController.m in Sources */,
+				D777F7BF21D3E73F00B45D24 /* ViewController.m in Sources */,
+				D777F7CA21D3E74100B45D24 /* main.m in Sources */,
+				D79E4D3921DA6F01004A8A53 /* UIColor+mdl.m in Sources */,
+				D777F7BC21D3E73F00B45D24 /* AppDelegate.m in Sources */,
+				D7A3E4A821D5323C0053D086 /* MDLProviderTypeView.m in Sources */,
+				D7617C4621D6B80D002063AE /* UpcomingApptCell.m in Sources */,
+				D7F67C0921D512630006CCB3 /* MDLPatientImageCell.m in Sources */,
+				D74B9BCB21D66C7100E9FD1F /* ScheduleVisitController.m in Sources */,
+				D79E4D3321DA6564004A8A53 /* ProviderTypeCell.m in Sources */,
+				D79E4D2721DA4C6E004A8A53 /* MessagesCell.m in Sources */,
+				D79E4D3621DA6AAE004A8A53 /* SelectProviderControllerViewController.m in Sources */,
+				D7617C4021D6A037002063AE /* UIView+IBDesignable.m in Sources */,
+				D7F67BFD21D42B340006CCB3 /* HomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D777F7C021D3E73F00B45D24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D777F7C121D3E73F00B45D24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D777F7C521D3E74100B45D24 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D777F7C621D3E74100B45D24 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D777F7CB21D3E74100B45D24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D777F7CC21D3E74100B45D24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D777F7CE21D3E74100B45D24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32073B535B741F2EE0B1B644 /* Pods-MDLIVE New Dashboard.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5HTN7X4TAF;
+				INFOPLIST_FILE = "MDLIVE New Dashboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mdlive.MDLIVE-New-Dashboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D777F7CF21D3E74100B45D24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDC0E85D4EDC0EA44516445F /* Pods-MDLIVE New Dashboard.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5HTN7X4TAF;
+				INFOPLIST_FILE = "MDLIVE New Dashboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mdlive.MDLIVE-New-Dashboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D777F7B221D3E73F00B45D24 /* Build configuration list for PBXProject "MDLIVE New Dashboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D777F7CB21D3E74100B45D24 /* Debug */,
+				D777F7CC21D3E74100B45D24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D777F7CD21D3E74100B45D24 /* Build configuration list for PBXNativeTarget "MDLIVE New Dashboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D777F7CE21D3E74100B45D24 /* Debug */,
+				D777F7CF21D3E74100B45D24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D777F7AF21D3E73F00B45D24 /* Project object */;
+}
