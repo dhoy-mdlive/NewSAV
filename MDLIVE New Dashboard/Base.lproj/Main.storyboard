@@ -491,7 +491,7 @@
                                                     <rect key="frame" x="16" y="8" width="343" height="103"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="UPCOMING APPOINTMENT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MX3-Qv-yyL">
-                                                            <rect key="frame" x="82" y="11" width="153.5" height="14"/>
+                                                            <rect key="frame" x="82" y="11" width="167.5" height="14"/>
                                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
                                                             <color key="textColor" red="0.051083846830000001" green="0.17872469190000001" blue="0.35450594190000001" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -506,7 +506,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6:45 pm" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGY-9t-MRo">
-                                                            <rect key="frame" x="283.5" y="32" width="51.5" height="17"/>
+                                                            <rect key="frame" x="278.5" y="32" width="56.5" height="17"/>
                                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -527,7 +527,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OCT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIW-ei-hA4">
-                                                            <rect key="frame" x="15" y="52" width="31" height="18"/>
+                                                            <rect key="frame" x="15" y="52" width="33" height="18"/>
                                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -564,7 +564,7 @@
                                                             <color key="value" red="0.051083846830000001" green="0.17872469190000001" blue="0.35450594190000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                            <integer key="value" value="1"/>
+                                                            <integer key="value" value="0"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                             <real key="value" value="4"/>
@@ -611,27 +611,27 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessagesCell" rowHeight="90" id="vfW-dc-Lri" customClass="MessagesCell">
                                         <rect key="frame" x="0.0" y="147" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vfW-dc-Lri" id="joU-ws-hkQ">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vfW-dc-Lri" id="joU-ws-hkQ">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AEN-Y1-Ru8" userLabel="Messages" customClass="UpcomingApptCell">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AEN-Y1-Ru8" userLabel="Messages" customClass="UpcomingApptCell">
                                                     <rect key="frame" x="16" y="8" width="343" height="76"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="MESSAGES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dqv-NP-PND">
-                                                            <rect key="frame" x="82" y="11" width="253" height="14"/>
+                                                            <rect key="frame" x="82" y="11" width="253" height="15"/>
                                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
                                                             <color key="textColor" red="0.051083846830000001" green="0.17872469190000001" blue="0.35450594190000001" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have no messages." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4c-IR-nzJ" userLabel="Message">
-                                                            <rect key="frame" x="82" y="32" width="253" height="17"/>
+                                                            <rect key="frame" x="82" y="33" width="253" height="17"/>
                                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mdl_envelope" translatesAutoresizingMaskIntoConstraints="NO" id="9Wo-UY-IXn">
-                                                            <rect key="frame" x="8" y="8" width="60" height="60"/>
+                                                            <rect key="frame" x="8" y="8" width="60" height="58"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="9Wo-UY-IXn" secondAttribute="height" multiplier="1:1" id="7ge-fx-VSb"/>
                                                                 <constraint firstAttribute="height" constant="60" id="c35-DA-ltV"/>
@@ -657,7 +657,7 @@
                                                             <color key="value" red="0.051083846830000001" green="0.17872469190000001" blue="0.35450594190000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                            <integer key="value" value="1"/>
+                                                            <integer key="value" value="0"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                             <real key="value" value="4"/>
@@ -753,7 +753,7 @@
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                            <integer key="value" value="1"/>
+                                                            <integer key="value" value="0"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
                                                             <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
