@@ -14,6 +14,9 @@
 		D74B9BA021D5556B00E9FD1F /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D74B9B9F21D5556B00E9FD1F /* Montserrat-Regular.ttf */; };
 		D74B9BCB21D66C7100E9FD1F /* ScheduleVisitController.m in Sources */ = {isa = PBXBuildFile; fileRef = D74B9BCA21D66C7100E9FD1F /* ScheduleVisitController.m */; };
 		D7617C4621D6B80D002063AE /* UpcomingApptCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7617C4521D6B80D002063AE /* UpcomingApptCell.m */; };
+		D771890221DD59200053944A /* AppointmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D771890121DD59200053944A /* AppointmentsViewController.m */; };
+		D771890521DD5E850053944A /* MessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D771890421DD5E850053944A /* MessagesViewController.m */; };
+		D771890821DD68D40053944A /* AccountNotVerifiedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D771890721DD68D40053944A /* AccountNotVerifiedCell.m */; };
 		D777F7BC21D3E73F00B45D24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D777F7BB21D3E73F00B45D24 /* AppDelegate.m */; };
 		D777F7BF21D3E73F00B45D24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D777F7BE21D3E73F00B45D24 /* ViewController.m */; };
 		D777F7C221D3E73F00B45D24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D777F7C021D3E73F00B45D24 /* Main.storyboard */; };
@@ -45,6 +48,12 @@
 		D74B9BCA21D66C7100E9FD1F /* ScheduleVisitController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleVisitController.m; sourceTree = "<group>"; };
 		D7617C4421D6B80D002063AE /* UpcomingApptCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpcomingApptCell.h; sourceTree = "<group>"; };
 		D7617C4521D6B80D002063AE /* UpcomingApptCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpcomingApptCell.m; sourceTree = "<group>"; };
+		D771890021DD59200053944A /* AppointmentsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppointmentsViewController.h; sourceTree = "<group>"; };
+		D771890121DD59200053944A /* AppointmentsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppointmentsViewController.m; sourceTree = "<group>"; };
+		D771890321DD5E850053944A /* MessagesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessagesViewController.h; sourceTree = "<group>"; };
+		D771890421DD5E850053944A /* MessagesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessagesViewController.m; sourceTree = "<group>"; };
+		D771890621DD68D40053944A /* AccountNotVerifiedCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountNotVerifiedCell.h; sourceTree = "<group>"; };
+		D771890721DD68D40053944A /* AccountNotVerifiedCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountNotVerifiedCell.m; sourceTree = "<group>"; };
 		D777F7B721D3E73F00B45D24 /* MDLIVE New Dashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MDLIVE New Dashboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D777F7BA21D3E73F00B45D24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D777F7BB21D3E73F00B45D24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -169,6 +178,12 @@
 				D7E4FD9821DD198C00DCAB30 /* ReasonForVisitController.m */,
 				D7E4FD9B21DD1A3800DCAB30 /* ReasonForVisitCell.h */,
 				D7E4FD9C21DD1A3800DCAB30 /* ReasonForVisitCell.m */,
+				D771890021DD59200053944A /* AppointmentsViewController.h */,
+				D771890121DD59200053944A /* AppointmentsViewController.m */,
+				D771890321DD5E850053944A /* MessagesViewController.h */,
+				D771890421DD5E850053944A /* MessagesViewController.m */,
+				D771890621DD68D40053944A /* AccountNotVerifiedCell.h */,
+				D771890721DD68D40053944A /* AccountNotVerifiedCell.m */,
 			);
 			path = "MDLIVE New Dashboard";
 			sourceTree = "<group>";
@@ -305,8 +320,10 @@
 			files = (
 				D7F67BFA21D42A6E0006CCB3 /* EMKRoundButton.m in Sources */,
 				D777F7BF21D3E73F00B45D24 /* ViewController.m in Sources */,
+				D771890521DD5E850053944A /* MessagesViewController.m in Sources */,
 				D777F7CA21D3E74100B45D24 /* main.m in Sources */,
 				D777F7BC21D3E73F00B45D24 /* AppDelegate.m in Sources */,
+				D771890221DD59200053944A /* AppointmentsViewController.m in Sources */,
 				D7A3E4A821D5323C0053D086 /* MDLProviderTypeView.m in Sources */,
 				D7617C4621D6B80D002063AE /* UpcomingApptCell.m in Sources */,
 				D7F67C0921D512630006CCB3 /* MDLPatientImageCell.m in Sources */,
@@ -318,6 +335,7 @@
 				D79E4D3621DA6AAE004A8A53 /* SelectProviderController.m in Sources */,
 				D7E4FD9D21DD1A3800DCAB30 /* ReasonForVisitCell.m in Sources */,
 				D709BBFC21DD083C002461E7 /* UIView+IBDesignable.m in Sources */,
+				D771890821DD68D40053944A /* AccountNotVerifiedCell.m in Sources */,
 				D7F67BFD21D42B340006CCB3 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,7 +413,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -448,7 +466,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

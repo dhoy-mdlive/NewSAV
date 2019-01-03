@@ -150,6 +150,10 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath
     switch (indexPath.row)
     {
         case 0:
+            cell = [tableView dequeueReusableCellWithIdentifier:@"AccountNotVerifiedCell"];
+            cell.accessibilityIdentifier = @"homescreen_accountnotverified";
+            break;
+            
         case 2:
         case 3:
             cell = [tableView dequeueReusableCellWithIdentifier:@"UpcomingApptCell"];
