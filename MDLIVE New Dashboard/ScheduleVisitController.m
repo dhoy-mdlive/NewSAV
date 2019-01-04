@@ -7,6 +7,7 @@
 //
 
 #import "ScheduleVisitController.h"
+#import "ReasonForVisitController.h"
 #import "MDLProviderTypeView.h"
 
 
@@ -25,9 +26,10 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
 
 @property (nonatomic, assign) NSInteger             pageIndx;
 @property (nonatomic, strong) NSArray <NSString  *> *pageTitles;
+@property (nonatomic, strong) NSArray <NSString *>  *pageVCNames;
 @property (nonatomic, assign) Boolean               changesMade;
 
-@property (nonatomic, strong) IBOutlet UITableView *providerTypeTableView;
+//@property (nonatomic, strong) IBOutlet UITableView *providerTypeTableView;
     
 @end
 
@@ -45,6 +47,13 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
                          @"Choose Doctor",
                          @"Your Appointment",
                          @"Payment" ];
+    self.pageVCNames = @[ @"SelectProviderController",
+                          @"ReasonForVisitController",
+                          @"MedicalHistoryController",
+                          @"PharmacyInfoController",
+                          @"ChooseDoctorController",
+                          @"YourAppointmentController",
+                          @"PaymentController"];
     self.changesMade = NO;
     [self setupPage:self.pageIndx];
 }
@@ -67,8 +76,16 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
     
     self.scheduleVisitPageControl.numberOfPages = self.pageTitles.count;
     self.scheduleVisitPageControl.currentPage   = page;
+    
+    NSString *vcname = _pageVCNames[page];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *viewcontroller = [storyboard instantiateViewControllerWithIdentifier:vcname];
+    
+    [self addChildViewController:viewcontroller];
+    viewcontroller.view.bounds = _contentView.bounds;
+    [_contentView addSubview:viewcontroller.view];
+    [viewcontroller didMoveToParentViewController:self];
 }
-
 
 
 #pragma mark - Button action handlers
@@ -106,7 +123,6 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
 
 -(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
     //NSLog(@"%s: identifier=%@, sender=%@", __func__, identifier, sender);
-    
     if ([identifier isEqualToString:@"unwindSegue"]) {
         return NO;
     }
@@ -130,32 +146,6 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
     self.changesMade = YES;
 }
     
-    
-#pragma mark - UIPageViewControllerDataSource
-    
-- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController
-       viewControllerAfterViewController:(UIViewController *)viewController {
-    //ViewController *vc = (ViewController *)viewController;
-    //NSUInteger index = vc.pageIndex;
-    //return [self viewControllerWithPageIndex:(index + 1)];
-    return nil;
-}
-    
-- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController
-      viewControllerBeforeViewController:(UIViewController *)viewController {
-    //ViewController *vc = (ViewController *)viewController;
-    //NSUInteger index = vc.pageIndex;
-    //return [self viewControllerWithPageIndex:(index - 1)];
-    return nil;
-}
-    
-- (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController {
-    return self.pageTitles.count;
-}
-    
-- (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController {
-    //return [(ViewController *)pageViewController.presentedViewController pageIndex];
-    return 0;
-}
+
     
 @end

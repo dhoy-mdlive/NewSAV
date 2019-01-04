@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ReasonForVisitController : UIViewController  <UITableViewDelegate, UITableViewDataSource>
+@interface ReasonForVisitController : UITableViewController  <UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UITableView *reasonForVisitTableView;
 

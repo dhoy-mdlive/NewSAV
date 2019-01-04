@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ReasonForVisitCell : UITableViewCell
 
 @property (nonatomic,strong) IBOutlet UITextField *symptomTextField;
-@property (nonatomic,strong) IBOutlet UIImageView *symptopImageView;
+@property (nonatomic,strong) IBOutlet UIImageView *symptomImageView;
 @property (nonatomic,strong) IBOutlet UIButton *uploadPhotoButton;
 
 @end

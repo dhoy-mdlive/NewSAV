@@ -17,8 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic) IBOutlet UIButton *cancelButton;
 @property (strong, nonatomic) IBOutlet UIButton *backButton;
 @property (strong, nonatomic) IBOutlet UIButton *nextButton;
-@property (strong, nonatomic) IBOutlet UIView *scheduleVisitView;
-@property (strong, nonatomic) IBOutlet UITableView *contentView;
+@property (strong, nonatomic) IBOutlet UIView *contentView;
+
 
 @end
 

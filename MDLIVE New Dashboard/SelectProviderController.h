@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SelectProviderController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface SelectProviderController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UITableView *providerTableView;
 

@@ -27,9 +27,12 @@
     NSLog(@"%s: sender=%@", __func__, sender);
 }
 
-- (IBAction)uploadPhotoTapped:(EMKRoundButton *)sender {
+
+- (IBAction)uploadPhotoTapped:(UIButton *)sender {
     NSLog(@"%s: sender=%@", __func__, sender);
 }
+
+
 
 
 @end
