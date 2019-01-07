@@ -7,12 +7,15 @@
 //
 
 #import "MessagesCell.h"
+#import "UIImageView+badge.h"
+#import "UIColor+mdl.h"
 
 @implementation MessagesCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    [_envelopeImage addBadge:@"0" withColor:[UIColor colorFromHexString:@"#63A0FA"]];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

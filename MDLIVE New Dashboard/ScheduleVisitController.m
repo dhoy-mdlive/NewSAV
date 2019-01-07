@@ -109,13 +109,24 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
         [self addChildViewController:viewController];
     }
     //_viewControllers[page].view.frame = _contentView.frame;
+    CGRect rect = _contentView.frame;       // Use the contentView frame as a reference
+    rect.origin = CGPointMake(0,0);         // pin to upper left corner of container view
+    [_viewControllers[page].view setFrame:rect];
     [_contentView addSubview:_viewControllers[page].view];
     [_viewControllers[page] didMoveToParentViewController:self];
-    
-    //UIViewController *currentTopVC = [self currentTopViewController];
-    //[currentTopVC presentViewController:viewcontroller animated:YES completion:nil];
-    
-    
+}
+
+-(void)viewWillTransitionToSize:(CGSize)size
+      withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+    [coordinator animateAlongsideTransition:^(id _Nonnull context) {
+        // during rotation: update our image view's bounds and centre
+        //UIImageView *imageView = [self.view viewWithTag:87];
+        //imageView.bounds = self.view.bounds;
+        //imageView.center = self.view.center;
+    } completion:^(id  _Nonnull context) {
+        // after rotation
+        [self setupPage:self.pageIndx];
+    }];
 }
 
 
@@ -165,7 +176,6 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
     NSLog(@"%s: sender=%@", __func__, sender);
     if (self.pageIndx > 0) {
         self.pageIndx--;
-     //   [self transitionFromViewController:<#(nonnull UIViewController *)#> toViewController:<#(nonnull UIViewController *)#> duration:<#(NSTimeInterval)#> options:<#(UIViewAnimationOptions)#> animations:<#^(void)animations#> completion:<#^(BOOL finished)completion#>]
     }
     [self setupPage:self.pageIndx];
 }
@@ -179,7 +189,6 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
     [self setupPage:self.pageIndx];
     self.changesMade = YES;
 }
-    
 
     
 @end

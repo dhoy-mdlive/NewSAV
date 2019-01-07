@@ -28,5 +28,6 @@ target 'MDLIVE New Dashboard' do
     # Pods for MDLIVE New Dashboard
     pod 'Montserrat'
     pod 'UIView+Borders'
+    pod 'M13BadgeView'
   
 end

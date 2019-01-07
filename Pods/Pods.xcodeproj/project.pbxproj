@@ -7,22 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C37F8D765E1274912A857E8E6D7E20B /* UIFont+Montserrat.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D44B255666547C9D28B7B333BC9E94 /* UIFont+Montserrat.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		1D35D68EF05BBA6D0B2095EE34ACCBC7 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43C6952FF9643ED6009F1ABE1C88F06E /* Montserrat-Regular.ttf */; };
-		284E3B41AC72DDD760FAA425F681048E /* UIView+Borders-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CD5DC0474EDDAED5725FEDD887E8C6 /* UIView+Borders-dummy.m */; };
-		2872BDCC70584507EEE5948A06B7FD4F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11055BF2B20FD193EBD48E13C5F5224 /* CoreText.framework */; };
-		33BD94AAF4111A6268A29D7F9E7791BB /* Pods-MDLIVE New Dashboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C71996810C6C2D69968A6EDBEE582E3F /* Pods-MDLIVE New Dashboard-dummy.m */; };
-		342818E6B23892DBC288A4409189E69B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7824C1A89E86BBAED18A01868005B545 /* UIKit.framework */; };
-		532B6D9BD16088BB846BB953EFC6C4C7 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 87C6E4DF174519E35B0A9E8CC08B6746 /* Montserrat-Bold.ttf */; };
-		89A8D9B4675D0417A9650C17CB37134B /* UIView+Borders.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CE74389D5D9476A414710259324A67A /* UIView+Borders.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9F45FC677275B9BE590A27833B19EEF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7824C1A89E86BBAED18A01868005B545 /* UIKit.framework */; };
-		AC00062346FB75C24220508DF27F64B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C1E47BA8D2C39CC213C7B672E0B86B /* Foundation.framework */; };
-		C207C926864D21546D89714834791174 /* UIFont+Montserrat.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C954CF73CE58667B97CBDF1F02C3605 /* UIFont+Montserrat.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C893AF7E55D2B5A24F8B26F26B73F41F /* Montserrat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2076A5391F2A669A0FD4D8C3C1AC82 /* Montserrat-dummy.m */; };
-		D193CD34F2AAD98E6E1AEF3161BFB869 /* UIView+Borders.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FC3EAD24CA72BD421128CDFDBD1203 /* UIView+Borders.m */; };
+		0A49BA36889CAD165DEFEB5BB4D2537B /* UIView+Borders.h in Headers */ = {isa = PBXBuildFile; fileRef = 69A1668F2C483C918FBABCAAC5493BFA /* UIView+Borders.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1C37F8D765E1274912A857E8E6D7E20B /* UIFont+Montserrat.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FD9A4A7183DED4F2514A8F6E7C1496 /* UIFont+Montserrat.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1D35D68EF05BBA6D0B2095EE34ACCBC7 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4D2408706FEB3AFFA47ACFFEFAE291 /* Montserrat-Regular.ttf */; };
+		2872BDCC70584507EEE5948A06B7FD4F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8943D35703AEBBEF917C7B13B2A0D0C5 /* CoreText.framework */; };
+		342818E6B23892DBC288A4409189E69B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8381ADA67174221C30169996D567BD /* UIKit.framework */; };
+		4941EF05E0F9DF331C8A6B7D04CED4C4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7523075AD839FE3F73F1677F365B65E /* QuartzCore.framework */; };
+		5135299A7E6BC0F92286EADA2F6966F1 /* M13BadgeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 78FEB25DC3B1905A6F883B59E76434EE /* M13BadgeView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		532B6D9BD16088BB846BB953EFC6C4C7 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1001ECB251AD1C37F87CA7F3AF302A1 /* Montserrat-Bold.ttf */; };
+		5A706B90D0709504D5B915DFEBBC8E9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C403F53976FF94C21B37432572C5262 /* Foundation.framework */; };
+		79F3FA5CCA152D449D0FE15BA0C9BCF2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8381ADA67174221C30169996D567BD /* UIKit.framework */; };
+		8AEEF99F7A807A0AC780F0264CD36F04 /* UIView+Borders-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1101EDDB33AF92950647D0171CF77DC /* UIView+Borders-dummy.m */; };
+		8E1358864D32F3AAC0354F1286092C01 /* Pods-MDLIVE New Dashboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C71996810C6C2D69968A6EDBEE582E3F /* Pods-MDLIVE New Dashboard-dummy.m */; };
+		93601F2BB274D4C738DC3054CA78AC31 /* M13BadgeView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C736A10BDA926253F819E75BBCFFCE /* M13BadgeView-dummy.m */; };
+		A45EFE75D426748CDF4F460F7E4EB7DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C403F53976FF94C21B37432572C5262 /* Foundation.framework */; };
+		AC82D927A9B871E12947E4B8845DD72F /* UIView+Borders.m in Sources */ = {isa = PBXBuildFile; fileRef = D19FAB70C317313697F45BB41844C772 /* UIView+Borders.m */; };
+		C207C926864D21546D89714834791174 /* UIFont+Montserrat.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F44EAC03F1DE4A67916529104979F54 /* UIFont+Montserrat.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C2A0E4B46A1B37DA9FFDC35D4F94B6B9 /* M13BadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F47C272CAA4B9832F2C236389A08D /* M13BadgeView.m */; };
+		C893AF7E55D2B5A24F8B26F26B73F41F /* Montserrat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC23CD57031D0D00857D2948000F5A3 /* Montserrat-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		16A91D2A1FF914B065165E5DF210FAAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58B2CD2721DD5E650C855CB114833B25;
+			remoteInfo = "UIView+Borders";
+		};
+		5952EBF216526D0BE308516D6BBACF99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80CB4DCDB8A74A2B25D1F13A5D585504;
+			remoteInfo = M13BadgeView;
+		};
+		895C299CDAD5B4C0A0CED0DB2B5456D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 836AC66E8888FF6FA0DEDDE34EF5BE51;
+			remoteInfo = Montserrat;
+		};
 		A99612213CDEAF1FD0DB5910B8AE1E07 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -30,51 +56,44 @@
 			remoteGlobalIDString = 3914C5DF3BC3A3838ECFF314EED7AB42;
 			remoteInfo = "Montserrat-Montserrat";
 		};
-		AADE3C06A5AB58B7F098E8C752EE1B15 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 836AC66E8888FF6FA0DEDDE34EF5BE51;
-			remoteInfo = Montserrat;
-		};
-		D1494B0A4794ADEAB5A09E8B8C8B1D77 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 08C2A019BAAE9B069B11B88F469505F0;
-			remoteInfo = "UIView+Borders";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03502CE44B3C611F0393D6434A0BE6CD /* UIView+Borders.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIView+Borders.xcconfig"; sourceTree = "<group>"; };
-		08C1E47BA8D2C39CC213C7B672E0B86B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		1B2076A5391F2A669A0FD4D8C3C1AC82 /* Montserrat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Montserrat-dummy.m"; sourceTree = "<group>"; };
-		1EC43AD8DBB09A59494EF9B093841FF3 /* UIView+Borders-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Borders-prefix.pch"; sourceTree = "<group>"; };
-		43C6952FF9643ED6009F1ABE1C88F06E /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Montserrat-Regular.ttf"; path = "Fonts/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
-		46D44B255666547C9D28B7B333BC9E94 /* UIFont+Montserrat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Montserrat.m"; sourceTree = "<group>"; };
-		4F3A37F2EE9CC5912B80DE1B8C13DD74 /* ResourceBundle-Montserrat-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Montserrat-Info.plist"; sourceTree = "<group>"; };
+		0F8381ADA67174221C30169996D567BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		171434E537EF265B80B5EC688AE3FA20 /* M13BadgeView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = M13BadgeView.xcconfig; sourceTree = "<group>"; };
+		21092C62323D43DD01989C41B4007508 /* libM13BadgeView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libM13BadgeView.a; path = libM13BadgeView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2925E44B0AB46AD0F79E0B31EF1DD326 /* Montserrat.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Montserrat.bundle; path = "Montserrat-Montserrat.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FB9B1DAE1A541516DD0098D0AB7C339 /* UIView+Borders.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIView+Borders.xcconfig"; sourceTree = "<group>"; };
+		4F44EAC03F1DE4A67916529104979F54 /* UIFont+Montserrat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIFont+Montserrat.h"; sourceTree = "<group>"; };
 		50DE173F4E9B0AF0FB943691C911D9F0 /* Pods-MDLIVE New Dashboard-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MDLIVE New Dashboard-frameworks.sh"; sourceTree = "<group>"; };
 		513649EE4435BA8E5D79C3369FAF1AA0 /* Pods-MDLIVE New Dashboard-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MDLIVE New Dashboard-resources.sh"; sourceTree = "<group>"; };
-		54BC94F3E4F8C25459454F19E62FC8CD /* Montserrat-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Montserrat-prefix.pch"; sourceTree = "<group>"; };
 		59C836ACD83E31BABE7AFE76AC558685 /* Pods-MDLIVE New Dashboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MDLIVE New Dashboard.release.xcconfig"; sourceTree = "<group>"; };
-		6233D9B920E1AB20AD9D85029628DB76 /* Montserrat.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Montserrat.xcconfig; sourceTree = "<group>"; };
-		68FC3EAD24CA72BD421128CDFDBD1203 /* UIView+Borders.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+Borders.m"; sourceTree = "<group>"; };
-		6CE74389D5D9476A414710259324A67A /* UIView+Borders.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Borders.h"; sourceTree = "<group>"; };
-		7824C1A89E86BBAED18A01868005B545 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		86965E6C5802A608AA1B3A4515BB5020 /* libUIView+Borders.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libUIView+Borders.a"; path = "libUIView+Borders.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		87C6E4DF174519E35B0A9E8CC08B6746 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Montserrat-Bold.ttf"; path = "Fonts/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
-		8C954CF73CE58667B97CBDF1F02C3605 /* UIFont+Montserrat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIFont+Montserrat.h"; sourceTree = "<group>"; };
+		64C854E8FCFF22592689DE5FE6DF9B00 /* libMontserrat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMontserrat.a; path = libMontserrat.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		69A1668F2C483C918FBABCAAC5493BFA /* UIView+Borders.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Borders.h"; sourceTree = "<group>"; };
+		6F96E73402D5E9143DB670EF89DBE967 /* ResourceBundle-Montserrat-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Montserrat-Info.plist"; sourceTree = "<group>"; };
+		78FEB25DC3B1905A6F883B59E76434EE /* M13BadgeView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13BadgeView.h; path = Classes/M13BadgeView.h; sourceTree = "<group>"; };
+		7B90B23DB7B44B21414069EACD286DC2 /* Montserrat-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Montserrat-prefix.pch"; sourceTree = "<group>"; };
+		883D33A8E8D7B0F9C1C6A3149510D3C2 /* UIView+Borders-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Borders-prefix.pch"; sourceTree = "<group>"; };
+		8943D35703AEBBEF917C7B13B2A0D0C5 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
 		8F81B88B415306093427496136089978 /* Pods-MDLIVE New Dashboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MDLIVE New Dashboard.debug.xcconfig"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96C736A10BDA926253F819E75BBCFFCE /* M13BadgeView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "M13BadgeView-dummy.m"; sourceTree = "<group>"; };
+		97FD9A4A7183DED4F2514A8F6E7C1496 /* UIFont+Montserrat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Montserrat.m"; sourceTree = "<group>"; };
+		9C0F47C272CAA4B9832F2C236389A08D /* M13BadgeView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13BadgeView.m; path = Classes/M13BadgeView.m; sourceTree = "<group>"; };
+		9C403F53976FF94C21B37432572C5262 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9C8917A8DC1876F1884E5F4B84C0D225 /* M13BadgeView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "M13BadgeView-prefix.pch"; sourceTree = "<group>"; };
+		A1001ECB251AD1C37F87CA7F3AF302A1 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Montserrat-Bold.ttf"; path = "Fonts/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		A7523075AD839FE3F73F1677F365B65E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		A756F70C7B3F05F9404D1EA5FE1A5C3D /* Pods-MDLIVE New Dashboard-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MDLIVE New Dashboard-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C11055BF2B20FD193EBD48E13C5F5224 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		BC4D2408706FEB3AFFA47ACFFEFAE291 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Montserrat-Regular.ttf"; path = "Fonts/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		C32803DF17C29DC0C4065CFD50996414 /* libUIView+Borders.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libUIView+Borders.a"; path = "libUIView+Borders.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3F16B3669C91E2C49AB54570B0B6920 /* Montserrat.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Montserrat.xcconfig; sourceTree = "<group>"; };
 		C71996810C6C2D69968A6EDBEE582E3F /* Pods-MDLIVE New Dashboard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MDLIVE New Dashboard-dummy.m"; sourceTree = "<group>"; };
-		CEA029734E16D36725CBB8D1B7586568 /* Montserrat.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Montserrat.bundle; path = "Montserrat-Montserrat.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2CD5DC0474EDDAED5725FEDD887E8C6 /* UIView+Borders-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+Borders-dummy.m"; sourceTree = "<group>"; };
-		D7011E56606A2CBAA74B7ADF7B074996 /* libPods-MDLIVE New Dashboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-MDLIVE New Dashboard.a"; path = "libPods-MDLIVE New Dashboard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1101EDDB33AF92950647D0171CF77DC /* UIView+Borders-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+Borders-dummy.m"; sourceTree = "<group>"; };
+		D19FAB70C317313697F45BB41844C772 /* UIView+Borders.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+Borders.m"; sourceTree = "<group>"; };
 		E0F74A760201636466F2BAE48C3F73D1 /* Pods-MDLIVE New Dashboard-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MDLIVE New Dashboard-acknowledgements.plist"; sourceTree = "<group>"; };
-		FC1FC06C00617577599BC300BC6AE9CD /* libMontserrat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMontserrat.a; path = libMontserrat.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDC051A5E157506A959A383C846BAA36 /* libPods-MDLIVE New Dashboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-MDLIVE New Dashboard.a"; path = "libPods-MDLIVE New Dashboard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEC23CD57031D0D00857D2948000F5A3 /* Montserrat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Montserrat-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +104,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8DB3EFF448CB72945785994A6D8676A5 /* Frameworks */ = {
+		48E6AA4158B86499E540DC0D877A7E66 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC00062346FB75C24220508DF27F64B9 /* Foundation.framework in Frameworks */,
-				9F45FC677275B9BE590A27833B19EEF6 /* UIKit.framework in Frameworks */,
+				5A706B90D0709504D5B915DFEBBC8E9A /* Foundation.framework in Frameworks */,
+				79F3FA5CCA152D449D0FE15BA0C9BCF2 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73CA762845D060FDF67B1D1FE0491EB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,61 +129,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ABF2A29B031CE057AAB3108AF48065FC /* Frameworks */ = {
+		D3020D0E546826138ADAF01F97766141 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A45EFE75D426748CDF4F460F7E4EB7DE /* Foundation.framework in Frameworks */,
+				4941EF05E0F9DF331C8A6B7D04CED4C4 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02A8EFCC0F0A6040DD5FB3D692BDB1CB /* Support Files */ = {
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				03502CE44B3C611F0393D6434A0BE6CD /* UIView+Borders.xcconfig */,
-				D2CD5DC0474EDDAED5725FEDD887E8C6 /* UIView+Borders-dummy.m */,
-				1EC43AD8DBB09A59494EF9B093841FF3 /* UIView+Borders-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/UIView+Borders";
-			sourceTree = "<group>";
-		};
-		05BA862F8DADAFDAA7126453FAE3A256 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				87C6E4DF174519E35B0A9E8CC08B6746 /* Montserrat-Bold.ttf */,
-				43C6952FF9643ED6009F1ABE1C88F06E /* Montserrat-Regular.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2398AABD708E38600AD56EE2E1C8E8B0 /* iOS */,
+				DB42F76E02BD1FA40C8D69EAF2E3ACFD /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2398AABD708E38600AD56EE2E1C8E8B0 /* iOS */ = {
+		1957635FAD9B253D98536CCF6775B824 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C11055BF2B20FD193EBD48E13C5F5224 /* CoreText.framework */,
-				08C1E47BA8D2C39CC213C7B672E0B86B /* Foundation.framework */,
-				7824C1A89E86BBAED18A01868005B545 /* UIKit.framework */,
+				171434E537EF265B80B5EC688AE3FA20 /* M13BadgeView.xcconfig */,
+				96C736A10BDA926253F819E75BBCFFCE /* M13BadgeView-dummy.m */,
+				9C8917A8DC1876F1884E5F4B84C0D225 /* M13BadgeView-prefix.pch */,
 			);
-			name = iOS;
+			name = "Support Files";
+			path = "../Target Support Files/M13BadgeView";
 			sourceTree = "<group>";
 		};
-		24A27ACCD3AAEB552C7D11F87D1ABD21 /* Pods */ = {
+		33C3CA52A89B3A04F7524D0C4311E5DD /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6CE51DF7C0CD13648BA4EACAEAE414F4 /* Montserrat */,
-				FAED6E5E732AA97E9EBF5250F503C915 /* UIView+Borders */,
+				3FB9B1DAE1A541516DD0098D0AB7C339 /* UIView+Borders.xcconfig */,
+				D1101EDDB33AF92950647D0171CF77DC /* UIView+Borders-dummy.m */,
+				883D33A8E8D7B0F9C1C6A3149510D3C2 /* UIView+Borders-prefix.pch */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/UIView+Borders";
 			sourceTree = "<group>";
 		};
 		350D157B78588363BD02FACE836FE312 /* Targets Support Files */ = {
@@ -168,36 +179,35 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		441BAE7A2A80E51B5056A33EEC89BB6C /* Products */ = {
+		5077122E456A5770D5C4BF398F7B1E51 /* M13BadgeView */ = {
 			isa = PBXGroup;
 			children = (
-				FC1FC06C00617577599BC300BC6AE9CD /* libMontserrat.a */,
-				D7011E56606A2CBAA74B7ADF7B074996 /* libPods-MDLIVE New Dashboard.a */,
-				86965E6C5802A608AA1B3A4515BB5020 /* libUIView+Borders.a */,
-				CEA029734E16D36725CBB8D1B7586568 /* Montserrat.bundle */,
+				78FEB25DC3B1905A6F883B59E76434EE /* M13BadgeView.h */,
+				9C0F47C272CAA4B9832F2C236389A08D /* M13BadgeView.m */,
+				1957635FAD9B253D98536CCF6775B824 /* Support Files */,
 			);
-			name = Products;
+			name = M13BadgeView;
+			path = M13BadgeView;
 			sourceTree = "<group>";
 		};
-		6CE51DF7C0CD13648BA4EACAEAE414F4 /* Montserrat */ = {
+		726F3A144801D8B9C01875782D9C6BF7 /* UIView+Borders */ = {
 			isa = PBXGroup;
 			children = (
-				8C954CF73CE58667B97CBDF1F02C3605 /* UIFont+Montserrat.h */,
-				46D44B255666547C9D28B7B333BC9E94 /* UIFont+Montserrat.m */,
-				05BA862F8DADAFDAA7126453FAE3A256 /* Resources */,
-				CDD7482E52859B1D4A4964B957283756 /* Support Files */,
+				69A1668F2C483C918FBABCAAC5493BFA /* UIView+Borders.h */,
+				D19FAB70C317313697F45BB41844C772 /* UIView+Borders.m */,
+				33C3CA52A89B3A04F7524D0C4311E5DD /* Support Files */,
 			);
-			name = Montserrat;
-			path = Montserrat;
+			name = "UIView+Borders";
+			path = "UIView+Borders";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				24A27ACCD3AAEB552C7D11F87D1ABD21 /* Pods */,
-				441BAE7A2A80E51B5056A33EEC89BB6C /* Products */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				E4D3380D2D4BDF9DCE3682D8A9F0B0F5 /* Pods */,
+				A81D10FD718536C0155B67A72B970C76 /* Products */,
 				350D157B78588363BD02FACE836FE312 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -217,39 +227,75 @@
 			path = "Target Support Files/Pods-MDLIVE New Dashboard";
 			sourceTree = "<group>";
 		};
-		CDD7482E52859B1D4A4964B957283756 /* Support Files */ = {
+		A81D10FD718536C0155B67A72B970C76 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6233D9B920E1AB20AD9D85029628DB76 /* Montserrat.xcconfig */,
-				1B2076A5391F2A669A0FD4D8C3C1AC82 /* Montserrat-dummy.m */,
-				54BC94F3E4F8C25459454F19E62FC8CD /* Montserrat-prefix.pch */,
-				4F3A37F2EE9CC5912B80DE1B8C13DD74 /* ResourceBundle-Montserrat-Info.plist */,
+				21092C62323D43DD01989C41B4007508 /* libM13BadgeView.a */,
+				64C854E8FCFF22592689DE5FE6DF9B00 /* libMontserrat.a */,
+				FDC051A5E157506A959A383C846BAA36 /* libPods-MDLIVE New Dashboard.a */,
+				C32803DF17C29DC0C4065CFD50996414 /* libUIView+Borders.a */,
+				2925E44B0AB46AD0F79E0B31EF1DD326 /* Montserrat.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD35887D338E0246B0373F57FFACA06C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3F16B3669C91E2C49AB54570B0B6920 /* Montserrat.xcconfig */,
+				FEC23CD57031D0D00857D2948000F5A3 /* Montserrat-dummy.m */,
+				7B90B23DB7B44B21414069EACD286DC2 /* Montserrat-prefix.pch */,
+				6F96E73402D5E9143DB670EF89DBE967 /* ResourceBundle-Montserrat-Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Montserrat";
 			sourceTree = "<group>";
 		};
-		FAED6E5E732AA97E9EBF5250F503C915 /* UIView+Borders */ = {
+		C49F1BFF46ACAD946174A29518050168 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				6CE74389D5D9476A414710259324A67A /* UIView+Borders.h */,
-				68FC3EAD24CA72BD421128CDFDBD1203 /* UIView+Borders.m */,
-				02A8EFCC0F0A6040DD5FB3D692BDB1CB /* Support Files */,
+				A1001ECB251AD1C37F87CA7F3AF302A1 /* Montserrat-Bold.ttf */,
+				BC4D2408706FEB3AFFA47ACFFEFAE291 /* Montserrat-Regular.ttf */,
 			);
-			name = "UIView+Borders";
-			path = "UIView+Borders";
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DB42F76E02BD1FA40C8D69EAF2E3ACFD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8943D35703AEBBEF917C7B13B2A0D0C5 /* CoreText.framework */,
+				9C403F53976FF94C21B37432572C5262 /* Foundation.framework */,
+				A7523075AD839FE3F73F1677F365B65E /* QuartzCore.framework */,
+				0F8381ADA67174221C30169996D567BD /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E4D3380D2D4BDF9DCE3682D8A9F0B0F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5077122E456A5770D5C4BF398F7B1E51 /* M13BadgeView */,
+				FFF32F0D88EF0017F74F86B2841C8977 /* Montserrat */,
+				726F3A144801D8B9C01875782D9C6BF7 /* UIView+Borders */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FFF32F0D88EF0017F74F86B2841C8977 /* Montserrat */ = {
+			isa = PBXGroup;
+			children = (
+				4F44EAC03F1DE4A67916529104979F54 /* UIFont+Montserrat.h */,
+				97FD9A4A7183DED4F2514A8F6E7C1496 /* UIFont+Montserrat.m */,
+				C49F1BFF46ACAD946174A29518050168 /* Resources */,
+				AD35887D338E0246B0373F57FFACA06C /* Support Files */,
+			);
+			name = Montserrat;
+			path = Montserrat;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1CFBCAB0C546CD66A279C330A88F5814 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		25479581E51AD5B17814444D729720B3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -258,53 +304,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4E827A89DBD8C28AA368BCD96AD30953 /* Headers */ = {
+		3D1D2D634B1EDEA1C0C7AE21AE149E72 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89A8D9B4675D0417A9650C17CB37134B /* UIView+Borders.h in Headers */,
+				5135299A7E6BC0F92286EADA2F6966F1 /* M13BadgeView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B164EB41E3A1222AFDBEC8127B8A551 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A49BA36889CAD165DEFEB5BB4D2537B /* UIView+Borders.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA9A622257544C7C1B702BB2E196B618 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		08C2A019BAAE9B069B11B88F469505F0 /* UIView+Borders */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 945677EC67A180FD90CF0420CC277B37 /* Build configuration list for PBXNativeTarget "UIView+Borders" */;
-			buildPhases = (
-				4E827A89DBD8C28AA368BCD96AD30953 /* Headers */,
-				AFD1BA607BC5F4FBDDC821E44AC9CD04 /* Sources */,
-				8DB3EFF448CB72945785994A6D8676A5 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "UIView+Borders";
-			productName = "UIView+Borders";
-			productReference = 86965E6C5802A608AA1B3A4515BB5020 /* libUIView+Borders.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		225786F8B99B37E4EF3A0FA412F37D83 /* Pods-MDLIVE New Dashboard */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 30733E01D7B45480596AA32E5767B570 /* Build configuration list for PBXNativeTarget "Pods-MDLIVE New Dashboard" */;
-			buildPhases = (
-				1CFBCAB0C546CD66A279C330A88F5814 /* Headers */,
-				9CAA88AACD84D9063C6179E29A0A44AE /* Sources */,
-				ABF2A29B031CE057AAB3108AF48065FC /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				05527605D7455C2E577685C962CD48F6 /* PBXTargetDependency */,
-				42367EF811DE86EB48FCB890FCB3D7A7 /* PBXTargetDependency */,
-			);
-			name = "Pods-MDLIVE New Dashboard";
-			productName = "Pods-MDLIVE New Dashboard";
-			productReference = D7011E56606A2CBAA74B7ADF7B074996 /* libPods-MDLIVE New Dashboard.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		3914C5DF3BC3A3838ECFF314EED7AB42 /* Montserrat-Montserrat */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58E05EBD0001D10C21825D1BDA49FB49 /* Build configuration list for PBXNativeTarget "Montserrat-Montserrat" */;
@@ -319,8 +344,42 @@
 			);
 			name = "Montserrat-Montserrat";
 			productName = "Montserrat-Montserrat";
-			productReference = CEA029734E16D36725CBB8D1B7586568 /* Montserrat.bundle */;
+			productReference = 2925E44B0AB46AD0F79E0B31EF1DD326 /* Montserrat.bundle */;
 			productType = "com.apple.product-type.bundle";
+		};
+		58B2CD2721DD5E650C855CB114833B25 /* UIView+Borders */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B31E283A83253AE06B6CDF93F99C1BB /* Build configuration list for PBXNativeTarget "UIView+Borders" */;
+			buildPhases = (
+				5B164EB41E3A1222AFDBEC8127B8A551 /* Headers */,
+				5BCC73DDA076B0587186C0F094FAFC7F /* Sources */,
+				48E6AA4158B86499E540DC0D877A7E66 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UIView+Borders";
+			productName = "UIView+Borders";
+			productReference = C32803DF17C29DC0C4065CFD50996414 /* libUIView+Borders.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		80CB4DCDB8A74A2B25D1F13A5D585504 /* M13BadgeView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D749E6FF6D5864AE3EB7859571FDF64D /* Build configuration list for PBXNativeTarget "M13BadgeView" */;
+			buildPhases = (
+				3D1D2D634B1EDEA1C0C7AE21AE149E72 /* Headers */,
+				1D44D98C02E64B13D64E38B6B545A1BC /* Sources */,
+				D3020D0E546826138ADAF01F97766141 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = M13BadgeView;
+			productName = M13BadgeView;
+			productReference = 21092C62323D43DD01989C41B4007508 /* libM13BadgeView.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 		836AC66E8888FF6FA0DEDDE34EF5BE51 /* Montserrat */ = {
 			isa = PBXNativeTarget;
@@ -337,7 +396,27 @@
 			);
 			name = Montserrat;
 			productName = Montserrat;
-			productReference = FC1FC06C00617577599BC300BC6AE9CD /* libMontserrat.a */;
+			productReference = 64C854E8FCFF22592689DE5FE6DF9B00 /* libMontserrat.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D0CFD63CE84D2D9A449DB9E2023011CB /* Pods-MDLIVE New Dashboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA4C0DE2BBA59766E3784D96514FE96F /* Build configuration list for PBXNativeTarget "Pods-MDLIVE New Dashboard" */;
+			buildPhases = (
+				BA9A622257544C7C1B702BB2E196B618 /* Headers */,
+				215BFF7BC4A39F0C82F4F36D021FDA2B /* Sources */,
+				73CA762845D060FDF67B1D1FE0491EB6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43E75941782790F51D5BDA06222EA1EC /* PBXTargetDependency */,
+				58BE275AADFC4E7F71754707140D69D8 /* PBXTargetDependency */,
+				857C15261C3151123D4135663AAA54D2 /* PBXTargetDependency */,
+			);
+			name = "Pods-MDLIVE New Dashboard";
+			productName = "Pods-MDLIVE New Dashboard";
+			productReference = FDC051A5E157506A959A383C846BAA36 /* libPods-MDLIVE New Dashboard.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -357,14 +436,15 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 441BAE7A2A80E51B5056A33EEC89BB6C /* Products */;
+			productRefGroup = A81D10FD718536C0155B67A72B970C76 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				80CB4DCDB8A74A2B25D1F13A5D585504 /* M13BadgeView */,
 				836AC66E8888FF6FA0DEDDE34EF5BE51 /* Montserrat */,
 				3914C5DF3BC3A3838ECFF314EED7AB42 /* Montserrat-Montserrat */,
-				225786F8B99B37E4EF3A0FA412F37D83 /* Pods-MDLIVE New Dashboard */,
-				08C2A019BAAE9B069B11B88F469505F0 /* UIView+Borders */,
+				D0CFD63CE84D2D9A449DB9E2023011CB /* Pods-MDLIVE New Dashboard */,
+				58B2CD2721DD5E650C855CB114833B25 /* UIView+Borders */,
 			);
 		};
 /* End PBXProject section */
@@ -391,6 +471,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1D44D98C02E64B13D64E38B6B545A1BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93601F2BB274D4C738DC3054CA78AC31 /* M13BadgeView-dummy.m in Sources */,
+				C2A0E4B46A1B37DA9FFDC35D4F94B6B9 /* M13BadgeView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		215BFF7BC4A39F0C82F4F36D021FDA2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E1358864D32F3AAC0354F1286092C01 /* Pods-MDLIVE New Dashboard-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2B8A4BE0F1DB34AAD8B5597F647BA550 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -398,37 +495,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9CAA88AACD84D9063C6179E29A0A44AE /* Sources */ = {
+		5BCC73DDA076B0587186C0F094FAFC7F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33BD94AAF4111A6268A29D7F9E7791BB /* Pods-MDLIVE New Dashboard-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AFD1BA607BC5F4FBDDC821E44AC9CD04 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				284E3B41AC72DDD760FAA425F681048E /* UIView+Borders-dummy.m in Sources */,
-				D193CD34F2AAD98E6E1AEF3161BFB869 /* UIView+Borders.m in Sources */,
+				8AEEF99F7A807A0AC780F0264CD36F04 /* UIView+Borders-dummy.m in Sources */,
+				AC82D927A9B871E12947E4B8845DD72F /* UIView+Borders.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		05527605D7455C2E577685C962CD48F6 /* PBXTargetDependency */ = {
+		43E75941782790F51D5BDA06222EA1EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = M13BadgeView;
+			target = 80CB4DCDB8A74A2B25D1F13A5D585504 /* M13BadgeView */;
+			targetProxy = 5952EBF216526D0BE308516D6BBACF99 /* PBXContainerItemProxy */;
+		};
+		58BE275AADFC4E7F71754707140D69D8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Montserrat;
 			target = 836AC66E8888FF6FA0DEDDE34EF5BE51 /* Montserrat */;
-			targetProxy = AADE3C06A5AB58B7F098E8C752EE1B15 /* PBXContainerItemProxy */;
-		};
-		42367EF811DE86EB48FCB890FCB3D7A7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "UIView+Borders";
-			target = 08C2A019BAAE9B069B11B88F469505F0 /* UIView+Borders */;
-			targetProxy = D1494B0A4794ADEAB5A09E8B8C8B1D77 /* PBXContainerItemProxy */;
+			targetProxy = 895C299CDAD5B4C0A0CED0DB2B5456D9 /* PBXContainerItemProxy */;
 		};
 		674E8D7A413849DD50E1421EDE498672 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -436,36 +525,18 @@
 			target = 3914C5DF3BC3A3838ECFF314EED7AB42 /* Montserrat-Montserrat */;
 			targetProxy = A99612213CDEAF1FD0DB5910B8AE1E07 /* PBXContainerItemProxy */;
 		};
+		857C15261C3151123D4135663AAA54D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UIView+Borders";
+			target = 58B2CD2721DD5E650C855CB114833B25 /* UIView+Borders */;
+			targetProxy = 16A91D2A1FF914B065165E5DF210FAAF /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1767C0BCF7DDB7F9538091F76B53BA59 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03502CE44B3C611F0393D6434A0BE6CD /* UIView+Borders.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/UIView+Borders/UIView+Borders-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = UIView_Borders;
-				PRODUCT_NAME = "UIView+Borders";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		2E1B17E30B1C7FB7B04253CD17E6C7A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6233D9B920E1AB20AD9D85029628DB76 /* Montserrat.xcconfig */;
+			baseConfigurationReference = C3F16B3669C91E2C49AB54570B0B6920 /* Montserrat.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Montserrat";
@@ -479,7 +550,68 @@
 			};
 			name = Debug;
 		};
-		32E97DE50AB06A06A19DD68AAC91CB0E /* Release */ = {
+		2FF26DE650EF917878C8711E19AC19A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F81B88B415306093427496136089978 /* Pods-MDLIVE New Dashboard.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45268012DE144FFAC65E05B69A6D8458 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3F16B3669C91E2C49AB54570B0B6920 /* Montserrat.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Montserrat";
+				INFOPLIST_FILE = "Target Support Files/Montserrat/ResourceBundle-Montserrat-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = Montserrat;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		45335AF7DB12DE2B8732CF5676386E1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 171434E537EF265B80B5EC688AE3FA20 /* M13BadgeView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/M13BadgeView/M13BadgeView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = M13BadgeView;
+				PRODUCT_NAME = M13BadgeView;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		532619B2ED10F05B1124DE5324E72AFC /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 59C836ACD83E31BABE7AFE76AC558685 /* Pods-MDLIVE New Dashboard.release.xcconfig */;
 			buildSettings = {
@@ -498,22 +630,6 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		45268012DE144FFAC65E05B69A6D8458 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6233D9B920E1AB20AD9D85029628DB76 /* Montserrat.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Montserrat";
-				INFOPLIST_FILE = "Target Support Files/Montserrat/ResourceBundle-Montserrat-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = Montserrat;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -579,30 +695,9 @@
 			};
 			name = Release;
 		};
-		5E01C5349EFA210AA52791B7FFDCC2BD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F81B88B415306093427496136089978 /* Pods-MDLIVE New Dashboard.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		825AA63EBB23400BD22CC72953A62144 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6233D9B920E1AB20AD9D85029628DB76 /* Montserrat.xcconfig */;
+			baseConfigurationReference = C3F16B3669C91E2C49AB54570B0B6920 /* Montserrat.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -690,9 +785,56 @@
 			};
 			name = Debug;
 		};
+		90BA1EAB82AAFB2044887A5072DD5C63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FB9B1DAE1A541516DD0098D0AB7C339 /* UIView+Borders.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/UIView+Borders/UIView+Borders-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = UIView_Borders;
+				PRODUCT_NAME = "UIView+Borders";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		91A33E745CCBB3327C665441A43D8DA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FB9B1DAE1A541516DD0098D0AB7C339 /* UIView+Borders.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/UIView+Borders/UIView+Borders-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = UIView_Borders;
+				PRODUCT_NAME = "UIView+Borders";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		991007BAD3F453D898C0306660160958 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6233D9B920E1AB20AD9D85029628DB76 /* Montserrat.xcconfig */;
+			baseConfigurationReference = C3F16B3669C91E2C49AB54570B0B6920 /* Montserrat.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -715,21 +857,21 @@
 			};
 			name = Release;
 		};
-		C2FEEF72FE996EE6EE5CC5640B492941 /* Debug */ = {
+		E0371E2A6F6FD5C3DC7E10925512ACD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03502CE44B3C611F0393D6434A0BE6CD /* UIView+Borders.xcconfig */;
+			baseConfigurationReference = 171434E537EF265B80B5EC688AE3FA20 /* M13BadgeView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/UIView+Borders/UIView+Borders-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/M13BadgeView/M13BadgeView-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = UIView_Borders;
-				PRODUCT_NAME = "UIView+Borders";
+				PRODUCT_MODULE_NAME = M13BadgeView;
+				PRODUCT_NAME = M13BadgeView;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -746,15 +888,6 @@
 			buildConfigurations = (
 				858D01EEFE984249A9581D18DBEA53F1 /* Debug */,
 				5DE19CECB206ACCCACF04D62F93FFDA6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		30733E01D7B45480596AA32E5767B570 /* Build configuration list for PBXNativeTarget "Pods-MDLIVE New Dashboard" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5E01C5349EFA210AA52791B7FFDCC2BD /* Debug */,
-				32E97DE50AB06A06A19DD68AAC91CB0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -777,11 +910,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		945677EC67A180FD90CF0420CC277B37 /* Build configuration list for PBXNativeTarget "UIView+Borders" */ = {
+		9B31E283A83253AE06B6CDF93F99C1BB /* Build configuration list for PBXNativeTarget "UIView+Borders" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C2FEEF72FE996EE6EE5CC5640B492941 /* Debug */,
-				1767C0BCF7DDB7F9538091F76B53BA59 /* Release */,
+				91A33E745CCBB3327C665441A43D8DA6 /* Debug */,
+				90BA1EAB82AAFB2044887A5072DD5C63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA4C0DE2BBA59766E3784D96514FE96F /* Build configuration list for PBXNativeTarget "Pods-MDLIVE New Dashboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FF26DE650EF917878C8711E19AC19A1 /* Debug */,
+				532619B2ED10F05B1124DE5324E72AFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D749E6FF6D5864AE3EB7859571FDF64D /* Build configuration list for PBXNativeTarget "M13BadgeView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0371E2A6F6FD5C3DC7E10925512ACD4 /* Debug */,
+				45335AF7DB12DE2B8732CF5676386E1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

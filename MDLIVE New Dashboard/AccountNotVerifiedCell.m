@@ -7,12 +7,15 @@
 //
 
 #import "AccountNotVerifiedCell.h"
+#import "UIImageView+badge.h"
 
 @implementation AccountNotVerifiedCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    
+    [_envelopeImageView addBadge:@"!" withColor:[UIColor redColor]];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

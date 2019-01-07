@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AccountNotVerifiedCell : UITableViewCell
 
+@property (strong, nonatomic) IBOutlet UIImageView *envelopeImageView;
+
 @end
 
 NS_ASSUME_NONNULL_END

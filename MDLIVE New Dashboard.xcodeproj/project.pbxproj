@@ -33,6 +33,7 @@
 		D7A3E4A821D5323C0053D086 /* MDLProviderTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A3E4A721D5323C0053D086 /* MDLProviderTypeView.m */; };
 		D7E4FD9921DD198C00DCAB30 /* ReasonForVisitController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E4FD9821DD198C00DCAB30 /* ReasonForVisitController.m */; };
 		D7E4FD9D21DD1A3800DCAB30 /* ReasonForVisitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E4FD9C21DD1A3800DCAB30 /* ReasonForVisitCell.m */; };
+		D7F33DEE21E3E17700799130 /* UIImageView+badge.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F33DED21E3E17700799130 /* UIImageView+badge.m */; };
 		D7F67BFA21D42A6E0006CCB3 /* EMKRoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F67BF821D42A6E0006CCB3 /* EMKRoundButton.m */; };
 		D7F67BFD21D42B340006CCB3 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F67BFC21D42B340006CCB3 /* HomeViewController.m */; };
 		D7F67C0921D512630006CCB3 /* MDLPatientImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F67C0721D512620006CCB3 /* MDLPatientImageCell.m */; };
@@ -90,6 +91,8 @@
 		D7E4FD9A21DD19CD00DCAB30 /* ReasonForVisitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReasonForVisitController.h; sourceTree = "<group>"; };
 		D7E4FD9B21DD1A3800DCAB30 /* ReasonForVisitCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReasonForVisitCell.h; sourceTree = "<group>"; };
 		D7E4FD9C21DD1A3800DCAB30 /* ReasonForVisitCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReasonForVisitCell.m; sourceTree = "<group>"; };
+		D7F33DEC21E3E17700799130 /* UIImageView+badge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+badge.h"; sourceTree = "<group>"; };
+		D7F33DED21E3E17700799130 /* UIImageView+badge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+badge.m"; sourceTree = "<group>"; };
 		D7F67BF821D42A6E0006CCB3 /* EMKRoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMKRoundButton.m; sourceTree = "<group>"; };
 		D7F67BF921D42A6E0006CCB3 /* EMKRoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMKRoundButton.h; sourceTree = "<group>"; };
 		D7F67BFB21D42B340006CCB3 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -125,6 +128,8 @@
 				D709BBF921DD083C002461E7 /* UIView+IBDesignable.m */,
 				D709BBFA21DD083C002461E7 /* UIView+IBDesignable.h */,
 				D709BBFB21DD083C002461E7 /* UIColor+mdl.m */,
+				D7F33DEC21E3E17700799130 /* UIImageView+badge.h */,
+				D7F33DED21E3E17700799130 /* UIImageView+badge.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -350,6 +355,7 @@
 				D777F7CA21D3E74100B45D24 /* main.m in Sources */,
 				D777F7BC21D3E73F00B45D24 /* AppDelegate.m in Sources */,
 				D771890221DD59200053944A /* AppointmentsViewController.m in Sources */,
+				D7F33DEE21E3E17700799130 /* UIImageView+badge.m in Sources */,
 				D73C629821DE996C00DC9F7B /* MedicalHistoryController.m in Sources */,
 				D7A3E4A821D5323C0053D086 /* MDLProviderTypeView.m in Sources */,
 				D7617C4621D6B80D002063AE /* UpcomingApptCell.m in Sources */,

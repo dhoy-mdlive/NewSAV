@@ -1,20 +1,24 @@
 PODS:
+  - M13BadgeView (1.0.4)
   - Montserrat (1.0.0)
   - "UIView+Borders (0.0.2)"
 
 DEPENDENCIES:
+  - M13BadgeView
   - Montserrat
   - "UIView+Borders"
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - M13BadgeView
     - Montserrat
     - "UIView+Borders"
 
 SPEC CHECKSUMS:
+  M13BadgeView: 700dd0714fdc837c0cf1c8c004454963ec22441f
   Montserrat: 05ccfd6f44aadfd81b2bc3655f759099983be06e
   "UIView+Borders": d632c8bef679e7f98e913b569e972858742841ce
 
-PODFILE CHECKSUM: f0d4499e2fd7e6e66cbbf48f5a5453d9b0c3b286
+PODFILE CHECKSUM: 7dd4719af3a2ff893c4c65816589b3f53b15a798
 
 COCOAPODS: 1.5.3
