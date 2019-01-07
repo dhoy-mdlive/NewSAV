@@ -27,6 +27,7 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
 @property (nonatomic, assign) NSInteger             pageIndx;
 @property (nonatomic, strong) NSArray <NSString  *> *pageTitles;
 @property (nonatomic, strong) NSArray <NSString *>  *pageVCNames;
+@property (nonatomic, strong) NSMutableArray <UIViewController *> *viewControllers;
 @property (nonatomic, assign) Boolean               changesMade;
 
 //@property (nonatomic, strong) IBOutlet UITableView *providerTypeTableView;
@@ -42,18 +43,32 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
     self.pageIndx = 0;
     self.pageTitles = @[ @"Provider Type",
                          @"Reason For Visit",
+                         @"Your Appointment",
                          @"Medical History",
                          @"Pharmacy Information",
                          @"Choose Doctor",
-                         @"Your Appointment",
                          @"Payment" ];
     self.pageVCNames = @[ @"SelectProviderController",
                           @"ReasonForVisitController",
+                          @"YourAppointmentController",
                           @"MedicalHistoryController",
                           @"PharmacyInfoController",
                           @"ChooseDoctorController",
-                          @"YourAppointmentController",
                           @"PaymentController"];
+    _viewControllers = [NSMutableArray arrayWithCapacity:_pageVCNames.count];
+    
+#if 0
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    NSInteger i = 0;
+    _viewControllers = [NSMutableArray arrayWithCapacity:_pageVCNames.count];
+    for (NSString *viewControllerName in _pageVCNames) {
+        _viewControllers[i] = [storyboard instantiateViewControllerWithIdentifier:viewControllerName];
+        _viewControllers[i].view.bounds = _contentView.bounds;
+        [self addChildViewController:_viewControllers[i]];
+        i++;
+    }
+#endif
+    
     self.changesMade = NO;
     [self setupPage:self.pageIndx];
 }
@@ -68,6 +83,14 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
 }
 
 
+- (UIViewController *)currentTopViewController {
+    UIViewController *topVC = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
+    while (topVC.presentedViewController) {
+        topVC = topVC.presentedViewController;
+    }
+    return topVC;
+}
+
 - (void)setupPage:(ScheduleVisitPage)page {
     self.backButton.enabled = (page == 0) ? NO : YES;
     self.nextButton.enabled = (page == self.pageTitles.count-1) ? NO : YES;
@@ -77,14 +100,22 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
     self.scheduleVisitPageControl.numberOfPages = self.pageTitles.count;
     self.scheduleVisitPageControl.currentPage   = page;
     
-    NSString *vcname = _pageVCNames[page];
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *viewcontroller = [storyboard instantiateViewControllerWithIdentifier:vcname];
     
-    [self addChildViewController:viewcontroller];
-    viewcontroller.view.bounds = _contentView.bounds;
-    [_contentView addSubview:viewcontroller.view];
-    [viewcontroller didMoveToParentViewController:self];
+    if (page >= _viewControllers.count) {
+        NSString *vcname = _pageVCNames[page];
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        UIViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:vcname];
+        [_viewControllers addObject:viewController];
+        [self addChildViewController:viewController];
+    }
+    //_viewControllers[page].view.frame = _contentView.frame;
+    [_contentView addSubview:_viewControllers[page].view];
+    [_viewControllers[page] didMoveToParentViewController:self];
+    
+    //UIViewController *currentTopVC = [self currentTopViewController];
+    //[currentTopVC presentViewController:viewcontroller animated:YES completion:nil];
+    
+    
 }
 
 
@@ -101,14 +132,14 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
     if (self.changesMade) {
         __weak __typeof(self)weakSelf = self;
         UIAlertController* alert = [UIAlertController alertControllerWithTitle:nil
-                                                                       message:@"Do you really want to leave?"
+                                                                       message:@"Are you sure you want to cancel?"
                                                                 preferredStyle:UIAlertControllerStyleAlert];
-        UIAlertAction* leaveAction = [UIAlertAction actionWithTitle:@"Leave"
+        UIAlertAction* leaveAction = [UIAlertAction actionWithTitle:@"Yes"
                                                               style:UIAlertActionStyleDefault
                                                             handler:^(UIAlertAction * action) {
                                                                 [weakSelf performSegueWithIdentifier:@"unwindSegue" sender:nil];
                                                             }];
-        UIAlertAction* stayAction  = [UIAlertAction actionWithTitle:@"Stay"
+        UIAlertAction* stayAction  = [UIAlertAction actionWithTitle:@"No"
                                                               style:UIAlertActionStyleCancel
                                                             handler:^(UIAlertAction * _Nonnull action) {
                                                             }];
@@ -132,16 +163,19 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
     
 - (IBAction)backButton:(id)sender {
     NSLog(@"%s: sender=%@", __func__, sender);
-    if (self.pageIndx > 0)
+    if (self.pageIndx > 0) {
         self.pageIndx--;
+     //   [self transitionFromViewController:<#(nonnull UIViewController *)#> toViewController:<#(nonnull UIViewController *)#> duration:<#(NSTimeInterval)#> options:<#(UIViewAnimationOptions)#> animations:<#^(void)animations#> completion:<#^(BOOL finished)completion#>]
+    }
     [self setupPage:self.pageIndx];
 }
     
     
 - (IBAction)nextButton:(id)sender {
     NSLog(@"%s: sender=%@", __func__, sender);
-    if (self.pageIndx < self.pageTitles.count)
+    if (self.pageIndx < self.pageTitles.count) {
         self.pageIndx++;
+    }
     [self setupPage:self.pageIndx];
     self.changesMade = YES;
 }

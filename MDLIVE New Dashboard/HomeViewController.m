@@ -28,12 +28,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSFontAttributeName:
+                                                        [UIFont fontWithName:@"Montserrat"
+                                                                        size:12.0f]}
+                                                                    forState:UIControlStateNormal];
     _userNames = [NSMutableArray array];
     [_userNames addObjectsFromArray:@[@"Miguel", @"Ketan", @"Kim", @"Paulette", @"David"]];
     _selectedUser = 0;
     
     _tableView.delegate = self;
     _tableView.dataSource = self;
+    
+    
 }
 
 

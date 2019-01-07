@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ScheduleVisitController : UIViewController <UIPageViewControllerDataSource>
+@interface ScheduleVisitController : UIViewController 
 
 @property (strong, nonatomic) IBOutlet UILabel *scheduleVisitPageTitleLabel;
 @property (strong, nonatomic) IBOutlet UIPageControl *scheduleVisitPageControl;
