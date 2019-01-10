@@ -15,6 +15,9 @@
     CGRect frame = CGRectMake(0, 0, 24.0, 24.0);
     M13BadgeView *badgeView = [[M13BadgeView alloc] initWithFrame:frame];
     badgeView.badgeBackgroundColor = color;
+    badgeView.borderColor = [UIColor whiteColor];
+    badgeView.borderWidth = 2.0;
+    //badgeView.font = [UIFont fontWithName:@"Montserrat-Bold" size:12.0f];
     badgeView.text = text;
     [self addSubview:badgeView];
     badgeView.alignmentShift = CGSizeMake(-2, 7);
