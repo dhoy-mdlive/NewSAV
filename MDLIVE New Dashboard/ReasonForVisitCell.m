@@ -19,12 +19,14 @@
     
     [_symptomTextField addLineAtPosition:LINE_POSITION_BOTTOM withColor:[UIColor lightGrayColor] lineWidth:2.0];
     
-    
+    _imagePicker = [[UIImagePickerController alloc] init];
+    _imagePicker.delegate = self;
+    _containerView.borderWidth = 0;
+    _containerView.dashedBorder = YES;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
     // Configure the view for the selected state
 }
 
@@ -38,14 +40,14 @@
     NSLog(@"%s: sender=%@", __func__, sender);
     
     if ([UIImagePickerController isSourceTypeAvailable: UIImagePickerControllerSourceTypeCamera]) {
-        _imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
+        _imagePicker.sourceType        = UIImagePickerControllerSourceTypeCamera;
         _imagePicker.cameraCaptureMode = UIImagePickerControllerCameraCaptureModePhoto;
     } else {
         _imagePicker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
     }
     
-    UITableView *tableView = self.parentTableView;
-    [tableView.inputViewController presentViewController:_imagePicker animated:YES completion:nil];
+    UIViewController *vc = [self firstAvailableUIViewController];
+    [vc presentViewController:_imagePicker animated:YES completion:nil];
 }
 
 
@@ -55,6 +57,9 @@
     UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
     _symptomImageView.image = image;
     _symptomImageView.contentMode = UIViewContentModeScaleAspectFit;
+    [self bringSubviewToFront:_symptomImageView];
+    _containerView.hidden = YES;
+    
 }
 
 

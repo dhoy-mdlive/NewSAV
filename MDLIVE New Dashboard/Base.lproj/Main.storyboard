@@ -1243,7 +1243,7 @@ $99 follow ups</string>
                                                         <constraint firstAttribute="height" constant="242" id="c9A-w9-Gpg"/>
                                                     </constraints>
                                                 </imageView>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmi-48-fn3" customClass="UIViewDesignable">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmi-48-fn3">
                                                     <rect key="frame" x="8" y="122" width="327" height="291"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="hMm-oT-ENh">
@@ -1272,7 +1272,7 @@ $99 follow ups</string>
                                                             <color key="tintColor" red="0.33725490200000002" green="0.74509803919999995" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <state key="normal" title="Upload a Photo"/>
                                                             <connections>
-                                                                <action selector="uploadPhotoTapped:" destination="wDg-nu-hTq" eventType="touchUpInside" id="B9T-jE-U4I"/>
+                                                                <action selector="uploadPhotoTapped:" destination="wDg-nu-hTq" eventType="touchUpInside" id="e6L-GP-ygA"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
@@ -1344,9 +1344,10 @@ $99 follow ups</string>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
+                                    <outlet property="containerView" destination="kmi-48-fn3" id="tbV-E0-wTs"/>
                                     <outlet property="symptomImageView" destination="RpK-tO-04k" id="1eY-8a-g6Q"/>
                                     <outlet property="symptomTextField" destination="Jii-nK-H5k" id="3eL-XP-Y78"/>
-                                    <outlet property="uploadPhotoButton" destination="tw4-6f-6cJ" id="e0E-af-GAe"/>
+                                    <outlet property="uploadPhotoButton" destination="tw4-6f-6cJ" id="6W4-jG-JcW"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

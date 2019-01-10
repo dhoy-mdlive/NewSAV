@@ -7,13 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+//#import "ContainerView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ReasonForVisitCell : UITableViewCell <UIImagePickerControllerDelegate>
+@interface ReasonForVisitCell : UITableViewCell <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (nonatomic,strong) IBOutlet UITextField *symptomTextField;
 @property (nonatomic,strong) IBOutlet UIImageView *symptomImageView;
+@property (strong, nonatomic) IBOutlet UIView *containerView;
 @property (nonatomic,strong) IBOutlet UIButton *uploadPhotoButton;
 
 @property (nonatomic,strong) UIImagePickerController *imagePicker;

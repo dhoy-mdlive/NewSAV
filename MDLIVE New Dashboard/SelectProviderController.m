@@ -9,7 +9,7 @@
 #import "SelectProviderController.h"
 #import "ProviderTypeCell.h"
 #import "UIColor+mdl.h"
-#import "UIView-Borders/UIView+Borders.h"
+#import "UIView+Borders.h"
 
 @interface SelectProviderController ()
 

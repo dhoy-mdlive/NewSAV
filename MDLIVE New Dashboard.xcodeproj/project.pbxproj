@@ -141,9 +141,9 @@
 			isa = PBXGroup;
 			children = (
 				D709BBF821DD083C002461E7 /* UIColor+mdl.h */,
+				D709BBFB21DD083C002461E7 /* UIColor+mdl.m */,
 				D709BBF921DD083C002461E7 /* UIView+IBDesignable.m */,
 				D709BBFA21DD083C002461E7 /* UIView+IBDesignable.h */,
-				D709BBFB21DD083C002461E7 /* UIColor+mdl.m */,
 				D7F33DEC21E3E17700799130 /* UIImageView+badge.h */,
 				D7F33DED21E3E17700799130 /* UIImageView+badge.m */,
 				D7F33DEF21E4DC0D00799130 /* UIViewDesignable.h */,

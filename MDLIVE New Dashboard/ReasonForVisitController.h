@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 IB_DESIGNABLE
-@interface ReasonForVisitController : UITableViewController  <UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate>
+@interface ReasonForVisitController : UITableViewController  <UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UITableView *reasonForVisitTableView;
 

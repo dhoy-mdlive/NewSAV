@@ -31,6 +31,10 @@ IB_DESIGNABLE
 
 - (UITableView *)parentTableView;
 
+- (UIViewController *) firstAvailableUIViewController;
+- (id) traverseResponderChainForUIViewController;
+
+
 @end
 
 
