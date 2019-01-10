@@ -15,6 +15,11 @@
 		D74B9B9E21D5556200E9FD1F /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D74B9B9D21D5556200E9FD1F /* Montserrat-Bold.ttf */; };
 		D74B9BA021D5556B00E9FD1F /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D74B9B9F21D5556B00E9FD1F /* Montserrat-Regular.ttf */; };
 		D74B9BCB21D66C7100E9FD1F /* ScheduleVisitController.m in Sources */ = {isa = PBXBuildFile; fileRef = D74B9BCA21D66C7100E9FD1F /* ScheduleVisitController.m */; };
+		D758C0F821E69379007F0007 /* ContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D758C0F721E69379007F0007 /* ContainerView.m */; };
+		D759842921E4E1400008E4A4 /* PaymentController.m in Sources */ = {isa = PBXBuildFile; fileRef = D759842821E4E1400008E4A4 /* PaymentController.m */; };
+		D759842C21E4E1760008E4A4 /* PaymentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D759842B21E4E1760008E4A4 /* PaymentCell.m */; };
+		D759843221E508450008E4A4 /* ChooseDoctorController.m in Sources */ = {isa = PBXBuildFile; fileRef = D759843121E508450008E4A4 /* ChooseDoctorController.m */; };
+		D759843521E51D810008E4A4 /* ChooseDoctorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D759843421E51D810008E4A4 /* ChooseDoctorCell.m */; };
 		D7617C4621D6B80D002063AE /* UpcomingApptCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7617C4521D6B80D002063AE /* UpcomingApptCell.m */; };
 		D771890221DD59200053944A /* AppointmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D771890121DD59200053944A /* AppointmentsViewController.m */; };
 		D771890521DD5E850053944A /* MessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D771890421DD5E850053944A /* MessagesViewController.m */; };
@@ -34,6 +39,7 @@
 		D7E4FD9921DD198C00DCAB30 /* ReasonForVisitController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E4FD9821DD198C00DCAB30 /* ReasonForVisitController.m */; };
 		D7E4FD9D21DD1A3800DCAB30 /* ReasonForVisitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E4FD9C21DD1A3800DCAB30 /* ReasonForVisitCell.m */; };
 		D7F33DEE21E3E17700799130 /* UIImageView+badge.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F33DED21E3E17700799130 /* UIImageView+badge.m */; };
+		D7F33DF121E4DC0D00799130 /* UIViewDesignable.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F33DF021E4DC0D00799130 /* UIViewDesignable.m */; };
 		D7F67BFA21D42A6E0006CCB3 /* EMKRoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F67BF821D42A6E0006CCB3 /* EMKRoundButton.m */; };
 		D7F67BFD21D42B340006CCB3 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F67BFC21D42B340006CCB3 /* HomeViewController.m */; };
 		D7F67C0921D512630006CCB3 /* MDLPatientImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F67C0721D512620006CCB3 /* MDLPatientImageCell.m */; };
@@ -55,6 +61,16 @@
 		D74B9B9F21D5556B00E9FD1F /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		D74B9BC921D66C7100E9FD1F /* ScheduleVisitController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleVisitController.h; sourceTree = "<group>"; };
 		D74B9BCA21D66C7100E9FD1F /* ScheduleVisitController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleVisitController.m; sourceTree = "<group>"; };
+		D758C0F621E69379007F0007 /* ContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContainerView.h; sourceTree = "<group>"; };
+		D758C0F721E69379007F0007 /* ContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContainerView.m; sourceTree = "<group>"; };
+		D759842721E4E1400008E4A4 /* PaymentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentController.h; sourceTree = "<group>"; };
+		D759842821E4E1400008E4A4 /* PaymentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentController.m; sourceTree = "<group>"; };
+		D759842A21E4E1760008E4A4 /* PaymentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentCell.h; sourceTree = "<group>"; };
+		D759842B21E4E1760008E4A4 /* PaymentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentCell.m; sourceTree = "<group>"; };
+		D759843021E508450008E4A4 /* ChooseDoctorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChooseDoctorController.h; sourceTree = "<group>"; };
+		D759843121E508450008E4A4 /* ChooseDoctorController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChooseDoctorController.m; sourceTree = "<group>"; };
+		D759843321E51D810008E4A4 /* ChooseDoctorCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChooseDoctorCell.h; sourceTree = "<group>"; };
+		D759843421E51D810008E4A4 /* ChooseDoctorCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChooseDoctorCell.m; sourceTree = "<group>"; };
 		D7617C4421D6B80D002063AE /* UpcomingApptCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpcomingApptCell.h; sourceTree = "<group>"; };
 		D7617C4521D6B80D002063AE /* UpcomingApptCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpcomingApptCell.m; sourceTree = "<group>"; };
 		D771890021DD59200053944A /* AppointmentsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppointmentsViewController.h; sourceTree = "<group>"; };
@@ -77,8 +93,6 @@
 		D780D12021DF9E9D00D2D9A4 /* YourAppointmentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YourAppointmentController.m; sourceTree = "<group>"; };
 		D780D12221DF9FFD00D2D9A4 /* YourAppointmentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YourAppointmentCell.h; sourceTree = "<group>"; };
 		D780D12321DF9FFD00D2D9A4 /* YourAppointmentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YourAppointmentCell.m; sourceTree = "<group>"; };
-		D780D12521E391C300D2D9A4 /* ScheduleVisitPageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleVisitPageController.h; sourceTree = "<group>"; };
-		D780D12621E391C300D2D9A4 /* ScheduleVisitPageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleVisitPageController.m; sourceTree = "<group>"; };
 		D79E4D2521DA4C6E004A8A53 /* MessagesCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessagesCell.h; sourceTree = "<group>"; };
 		D79E4D2621DA4C6E004A8A53 /* MessagesCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessagesCell.m; sourceTree = "<group>"; };
 		D79E4D3121DA6564004A8A53 /* ProviderTypeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProviderTypeCell.h; sourceTree = "<group>"; };
@@ -93,6 +107,8 @@
 		D7E4FD9C21DD1A3800DCAB30 /* ReasonForVisitCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReasonForVisitCell.m; sourceTree = "<group>"; };
 		D7F33DEC21E3E17700799130 /* UIImageView+badge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+badge.h"; sourceTree = "<group>"; };
 		D7F33DED21E3E17700799130 /* UIImageView+badge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+badge.m"; sourceTree = "<group>"; };
+		D7F33DEF21E4DC0D00799130 /* UIViewDesignable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIViewDesignable.h; sourceTree = "<group>"; };
+		D7F33DF021E4DC0D00799130 /* UIViewDesignable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewDesignable.m; sourceTree = "<group>"; };
 		D7F67BF821D42A6E0006CCB3 /* EMKRoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMKRoundButton.m; sourceTree = "<group>"; };
 		D7F67BF921D42A6E0006CCB3 /* EMKRoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMKRoundButton.h; sourceTree = "<group>"; };
 		D7F67BFB21D42B340006CCB3 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -130,6 +146,8 @@
 				D709BBFB21DD083C002461E7 /* UIColor+mdl.m */,
 				D7F33DEC21E3E17700799130 /* UIImageView+badge.h */,
 				D7F33DED21E3E17700799130 /* UIImageView+badge.m */,
+				D7F33DEF21E4DC0D00799130 /* UIViewDesignable.h */,
+				D7F33DF021E4DC0D00799130 /* UIViewDesignable.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -211,8 +229,16 @@
 				D780D12021DF9E9D00D2D9A4 /* YourAppointmentController.m */,
 				D780D12221DF9FFD00D2D9A4 /* YourAppointmentCell.h */,
 				D780D12321DF9FFD00D2D9A4 /* YourAppointmentCell.m */,
-				D780D12521E391C300D2D9A4 /* ScheduleVisitPageController.h */,
-				D780D12621E391C300D2D9A4 /* ScheduleVisitPageController.m */,
+				D759842721E4E1400008E4A4 /* PaymentController.h */,
+				D759842821E4E1400008E4A4 /* PaymentController.m */,
+				D759842A21E4E1760008E4A4 /* PaymentCell.h */,
+				D759842B21E4E1760008E4A4 /* PaymentCell.m */,
+				D759843021E508450008E4A4 /* ChooseDoctorController.h */,
+				D759843121E508450008E4A4 /* ChooseDoctorController.m */,
+				D759843321E51D810008E4A4 /* ChooseDoctorCell.h */,
+				D759843421E51D810008E4A4 /* ChooseDoctorCell.m */,
+				D758C0F621E69379007F0007 /* ContainerView.h */,
+				D758C0F721E69379007F0007 /* ContainerView.m */,
 			);
 			path = "MDLIVE New Dashboard";
 			sourceTree = "<group>";
@@ -349,11 +375,14 @@
 			files = (
 				D780D12421DF9FFD00D2D9A4 /* YourAppointmentCell.m in Sources */,
 				D780D12121DF9E9D00D2D9A4 /* YourAppointmentController.m in Sources */,
+				D758C0F821E69379007F0007 /* ContainerView.m in Sources */,
 				D7F67BFA21D42A6E0006CCB3 /* EMKRoundButton.m in Sources */,
 				D777F7BF21D3E73F00B45D24 /* ViewController.m in Sources */,
+				D7F33DF121E4DC0D00799130 /* UIViewDesignable.m in Sources */,
 				D771890521DD5E850053944A /* MessagesViewController.m in Sources */,
 				D777F7CA21D3E74100B45D24 /* main.m in Sources */,
 				D777F7BC21D3E73F00B45D24 /* AppDelegate.m in Sources */,
+				D759843521E51D810008E4A4 /* ChooseDoctorCell.m in Sources */,
 				D771890221DD59200053944A /* AppointmentsViewController.m in Sources */,
 				D7F33DEE21E3E17700799130 /* UIImageView+badge.m in Sources */,
 				D73C629821DE996C00DC9F7B /* MedicalHistoryController.m in Sources */,
@@ -363,13 +392,16 @@
 				D709BBFD21DD083C002461E7 /* UIColor+mdl.m in Sources */,
 				D74B9BCB21D66C7100E9FD1F /* ScheduleVisitController.m in Sources */,
 				D79E4D3321DA6564004A8A53 /* ProviderTypeCell.m in Sources */,
+				D759843221E508450008E4A4 /* ChooseDoctorController.m in Sources */,
 				D79E4D2721DA4C6E004A8A53 /* MessagesCell.m in Sources */,
 				D7E4FD9921DD198C00DCAB30 /* ReasonForVisitController.m in Sources */,
+				D759842C21E4E1760008E4A4 /* PaymentCell.m in Sources */,
 				D73C629B21DE99D800DC9F7B /* MedicalHistoryCell.m in Sources */,
 				D79E4D3621DA6AAE004A8A53 /* SelectProviderController.m in Sources */,
 				D7E4FD9D21DD1A3800DCAB30 /* ReasonForVisitCell.m in Sources */,
 				D709BBFC21DD083C002461E7 /* UIView+IBDesignable.m in Sources */,
 				D771890821DD68D40053944A /* AccountNotVerifiedCell.m in Sources */,
+				D759842921E4E1400008E4A4 /* PaymentController.m in Sources */,
 				D7F67BFD21D42B340006CCB3 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

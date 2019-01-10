@@ -45,14 +45,14 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
                          @"Reason For Visit",
                          @"Your Appointment",
                          @"Medical History",
-                         @"Pharmacy Information",
+                         //@"Pharmacy Information",
                          @"Choose Doctor",
                          @"Payment" ];
     self.pageVCNames = @[ @"SelectProviderController",
                           @"ReasonForVisitController",
                           @"YourAppointmentController",
                           @"MedicalHistoryController",
-                          @"PharmacyInfoController",
+                          //@"PharmacyInfoController",
                           @"ChooseDoctorController",
                           @"PaymentController"];
     _viewControllers = [NSMutableArray arrayWithCapacity:_pageVCNames.count];
@@ -68,6 +68,16 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
         i++;
     }
 #endif
+    
+    // Add left and right navigation arrows to Back and Next buttons
+    [_backButton setImage:[UIImage imageNamed:@"nav_back.png"] forState:UIControlStateNormal];
+    [_backButton setImage:[UIImage imageNamed:@"nav_back_disabled.png"] forState:UIControlStateDisabled];
+    [_backButton setTitle:@" Back" forState:UIControlStateNormal];
+  
+    _nextButton.semanticContentAttribute = UISemanticContentAttributeForceRightToLeft;
+    [_nextButton setImage:[UIImage imageNamed:@"nav_next.png"] forState:UIControlStateNormal];
+    [_nextButton setImage:[UIImage imageNamed:@"nav_next_disabled.png"] forState:UIControlStateDisabled];
+    [_nextButton setTitle:@"Next " forState:UIControlStateNormal];
     
     self.changesMade = NO;
     [self setupPage:self.pageIndx];
@@ -133,12 +143,12 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
 #pragma mark - Button action handlers
     
 - (IBAction)unwindSegueAction:(UIStoryboardSegue *)unwindSegue {
-     NSLog(@"%s: segue=%@", __func__, unwindSegue);
+     //NSLog(@"%s: segue=%@", __func__, unwindSegue);
 }
     
     
 - (IBAction)cancelButton:(id)sender {
-    NSLog(@"%s: sender=%@", __func__, sender);
+    //NSLog(@"%s: sender=%@", __func__, sender);
     
     if (self.changesMade) {
         __weak __typeof(self)weakSelf = self;
@@ -173,7 +183,7 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
     
     
 - (IBAction)backButton:(id)sender {
-    NSLog(@"%s: sender=%@", __func__, sender);
+    //NSLog(@"%s: sender=%@", __func__, sender);
     if (self.pageIndx > 0) {
         self.pageIndx--;
     }
@@ -182,7 +192,7 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
     
     
 - (IBAction)nextButton:(id)sender {
-    NSLog(@"%s: sender=%@", __func__, sender);
+    //NSLog(@"%s: sender=%@", __func__, sender);
     if (self.pageIndx < self.pageTitles.count) {
         self.pageIndx++;
     }

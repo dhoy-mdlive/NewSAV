@@ -8,7 +8,10 @@
 
 #import "ReasonForVisitController.h"
 
+
 @interface ReasonForVisitController ()
+
+@property (nonatomic,strong) UIImagePickerController *imagePicker;
 
 @end
 
@@ -20,6 +23,9 @@
     
     _reasonForVisitTableView.delegate = self;
     _reasonForVisitTableView.dataSource = self;
+    
+    _imagePicker = [[UIImagePickerController alloc] init];
+    _imagePicker.delegate = self;
 }
 
 /*

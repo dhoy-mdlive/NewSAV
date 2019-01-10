@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong, nonatomic) IBOutlet UIView *containerView;
 @property (strong, nonatomic) IBOutlet UITextField *phoneNumberTextField;
+@property (strong, nonatomic) IBOutlet UIImageView *videoImageView;
+@property (strong, nonatomic) IBOutlet UIImageView *phoneImageView;
 
 @end
 

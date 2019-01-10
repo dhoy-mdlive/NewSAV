@@ -38,7 +38,8 @@
 }
 
 
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+-(UITableViewCell *)tableView:(UITableView *)tableView
+        cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     ProviderTypeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ProviderTypeCell"];
     UIColor *color = nil;
@@ -90,7 +91,8 @@
 }
 
 
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+-(void)       tableView:(UITableView *)tableView
+didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     NSInteger numRows = [tableView numberOfRowsInSection:0];
     for (NSInteger row = 0; row < numRows; row++) {

@@ -10,11 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ReasonForVisitCell : UITableViewCell
+@interface ReasonForVisitCell : UITableViewCell <UIImagePickerControllerDelegate>
 
 @property (nonatomic,strong) IBOutlet UITextField *symptomTextField;
 @property (nonatomic,strong) IBOutlet UIImageView *symptomImageView;
 @property (nonatomic,strong) IBOutlet UIButton *uploadPhotoButton;
+
+@property (nonatomic,strong) UIImagePickerController *imagePicker;
 
 @end
 

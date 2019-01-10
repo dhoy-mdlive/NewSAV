@@ -32,18 +32,21 @@
 }
 */
 
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 1;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    MedicalHistoryCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MedicalHistoryCell"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MedicalHistoryCell"];
     return cell;
 }
 
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-}
+//-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+//}
 
 
 @end
