@@ -58,7 +58,7 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
     _viewControllers = [NSMutableArray arrayWithCapacity:_pageVCNames.count];
     
 #if 0
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"NewSAV" bundle:nil];
     NSInteger i = 0;
     _viewControllers = [NSMutableArray arrayWithCapacity:_pageVCNames.count];
     for (NSString *viewControllerName in _pageVCNames) {
@@ -115,7 +115,7 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
     
     if (page >= _viewControllers.count) {
         NSString *vcname = _pageVCNames[page];
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"NewSAV" bundle:nil];
         UIViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:vcname];
         [_viewControllers addObject:viewController];
         [self addChildViewController:viewController];
