@@ -50,6 +50,7 @@
     _searchController.searchBar.delegate = self;
     _chooseDoctorTableView.tableHeaderView = _searchController.searchBar;
     
+    
     [self.searchController.searchBar sizeToFit];
     _searchController.searchBar.barTintColor = _chooseDoctorTableView.backgroundColor;
     _searchController.searchBar.layer.borderWidth = 1;
@@ -76,9 +77,9 @@
 -(void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     
-    CGRect barFrame = _searchController.searchBar.frame;
-    barFrame.size.width -= 8;
-    barFrame.origin.x += 4;
+    // Resize the search bar to match the doctor cells in width
+    CGSize barSize = [_searchController.searchBar sizeThatFits:_chooseDoctorTableView.contentSize];
+    CGRect barFrame = CGRectMake(8, 0, barSize.width-16, barSize.height);
     _searchController.searchBar.frame = barFrame;
 }
 
