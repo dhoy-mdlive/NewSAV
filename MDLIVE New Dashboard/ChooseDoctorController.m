@@ -50,18 +50,13 @@
     _searchController.searchBar.delegate = self;
     _chooseDoctorTableView.tableHeaderView = _searchController.searchBar;
     
-
-    
     [self.searchController.searchBar sizeToFit];
     _searchController.searchBar.barTintColor = _chooseDoctorTableView.backgroundColor;
-    //_searchController.searchBar.translucent = NO;
     _searchController.searchBar.layer.borderWidth = 1;
     _searchController.searchBar.layer.borderColor = _chooseDoctorTableView.backgroundColor.CGColor;
     _searchController.searchBar.placeholder = @"Search for a physician by name...";
     _searchController.searchBar.searchBarStyle = UISearchBarStyleMinimal;
-  //  _searchController.searchBar.scopeBarBackgroundImage = [UIImage imageNamed:@"app_logo_orange"];
-    
-    [_searchController.searchBar setShowsCancelButton:NO];
+    _searchController.searchBar.showsCancelButton = NO;
     
     UITextField *textField = [_searchController.searchBar valueForKey:@"_searchField"];
     textField.textColor = [UIColor whiteColor];
@@ -76,6 +71,15 @@
     textField.rightView.tintColor = [UIColor whiteColor];
                                       
     self.definesPresentationContext = YES;
+}
+
+-(void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    
+    CGRect barFrame = _searchController.searchBar.frame;
+    barFrame.size.width -= 8;
+    barFrame.origin.x += 4;
+    _searchController.searchBar.frame = barFrame;
 }
 
 

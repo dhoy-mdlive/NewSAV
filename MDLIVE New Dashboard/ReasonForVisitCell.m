@@ -11,7 +11,24 @@
 #import "EMKRoundButton.h"
 #import "UIView+IBDesignable.h"
 
+@interface ReasonForVisitCell ()
+@property (nonatomic, weak) ReasonForVisitController *viewController;
+@end
+
 @implementation ReasonForVisitCell
+
+
+- (UIViewController *)viewController {
+    UIResponder *responder = self;
+    while (![responder isKindOfClass:[UIViewController class]]) {
+        responder = [responder nextResponder];
+        if (nil == responder) {
+            break;
+        }
+    }
+    return (UIViewController *)responder;
+}
+
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -23,6 +40,9 @@
     _imagePicker.delegate = self;
     _containerView.borderWidth = 0;
     _containerView.dashedBorder = YES;
+    
+    _viewController = (ReasonForVisitController *)[self viewController];
+    _viewController.scheduleVisitController.nextButton.enabled = NO;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -33,6 +53,7 @@
 
 - (IBAction)symptomTextFieldChanged:(UITextField *)sender {
     NSLog(@"%s: sender=%@", __func__, sender);
+    _viewController.scheduleVisitController.nextButton.enabled = YES;
 }
 
 

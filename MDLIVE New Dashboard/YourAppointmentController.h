@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "YourAppointmentCell.h"
+#import "ScheduleVisitController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface YourAppointmentController : UITableViewController
 
+@property (nonatomic, weak) ScheduleVisitController *scheduleVisitController;
 @property (strong, nonatomic) IBOutlet UITableView *appointmentTableView;
 
 @end

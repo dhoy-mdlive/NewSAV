@@ -23,6 +23,9 @@
     
     _providerTableView.delegate = self;
     _providerTableView.dataSource = self;
+    
+    _scheduleVisitController = (ScheduleVisitController *)[self parentViewController];
+    _scheduleVisitController.nextButton.enabled = NO;
 }
 
 
@@ -106,6 +109,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
             cell.radioButton.image = [UIImage imageNamed:@"unselected-radio-button"];
         }
     }
+    _scheduleVisitController.nextButton.enabled = YES;
 }
 
 

@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "PaymentCell.h"
+#import "ScheduleVisitController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PaymentController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic,weak) ScheduleVisitController *scheduleVisitController;
 
 @end
 

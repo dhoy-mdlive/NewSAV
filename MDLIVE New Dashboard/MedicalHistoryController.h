@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "MedicalHistoryCell.h"
+#import "ScheduleVisitController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MedicalHistoryController : UITableViewController  <UITableViewDelegate, UITableViewDataSource>
 
+@property (nonatomic,weak) ScheduleVisitController *scheduleVisitController;
 @property (strong, nonatomic) IBOutlet UITableView *medicalHistoryTableView;
 
 @end

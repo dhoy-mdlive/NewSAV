@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "ReasonForVisitCell.h"
+#import "ScheduleVisitController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 IB_DESIGNABLE
 @interface ReasonForVisitController : UITableViewController  <UITableViewDelegate, UITableViewDataSource>
 
+@property (nonatomic,weak) ScheduleVisitController *scheduleVisitController;
 @property (strong, nonatomic) IBOutlet UITableView *reasonForVisitTableView;
 
 @end

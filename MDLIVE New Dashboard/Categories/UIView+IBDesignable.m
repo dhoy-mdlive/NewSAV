@@ -65,7 +65,8 @@
         CAShapeLayer *borderLayer = [CAShapeLayer layer];
         borderLayer.strokeColor = self.layer.borderColor;
         borderLayer.fillColor = nil;
-        borderLayer.lineDashPattern = @[@2, @2];
+        borderLayer.lineDashPattern = @[@5, @5];
+        borderLayer.strokeColor = [UIColor lightGrayColor].CGColor;
         borderLayer.frame = self.bounds;
         borderLayer.path = [UIBezierPath bezierPathWithRect:self.bounds].CGPath;
         [self.layer addSublayer:borderLayer];

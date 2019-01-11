@@ -9,7 +9,6 @@
 #import "PaymentController.h"
 
 @interface PaymentController ()
-
 @property (strong, nonatomic) IBOutlet UITableView *paymentTableView;
 @end
 
@@ -27,6 +26,7 @@
     _paymentTableView.delegate = self;
     _paymentTableView.dataSource = self;
     
+    _scheduleVisitController = (ScheduleVisitController *)[self parentViewController];
 }
 
 #pragma mark - Table view data source

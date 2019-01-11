@@ -7,12 +7,10 @@
 //
 
 #import "ReasonForVisitController.h"
+#import "ScheduleVisitController.h"
 
 
 @interface ReasonForVisitController ()
-
-//@property (nonatomic,strong) UIImagePickerController *imagePicker;
-
 @end
 
 @implementation ReasonForVisitController
@@ -24,8 +22,7 @@
     _reasonForVisitTableView.delegate = self;
     _reasonForVisitTableView.dataSource = self;
     
-    //_imagePicker = [[UIImagePickerController alloc] init];
-    //_imagePicker.delegate = self;
+    _scheduleVisitController = (ScheduleVisitController *)[self parentViewController];
 }
 
 /*

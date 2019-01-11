@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MedicalHistoryCell : UITableViewCell
 
+@property (strong, nonatomic) IBOutlet UIView *containerView;
 @property (strong, nonatomic) IBOutlet UISegmentedControl *allergySegmentedControl;
 @property (strong, nonatomic) IBOutlet UITextField *allergyTextField;
 @property (strong, nonatomic) IBOutlet EMKRoundButton *allergyAddButton;

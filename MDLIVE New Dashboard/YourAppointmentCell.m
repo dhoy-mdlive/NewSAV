@@ -7,6 +7,14 @@
 //
 
 #import "YourAppointmentCell.h"
+#import "YourAppointmentController.h"
+#import "UIView+IBDesignable.h"
+
+
+@interface YourAppointmentCell ()
+@property (nonatomic, weak) YourAppointmentController *viewController;
+@end
+
 
 @implementation YourAppointmentCell
 
@@ -23,6 +31,17 @@
                                                                                action:@selector(videoImageTapped)];
     [_videoImageView addGestureRecognizer:videoTap];
     _videoImageView.userInteractionEnabled = YES;
+    
+    _viewController = (YourAppointmentController *)[self firstAvailableUIViewController];
+    _viewController.scheduleVisitController.nextButton.enabled = NO;
+    
+    id view = [self superview];
+    while (view && [view isKindOfClass:[UITableView class]] == NO) {
+        view = [view superview];
+    }
+    UITableView *tableView = (UITableView *)view;
+    NSLog(@"tableView=%@", tableView);
+    
 }
 
 
@@ -35,6 +54,7 @@
     if (_phoneImageView.highlighted == NO) {
         _phoneImageView.highlighted = YES;
         _videoImageView.highlighted = NO;
+        _viewController.scheduleVisitController.nextButton.enabled = YES;
     }
 }
 
@@ -43,6 +63,7 @@
     if (_videoImageView.highlighted == NO) {
         _phoneImageView.highlighted = NO;
         _videoImageView.highlighted = YES;
+        _viewController.scheduleVisitController.nextButton.enabled = YES;
     }
 }
 

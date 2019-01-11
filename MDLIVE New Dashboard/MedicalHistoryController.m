@@ -20,6 +20,8 @@
     
     _medicalHistoryTableView.delegate = self;
     _medicalHistoryTableView.dataSource = self;
+    
+    _scheduleVisitController = (ScheduleVisitController *)[self parentViewController]; 
 }
 
 /*

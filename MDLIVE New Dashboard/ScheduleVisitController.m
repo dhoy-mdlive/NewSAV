@@ -103,7 +103,9 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
 
 - (void)setupPage:(ScheduleVisitPage)page {
     self.backButton.enabled = (page == 0) ? NO : YES;
-    self.nextButton.enabled = (page == self.pageTitles.count-1) ? NO : YES;
+    //self.nextButton.enabled = (page == self.pageTitles.count-1) ? NO : YES;
+    _backButton.hidden = (page == 0) ? YES : NO;
+    _nextButton.hidden = (page >= _pageTitles.count-1) ? YES : NO;
     
     self.scheduleVisitPageTitleLabel.text = self.pageTitles[page];
     
