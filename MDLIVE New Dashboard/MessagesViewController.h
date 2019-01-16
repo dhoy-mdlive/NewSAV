@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MessagesCell.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MessagesViewController : UIViewController  <UITableViewDelegate, UITableViewDataSource>
+@interface MessagesViewController : UIViewController  <UITableViewDelegate, UITableViewDataSource, MessagesCellProtocol>
 
 @end
 

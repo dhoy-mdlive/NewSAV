@@ -35,18 +35,24 @@
 }
 */
 
-
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 1;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     ReasonForVisitCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ReasonForVisitCell"];
+    cell.delegate = self;
+    [self nextButtonEnabled:NO];
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 }
 
+#pragma mark - ReasonForVisitCellProtocol method(s()
+
+-(void)nextButtonEnabled:(Boolean)state {
+    self.scheduleVisitController.nextButton.enabled = state;
+}
 
 @end

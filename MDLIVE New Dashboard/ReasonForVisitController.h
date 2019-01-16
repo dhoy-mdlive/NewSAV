@@ -11,8 +11,9 @@
 #import "ScheduleVisitController.h"
 
 NS_ASSUME_NONNULL_BEGIN
+
 IB_DESIGNABLE
-@interface ReasonForVisitController : UITableViewController  <UITableViewDelegate, UITableViewDataSource>
+@interface ReasonForVisitController : UITableViewController  <UITableViewDelegate, UITableViewDataSource, ReasonForVisitCellProtocol>
 
 @property (nonatomic,weak) ScheduleVisitController *scheduleVisitController;
 @property (strong, nonatomic) IBOutlet UITableView *reasonForVisitTableView;

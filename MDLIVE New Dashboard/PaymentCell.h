@@ -12,8 +12,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol PaymenyCellProtocol <NSObject>
+@end
+
 IB_DESIGNABLE
 @interface PaymentCell : UITableViewCell
+
+@property (nonatomic,retain) id<PaymenyCellProtocol> delegate;
+
 @property (strong, nonatomic) IBOutlet UILabel *visitTotalLabel;
 @property (strong, nonatomic) IBOutlet UIImageView *creditCardImageView;
 @property (strong, nonatomic) IBOutlet UILabel *cardEndingLabel;

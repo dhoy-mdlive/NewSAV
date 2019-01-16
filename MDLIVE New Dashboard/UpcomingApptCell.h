@@ -9,10 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "UIView+IBDesignable.h"
 
-
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol UpcomingApptCellProtocol <NSObject>
+@end
+
 @interface UpcomingApptCell : UITableViewCell
+
+@property (nonatomic,retain) id<UpcomingApptCellProtocol> delegate;
 
 @property (strong, nonatomic) IBOutlet UILabel *doctorNameLabel;
 @property (strong, nonatomic) IBOutlet UILabel *notesLabel;

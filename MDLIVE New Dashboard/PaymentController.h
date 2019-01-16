@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PaymentController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
+@interface PaymentController : UITableViewController <UITableViewDelegate, UITableViewDataSource, PaymenyCellProtocol>
 
 @property (nonatomic,weak) ScheduleVisitController *scheduleVisitController;
 

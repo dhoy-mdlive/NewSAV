@@ -1,5 +1,5 @@
 //
-//  MDLProviderTypeView.h
+//  ProviderTypeView.h
 //  MDLIVE New Dashboard
 //
 //  Created by David Hoy on 12/27/18.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MDLProviderTypeView : UIView // DesignableUIView
+@interface ProviderTypeView : UIView 
 
 @end
 

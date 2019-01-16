@@ -8,7 +8,7 @@
 
 #import "ScheduleVisitController.h"
 #import "ReasonForVisitController.h"
-#import "MDLProviderTypeView.h"
+#import "ProviderTypeView.h"
 
 
 typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
@@ -57,18 +57,6 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
                           @"PaymentController"];
     _viewControllers = [NSMutableArray arrayWithCapacity:_pageVCNames.count];
     
-#if 0
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"NewSAV" bundle:nil];
-    NSInteger i = 0;
-    _viewControllers = [NSMutableArray arrayWithCapacity:_pageVCNames.count];
-    for (NSString *viewControllerName in _pageVCNames) {
-        _viewControllers[i] = [storyboard instantiateViewControllerWithIdentifier:viewControllerName];
-        _viewControllers[i].view.bounds = _contentView.bounds;
-        [self addChildViewController:_viewControllers[i]];
-        i++;
-    }
-#endif
-    
     // Add left and right navigation arrows to Back and Next buttons
     [_backButton setImage:[UIImage imageNamed:@"nav_back.png"] forState:UIControlStateNormal];
     [_backButton setImage:[UIImage imageNamed:@"nav_back_disabled.png"] forState:UIControlStateDisabled];
@@ -112,7 +100,6 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
     self.scheduleVisitPageControl.numberOfPages = self.pageTitles.count;
     self.scheduleVisitPageControl.currentPage   = page;
     
-    
     if (page >= _viewControllers.count) {
         NSString *vcname = _pageVCNames[page];
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"NewSAV" bundle:nil];
@@ -120,7 +107,6 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
         [_viewControllers addObject:viewController];
         [self addChildViewController:viewController];
     }
-    //_viewControllers[page].view.frame = _contentView.frame;
     CGRect rect = _contentView.frame;       // Use the contentView frame as a reference
     rect.origin = CGPointMake(0,0);         // pin to upper left corner of container view
     [_viewControllers[page].view setFrame:rect];

@@ -11,7 +11,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol ChooseDoctorCellProtcol <NSObject>
+@end
+
 @interface ChooseDoctorCell : UITableViewCell
+
+@property (nonatomic,retain) id<ChooseDoctorCellProtcol> delegate;
 
 @property (strong, nonatomic) IBOutlet UIViewDesignable *containerView;
 @property (strong, nonatomic) IBOutlet UIImageView *doctorImageView;

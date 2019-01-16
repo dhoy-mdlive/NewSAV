@@ -11,7 +11,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol ReasonForVisitCellProtocol <NSObject>
+- (void)nextButtonEnabled:(Boolean)state;
+@end
+
 @interface ReasonForVisitCell : UITableViewCell <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+
+@property (nonatomic,retain) id<ReasonForVisitCellProtocol> delegate;
 
 @property (nonatomic,strong) IBOutlet UITextField *symptomTextField;
 @property (nonatomic,strong) IBOutlet UIImageView *symptomImageView;

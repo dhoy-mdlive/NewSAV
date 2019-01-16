@@ -7,7 +7,7 @@
 //
 
 #import "HomeViewController.h"
-#import "MDLPatientImageCell.h"
+#import "PatientImageCell.h"
 #import "UpcomingApptCell.h"
 #import "MessagesCell.h"
 
@@ -79,7 +79,7 @@
                           cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *cellIdentifier = @"PatientImageCell";
-    MDLPatientImageCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier
+    PatientImageCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier
                                                                           forIndexPath:indexPath];
     
     if (indexPath.row == _selectedUser)
@@ -156,9 +156,13 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath
     switch (indexPath.row)
     {
         case 0:
+        {
             cell = [tableView dequeueReusableCellWithIdentifier:@"AccountNotVerifiedCell"];
             cell.accessibilityIdentifier = @"homescreen_accountnotverified";
+            AccountNotVerifiedCell *anvCell = (AccountNotVerifiedCell *)cell;
+            anvCell.delegate = self;
             break;
+        }
             
         case 2:
         case 3:
@@ -184,6 +188,18 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath
     NSLog(@"%s: indexPath=%@", __func__, indexPath);
 }
 
+#pragma mark - AccountNotVerifiedCellProtocol method(s)
 
+-(void)resendConfirmationEmail
+{
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:nil
+                                                                   message:@"Email confirmation being sent."
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* okAction = [UIAlertAction actionWithTitle:@"OK"
+                                                       style:UIAlertActionStyleDefault
+                                                     handler:nil];
+    [alert addAction:okAction];
+    [self presentViewController:alert animated:YES completion:nil];
+}
 
 @end

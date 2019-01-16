@@ -1,14 +1,14 @@
 //
-//  MDLProviderTypeView.m
+//  ProviderTypeView.m
 //  MDLIVE New Dashboard
 //
 //  Created by David Hoy on 12/27/18.
 //  Copyright © 2018 David Hoy. All rights reserved.
 //
 
-#import "MDLProviderTypeView.h"
+#import "ProviderTypeView.h"
 
-@implementation MDLProviderTypeView
+@implementation ProviderTypeView
 
 /*
 // Only override drawRect: if you perform custom drawing.

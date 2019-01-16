@@ -42,6 +42,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     PaymentCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PaymentCell"];
+    cell.delegate = self;
     cell.visitTotalLabel.text = @"$99.99";
     return cell;
 }

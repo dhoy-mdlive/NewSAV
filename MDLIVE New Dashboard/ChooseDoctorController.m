@@ -7,15 +7,14 @@
 //
 
 #import "ChooseDoctorController.h"
-#import "ChooseDoctorCell.h"
 #import "UIColor+mdl.h"
 
 @interface ChooseDoctorController ()
 
 //@property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (strong, nonatomic) UISearchController *searchController;
-@property (nonatomic, strong) NSArray <NSString *> *doctorNames;
-@property (nonatomic, strong) NSArray <NSString *> *filteredDoctorNames;
+@property (nonatomic, strong) NSArray <NSDictionary *> *doctorInfo;
+@property (nonatomic, strong) NSArray <NSDictionary *> *filteredDoctorInfo;
 
 @end
 
@@ -30,19 +29,20 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 
-    _doctorNames = @[ @"Dr. William Gibson",
-                      @"Dr. Ray Bradbury",
-                      @"Dr. Kurt Vonnegut",
-                      @"Dr. Isaac Asimov",
-                      @"Dr. Philip K. Dick",
-                      @"Dr. Orson Scott Card",
-                      @"Dr. Harlan Ellison",
-                      @"Dr. Arthur C. Clarke",
-                      @"Dr. Douglas Adams",
-                      @"Dr. Strangelove",
-                      @"Dr. Strange",
-                      @"Dr. Doctor",
-                      @"Dr. Doolittle"];
+    _doctorInfo = @[ @{ @"name":@"Dr. Edgar Allen Poe",@"specialty":@"Anything macabre",    @"availability":@"Nevermore..." },
+                     @{ @"name":@"Dr. William Gibson",  @"specialty":@"Neuromancy",         @"availability":@"Now" },
+                     @{ @"name":@"Dr. Ray Bradbury",    @"specialty":@"Book burning",       @"availability":@"Yesterday at 4:51pm" },
+                     @{ @"name":@"Dr. Kurt Vonnegut",   @"specialty":@"Slaughtering",       @"availability":@"Tomorrow at 3:33am" },
+                     @{ @"name":@"Dr. Isaac Asimov",    @"specialty":@"Robotics",           @"availability":@"Some time in the future" },
+                     @{ @"name":@"Dr. Philip K. Dick",  @"specialty":@"Bladerunners",       @"availability":@"2019" },
+                     @{ @"name":@"Dr. Orson Scott Card",@"specialty":@"Slaughtering",       @"availability":@"Next week" },
+                     @{ @"name":@"Dr. Harlan Ellison",  @"specialty":@"Star Trek Scripts",  @"availability":@"Never - he's dead Jim!" },
+                     @{ @"name":@"Dr. Arthur C. Clarke",@"specialty":@"Strange monoliths",  @"availability":@"2001" },
+                     @{ @"name":@"Dr. Douglas Adams",   @"specialty":@"Hitchhiking",        @"availability":@"At the end of the universe" },
+                     @{ @"name":@"Dr. Strangelove",     @"specialty":@"Riding nuclear bombs",@"availability":@"Who knows?" },
+                     @{ @"name":@"Dr. Strange",         @"specialty":@"Magic",              @"availability":@"Always" },
+                     @{ @"name":@"Dr. Doctor",          @"specialty":@"Some weird stuff",   @"availability":@"He killed Kenny" },
+                     @{ @"name":@"Dr. Doolittle",       @"specialty":@"Vetinary",           @"availability":@"Ask the animals" } ];
     
     _searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
     _searchController.searchResultsUpdater = self;
@@ -93,10 +93,10 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     NSInteger ret = 0;
-    if (_filteredDoctorNames.count > 0) {
-        ret = _filteredDoctorNames.count;
+    if (_filteredDoctorInfo.count > 0) {
+        ret = _filteredDoctorInfo.count;
     } else {
-        ret = _doctorNames.count;
+        ret = _doctorInfo.count;
     }
     return ret;
 }
@@ -105,11 +105,16 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     //NSLog(@"%s: indexPath=%@", __func__, indexPath);
     ChooseDoctorCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ChooseDoctorCell"];
-    if (_filteredDoctorNames.count > 0) {
-        cell.doctorNameLabel.text = _filteredDoctorNames[indexPath.row];
+    cell.delegate = self;
+    NSDictionary *doctorInfo;
+    if (_filteredDoctorInfo.count > 0) {
+        doctorInfo = _filteredDoctorInfo[indexPath.row];
     } else {
-        cell.doctorNameLabel.text = _doctorNames[indexPath.row];
+        doctorInfo = _doctorInfo[indexPath.row];
     }
+    cell.doctorNameLabel.text   = doctorInfo[@"name"];
+    cell.practiceTypeLabel.text = doctorInfo[@"specialty"];
+    cell.availabilityLabel.text = doctorInfo[@"availability"];
     return cell;
 }
 
@@ -179,10 +184,10 @@
     if (searchString.length != 0) {
         // strip out all the leading and trailing spaces
         NSString *strippedString = [searchString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-        NSPredicate* predicate = [NSPredicate predicateWithFormat:@"SELF contains[cd] %@", strippedString];
-        _filteredDoctorNames = [_doctorNames filteredArrayUsingPredicate:predicate];
+        NSPredicate* predicate = [NSPredicate predicateWithFormat:@"%K contains[cd] %@", @"name", strippedString];
+        _filteredDoctorInfo = [_doctorInfo filteredArrayUsingPredicate:predicate];
     } else {
-        _filteredDoctorNames = nil;
+        _filteredDoctorInfo = nil;
     }
     [self.tableView reloadData];
 }
@@ -232,5 +237,8 @@
 
 -(void)searchBarTextDidEndEditing:(UISearchBar *)searchBar {
 }
+
+
+
 
 @end

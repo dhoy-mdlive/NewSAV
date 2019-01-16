@@ -45,6 +45,7 @@
         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     ProviderTypeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ProviderTypeCell"];
+    cell.delegate = self;
     UIColor *color = nil;
     
     switch (indexPath.row)

@@ -43,8 +43,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     YourAppointmentCell *cell = [tableView dequeueReusableCellWithIdentifier:@"YourAppointmentCell"];
-    // Configure the cell...
-    
+    cell.delegate = self;
+    [self nextButtonEnabled:NO];
     return cell;
 }
 
@@ -92,5 +92,11 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - YourAppointmentCellProtocol method(s)
+
+-(void)nextButtonEnabled:(Boolean)state {
+    self.scheduleVisitController.nextButton.enabled = state;
+}
 
 @end

@@ -10,7 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol MessagesCellProtocol <NSObject>
+@end
+
 @interface MessagesCell : UITableViewCell
+
+@property (nonatomic,retain) id<MessagesCellProtocol> delegate;
 
 @property (nonatomic, strong) IBOutlet UIImageView *envelopeImage;
 @property (nonatomic, strong) IBOutlet UILabel *messageLabel;

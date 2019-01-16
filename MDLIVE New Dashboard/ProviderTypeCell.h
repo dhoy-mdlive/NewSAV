@@ -10,7 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol ProviderTypeCellProtocol <NSObject>
+@end
+
 @interface ProviderTypeCell : UITableViewCell
+
+@property (nonatomic,retain) id<ProviderTypeCellProtocol> delegate;
 
 @property (nonatomic, strong) IBOutlet UIView *containerView;
 @property (nonatomic, strong) IBOutlet UIImageView *radioButton;

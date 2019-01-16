@@ -10,7 +10,7 @@
 
 @interface MessagesViewController ()
 
-@property (nonatomic, strong) IBOutlet UITableView      *tableView;
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
 
 @end
 
@@ -51,8 +51,9 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView
         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MessagesCell"];
+    MessagesCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MessagesCell"];
     cell.accessibilityIdentifier = @"homescreen_upcomingapp";
+    cell.delegate = self;
     return cell;
 }
 

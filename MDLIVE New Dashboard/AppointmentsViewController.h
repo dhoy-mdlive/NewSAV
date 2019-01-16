@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UpcomingApptCell.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AppointmentsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface AppointmentsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UpcomingApptCellProtocol>
 
 @end
 

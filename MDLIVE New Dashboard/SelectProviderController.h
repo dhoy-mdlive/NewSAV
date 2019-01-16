@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "ScheduleVisitController.h"
+#import "ProviderTypeCell.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SelectProviderController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
+@interface SelectProviderController : UITableViewController <UITableViewDelegate,
+                                                             UITableViewDataSource,
+                                                             ProviderTypeCellProtocol>
 
 @property (nonatomic,weak) ScheduleVisitController *scheduleVisitController;
 @property (strong, nonatomic) IBOutlet UITableView *providerTableView;

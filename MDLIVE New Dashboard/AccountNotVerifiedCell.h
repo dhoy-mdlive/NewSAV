@@ -10,8 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol AccountNotVerifiedCellProtocol <NSObject>
+- (void)resendConfirmationEmail;
+@end
+
 @interface AccountNotVerifiedCell : UITableViewCell
 
+@property (retain,nonatomic) id<AccountNotVerifiedCellProtocol> delegate;
 @property (strong, nonatomic) IBOutlet UIImageView *envelopeImageView;
 
 @end

@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MedicalHistoryController : UITableViewController  <UITableViewDelegate, UITableViewDataSource>
+@interface MedicalHistoryController : UITableViewController  <UITableViewDelegate, UITableViewDataSource, MedicalHistoryCellProtocol>
 
 @property (nonatomic,weak) ScheduleVisitController *scheduleVisitController;
 @property (strong, nonatomic) IBOutlet UITableView *medicalHistoryTableView;

@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YourAppointmentController : UITableViewController
+@interface YourAppointmentController : UITableViewController <YourAppointmentCellProtocol>
 
 @property (nonatomic, weak) ScheduleVisitController *scheduleVisitController;
 @property (strong, nonatomic) IBOutlet UITableView *appointmentTableView;

@@ -12,6 +12,8 @@
 
 @implementation MessagesCell
 
+@synthesize delegate;
+
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code

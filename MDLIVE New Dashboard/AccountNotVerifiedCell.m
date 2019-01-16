@@ -11,6 +11,8 @@
 
 @implementation AccountNotVerifiedCell
 
+@synthesize delegate;
+
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
@@ -25,7 +27,7 @@
 }
 
 - (IBAction)resendEmailButtonTapped:(UIButton *)sender {
-    NSLog(@"%s: sender=%@", __func__, sender);
+    [self.delegate resendConfirmationEmail];
 }
 
 @end

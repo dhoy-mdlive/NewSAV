@@ -11,13 +11,15 @@
 #import "EMKRoundButton.h"
 #import "UIView+IBDesignable.h"
 
-@interface ReasonForVisitCell ()
-@property (nonatomic, weak) ReasonForVisitController *viewController;
-@end
+//@interface ReasonForVisitCell ()
+//@property (nonatomic, weak) ReasonForVisitController *viewController;
+//@end
 
 @implementation ReasonForVisitCell
 
+@synthesize delegate;
 
+/*
 - (UIViewController *)viewController {
     UIResponder *responder = self;
     while (![responder isKindOfClass:[UIViewController class]]) {
@@ -27,22 +29,18 @@
         }
     }
     return (UIViewController *)responder;
-}
-
+}*/
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
-    
-    [_symptomTextField addLineAtPosition:LINE_POSITION_BOTTOM withColor:[UIColor lightGrayColor] lineWidth:2.0];
     
     _imagePicker = [[UIImagePickerController alloc] init];
     _imagePicker.delegate = self;
     _containerView.borderWidth = 0;
     _containerView.dashedBorder = YES;
     
-    _viewController = (ReasonForVisitController *)[self viewController];
-    _viewController.scheduleVisitController.nextButton.enabled = NO;
+    //[self.delegate nextButtonEnabled:NO];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -53,7 +51,8 @@
 
 - (IBAction)symptomTextFieldChanged:(UITextField *)sender {
     NSLog(@"%s: sender=%@", __func__, sender);
-    _viewController.scheduleVisitController.nextButton.enabled = YES;
+    [self.delegate nextButtonEnabled:YES];
+    
 }
 
 
@@ -80,7 +79,6 @@
     _symptomImageView.contentMode = UIViewContentModeScaleAspectFit;
     [self bringSubviewToFront:_symptomImageView];
     _containerView.hidden = YES;
-    
 }
 
 

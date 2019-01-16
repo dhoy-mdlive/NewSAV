@@ -11,7 +11,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol MedicalHistoryCellProtocol <NSObject>
+@end
+
 @interface MedicalHistoryCell : UITableViewCell
+
+@property (nonatomic,retain) id<MedicalHistoryCellProtocol> delegate;
 
 @property (strong, nonatomic) IBOutlet UIView *containerView;
 @property (strong, nonatomic) IBOutlet UISegmentedControl *allergySegmentedControl;

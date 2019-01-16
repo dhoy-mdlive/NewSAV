@@ -10,7 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YourAppointmentCell : UITableViewCell
+@protocol YourAppointmentCellProtocol <NSObject>
+- (void)nextButtonEnabled:(Boolean)state;
+@end
+
+@interface YourAppointmentCell : UITableViewCell <UITextFieldDelegate>
+
+@property (nonatomic,retain) id<YourAppointmentCellProtocol> delegate;
 
 @property (strong, nonatomic) IBOutlet UIView *containerView;
 @property (strong, nonatomic) IBOutlet UITextField *phoneNumberTextField;

@@ -8,10 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "EMKRoundButton.h"
+#import "AccountNotVerifiedCell.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HomeViewController : UIViewController  <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UITableViewDelegate, UITableViewDataSource>
+@interface HomeViewController : UIViewController  <UICollectionViewDataSource,
+                                                   UICollectionViewDelegateFlowLayout,
+                                                   UITableViewDelegate,
+                                                   UITableViewDataSource,
+                                                   AccountNotVerifiedCellProtocol>
 
 @property (strong, nonatomic) IBOutlet EMKRoundButton *getStartedButton;
 

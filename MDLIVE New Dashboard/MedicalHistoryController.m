@@ -43,7 +43,8 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MedicalHistoryCell"];
+    MedicalHistoryCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MedicalHistoryCell"];
+    cell.delegate = self;
     return cell;
 }
 

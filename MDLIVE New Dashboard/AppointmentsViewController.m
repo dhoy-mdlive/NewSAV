@@ -8,9 +8,10 @@
 
 #import "AppointmentsViewController.h"
 
+
 @interface AppointmentsViewController ()
 
-@property (nonatomic, strong) IBOutlet UITableView      *tableView;
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
 
 @end
 
@@ -51,8 +52,9 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView
         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UpcomingApptCell"];
+    UpcomingApptCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UpcomingApptCell"];
     cell.accessibilityIdentifier = @"homescreen_upcomingapp";
+    cell.delegate = self;
     return cell;
 }
 
@@ -61,6 +63,7 @@
     NSLog(@"%s: indexPath=%@", __func__, indexPath);
 }
 
+#pragma mark UpcomoingApptCellProtocol method(s)
 
 
 
