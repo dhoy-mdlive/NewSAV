@@ -26,6 +26,35 @@
 }
 
 /*
+- (void)listSubviewsOfView:(UIView *)view {
+    // Get the subviews of the view
+    static int indent = 0;
+    
+    NSArray *subviews = [view subviews];
+    if ([subviews count] == 0)
+        return;
+    
+    for (UIView *subview in subviews) {
+        // Do what you want to do with the subview
+        NSString *indentStr = @"";
+        for (int i = 0; i < indent; i++)
+            indentStr = [indentStr stringByAppendingString:@"--"];
+        NSLog(@"%@%@", indentStr, subview);
+        
+        // List the subviews of subview
+        indent++;
+        [self listSubviewsOfView:subview];
+        indent--;
+    }
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    NSLog(@"%s:", __func__);
+    [self listSubviewsOfView:self.view];
+}
+*/
+
+/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -42,7 +71,7 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     ReasonForVisitCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ReasonForVisitCell"];
     cell.delegate = self;
-    [self nextButtonEnabled:NO];
+    //[self nextButtonEnabled:NO];
     return cell;
 }
 

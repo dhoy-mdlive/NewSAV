@@ -18,13 +18,15 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ReasonForVisitCell : UITableViewCell <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (nonatomic,retain) id<ReasonForVisitCellProtocol> delegate;
+@property (nonatomic,strong) UIImagePickerController *imagePicker;
 
+// Interface Builder Outlets
 @property (nonatomic,strong) IBOutlet UITextField *symptomTextField;
 @property (nonatomic,strong) IBOutlet UIImageView *symptomImageView;
 @property (strong, nonatomic) IBOutlet UIView *containerView;
 @property (nonatomic,strong) IBOutlet UIButton *uploadPhotoButton;
 
-@property (nonatomic,strong) UIImagePickerController *imagePicker;
+
 
 @end
 

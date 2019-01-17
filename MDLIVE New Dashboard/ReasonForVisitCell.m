@@ -19,17 +19,6 @@
 
 @synthesize delegate;
 
-/*
-- (UIViewController *)viewController {
-    UIResponder *responder = self;
-    while (![responder isKindOfClass:[UIViewController class]]) {
-        responder = [responder nextResponder];
-        if (nil == responder) {
-            break;
-        }
-    }
-    return (UIViewController *)responder;
-}*/
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -42,6 +31,7 @@
     
     //[self.delegate nextButtonEnabled:NO];
 }
+
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
