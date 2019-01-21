@@ -23,11 +23,12 @@ platform :ios, '9.0'
 
 target 'MDLIVE New Dashboard' do
     # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-    # use_frameworks!
+    use_frameworks!
 
     # Pods for MDLIVE New Dashboard
     pod 'Montserrat'
     pod 'UIView+Borders'
     pod 'M13BadgeView'
+    #pod 'BEMCheckBox'
   
 end

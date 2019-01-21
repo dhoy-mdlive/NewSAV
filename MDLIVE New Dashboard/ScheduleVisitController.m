@@ -24,35 +24,37 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
 
 @interface ScheduleVisitController ()
 
+@property (nonatomic, strong) CLLocationManager *locationManager;
 @property (nonatomic, assign) NSInteger             pageIndx;
 @property (nonatomic, strong) NSArray <NSString  *> *pageTitles;
 @property (nonatomic, strong) NSArray <NSString *>  *pageVCNames;
 @property (nonatomic, strong) NSMutableArray <UIViewController *> *viewControllers;
 @property (nonatomic, assign) Boolean               changesMade;
 
-//@property (nonatomic, strong) IBOutlet UITableView *providerTypeTableView;
-    
 @end
 
+
 @implementation ScheduleVisitController
+
+@synthesize currentLocation;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     // Do any additional setup after loading the view.
     self.pageIndx = 0;
-    self.pageTitles = @[ @"Provider Type",
+    self.pageTitles = @[ /*@"Provider Type",
                          @"Reason For Visit",
                          @"Your Appointment",
-                         @"Medical History",
-                         //@"Pharmacy Information",
+                         @"Medical History",*/
+                         @"Pharmacy Information",
                          @"Choose Doctor",
                          @"Payment" ];
-    self.pageVCNames = @[ @"SelectProviderController",
+    self.pageVCNames = @[ /*@"SelectProviderController",
                           @"ReasonForVisitController",
                           @"YourAppointmentController",
-                          @"MedicalHistoryController",
-                          //@"PharmacyInfoController",
+                          @"MedicalHistoryController",*/
+                          @"PharmacyInfoController",
                           @"ChooseDoctorController",
                           @"PaymentController"];
     _viewControllers = [NSMutableArray arrayWithCapacity:_pageVCNames.count];
@@ -69,6 +71,17 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
     
     self.changesMade = NO;
     [self setupPage:self.pageIndx];
+    
+    
+    // Set up and start the location manager to get the current GPS position
+    _locationManager = [[CLLocationManager alloc] init];
+    _locationManager.delegate = self;
+    _locationManager.distanceFilter = kCLDistanceFilterNone;
+    _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) {
+        [_locationManager requestWhenInUseAuthorization];
+    }
+    [_locationManager startUpdatingLocation];
 }
 
 #pragma mark - Navigation
@@ -188,5 +201,17 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
     self.changesMade = YES;
 }
 
+
+#pragma mark - CLLocationManagerDelegate method(s)
+
+
+- (void)locationManager:(CLLocationManager *)manager
+     didUpdateLocations:(NSArray <CLLocation *> *)locations {
+    NSLog(@"Location %f %f",
+          locations[0].coordinate.latitude,
+          locations[0].coordinate.longitude);
+    [manager stopUpdatingLocation];
+    self.currentLocation = locations[0];
+}
     
 @end

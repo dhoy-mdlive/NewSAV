@@ -141,6 +141,17 @@ strip_invalid_archs() {
   STRIP_BINARY_RETVAL=1
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/M13BadgeView/M13BadgeView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Montserrat/Montserrat.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/UIView+Borders/UIView_Borders.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/M13BadgeView/M13BadgeView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Montserrat/Montserrat.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/UIView+Borders/UIView_Borders.framework"
+fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
 fi

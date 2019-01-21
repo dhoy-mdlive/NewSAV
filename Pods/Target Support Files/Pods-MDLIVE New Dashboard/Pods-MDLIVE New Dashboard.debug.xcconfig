@@ -1,8 +1,8 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/M13BadgeView" "${PODS_CONFIGURATION_BUILD_DIR}/Montserrat" "${PODS_CONFIGURATION_BUILD_DIR}/UIView+Borders"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/M13BadgeView" "${PODS_ROOT}/Headers/Public/Montserrat" "${PODS_ROOT}/Headers/Public/UIView+Borders"
-LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/M13BadgeView" "${PODS_CONFIGURATION_BUILD_DIR}/Montserrat" "${PODS_CONFIGURATION_BUILD_DIR}/UIView+Borders"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/M13BadgeView" -isystem "${PODS_ROOT}/Headers/Public/Montserrat" -isystem "${PODS_ROOT}/Headers/Public/UIView+Borders"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"M13BadgeView" -l"Montserrat" -l"UIView+Borders" -framework "CoreText" -framework "Foundation" -framework "QuartzCore" -framework "UIKit"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/M13BadgeView/M13BadgeView.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/Montserrat/Montserrat.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/UIView+Borders/UIView_Borders.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "M13BadgeView" -framework "Montserrat" -framework "UIView_Borders"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
