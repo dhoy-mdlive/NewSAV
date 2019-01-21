@@ -45,6 +45,8 @@
         _videoImageView.highlighted = NO;
         [self.delegate nextButtonEnabled:YES];
     }
+    if ([_phoneNumberTextField isFirstResponder])
+        [_phoneNumberTextField resignFirstResponder];
 }
 
 - (void)videoImageTapped {
@@ -54,6 +56,8 @@
         _videoImageView.highlighted = YES;
         [self.delegate nextButtonEnabled:YES];
     }
+    if ([_phoneNumberTextField isFirstResponder])
+        [_phoneNumberTextField resignFirstResponder];
 }
 
 -(NSString*) formatPhoneNumber:(NSString*) simpleNumber deleteLastChar:(BOOL)deleteLastChar {
