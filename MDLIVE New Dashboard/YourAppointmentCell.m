@@ -40,6 +40,7 @@
     [super drawRect:rect];
 }
 
+
 - (void)phoneImageTapped {
     NSLog(@"%s:", __func__);
     if (_phoneImageView.highlighted == NO) {
@@ -50,6 +51,7 @@
     if ([_phoneNumberTextField isFirstResponder])
         [_phoneNumberTextField resignFirstResponder];
 }
+
 
 - (void)videoImageTapped {
     NSLog(@"%s:", __func__);
@@ -62,17 +64,22 @@
         [_phoneNumberTextField resignFirstResponder];
 }
 
+
 -(NSString*) formatPhoneNumber:(NSString*) simpleNumber deleteLastChar:(BOOL)deleteLastChar {
-    if(simpleNumber.length==0) return @"";
+    if(simpleNumber.length==0) {
+        return @"";
+    }
+    
     // use regex to remove non-digits(including spaces) so we are left with just the numbers
     NSError *error = NULL;
     NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"[\\s-\\(\\)]" options:NSRegularExpressionCaseInsensitive error:&error];
     simpleNumber = [regex stringByReplacingMatchesInString:simpleNumber options:0 range:NSMakeRange(0, [simpleNumber length]) withTemplate:@""];
     
     // check if the number is to long
-    if(simpleNumber.length>10) {
+    if(simpleNumber.length>10 && deleteLastChar != YES) {
         // remove last extra chars.
-        simpleNumber = [simpleNumber substringToIndex:10];
+        //simpleNumber = [simpleNumber substringToIndex:10];
+        return simpleNumber;
     }
     
     if(deleteLastChar) {
@@ -96,20 +103,20 @@
     return simpleNumber;
 }
 
+
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
-    NSString* totalString = [NSString stringWithFormat:@"%@%@",textField.text,string];
-    
-    // if it's the phone number textfield format it.
-    //if(textField.tag==102 ) {
+    // If it's the phone number textfield, format it.
+    if (textField.tag == 102) {
+        NSString* totalString = [NSString stringWithFormat:@"%@%@",textField.text,string];
         if (range.length == 1) {
             // Delete button was hit.. so tell the method to delete the last char.
             textField.text = [self formatPhoneNumber:totalString deleteLastChar:YES];
-        } else {
+        }
+        else {
             textField.text = [self formatPhoneNumber:totalString deleteLastChar:NO ];
         }
-        return false;
-    //}
-    
+        return NO;
+    }
     return YES;
 }
 
