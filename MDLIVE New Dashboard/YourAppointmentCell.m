@@ -107,13 +107,27 @@
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     // If it's the phone number textfield, format it.
     if (textField.tag == 102) {
-        NSString* totalString = [NSString stringWithFormat:@"%@%@",textField.text,string];
-        if (range.length == 1) {
-            // Delete button was hit.. so tell the method to delete the last char.
-            textField.text = [self formatPhoneNumber:totalString deleteLastChar:YES];
+        //NSLog(@"%s: textfield.text='%@', range=(%d,%d), string='%@'", __func__, textField.text, (int)range.location, (int)range.length, string);
+        
+        if ((range.location == 0) && (range.length == 0) && ([string isEqualToString:@" "])) {
+            return YES;
         }
+        
+        // If text is coming from the pasteboard, take it as-is
+        if ([string isEqualToString:[UIPasteboard generalPasteboard].string]) {
+            textField.text = string;
+        }
+        
+        // If user is typing text, format it as a phone number
         else {
-            textField.text = [self formatPhoneNumber:totalString deleteLastChar:NO ];
+            NSString* totalString = [textField.text stringByAppendingString:string];
+            if (range.length == 1) {
+                // Delete button was hit.. so tell the method to delete the last char.
+                textField.text = [self formatPhoneNumber:totalString deleteLastChar:YES];
+            }
+            else {
+                textField.text = [self formatPhoneNumber:totalString deleteLastChar:NO ];
+            }
         }
         return NO;
     }
