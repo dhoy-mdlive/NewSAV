@@ -32,6 +32,7 @@
 		D780D12121DF9E9D00D2D9A4 /* YourAppointmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = D780D12021DF9E9D00D2D9A4 /* YourAppointmentController.m */; };
 		D780D12421DF9FFD00D2D9A4 /* YourAppointmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D780D12321DF9FFD00D2D9A4 /* YourAppointmentCell.m */; };
 		D788BC4F21F257D4008FABDE /* UICheckboxButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D788BC4E21F257D4008FABDE /* UICheckboxButton.m */; };
+		D788BC5221F6150F008FABDE /* UITextField+dismissNumberKeypad.m in Sources */ = {isa = PBXBuildFile; fileRef = D788BC5121F6150F008FABDE /* UITextField+dismissNumberKeypad.m */; };
 		D79E4D2721DA4C6E004A8A53 /* MessagesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E4D2621DA4C6E004A8A53 /* MessagesCell.m */; };
 		D79E4D3321DA6564004A8A53 /* ProviderTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E4D3221DA6564004A8A53 /* ProviderTypeCell.m */; };
 		D79E4D3621DA6AAE004A8A53 /* SelectProviderController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E4D3521DA6AAE004A8A53 /* SelectProviderController.m */; };
@@ -100,6 +101,8 @@
 		D780D12321DF9FFD00D2D9A4 /* YourAppointmentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YourAppointmentCell.m; sourceTree = "<group>"; };
 		D788BC4D21F257D4008FABDE /* UICheckboxButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UICheckboxButton.h; sourceTree = "<group>"; };
 		D788BC4E21F257D4008FABDE /* UICheckboxButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICheckboxButton.m; sourceTree = "<group>"; };
+		D788BC5021F6150F008FABDE /* UITextField+dismissNumberKeypad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+dismissNumberKeypad.h"; sourceTree = "<group>"; };
+		D788BC5121F6150F008FABDE /* UITextField+dismissNumberKeypad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+dismissNumberKeypad.m"; sourceTree = "<group>"; };
 		D79E4D2521DA4C6E004A8A53 /* MessagesCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessagesCell.h; sourceTree = "<group>"; };
 		D79E4D2621DA4C6E004A8A53 /* MessagesCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessagesCell.m; sourceTree = "<group>"; };
 		D79E4D3121DA6564004A8A53 /* ProviderTypeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProviderTypeCell.h; sourceTree = "<group>"; };
@@ -163,6 +166,8 @@
 		D709BBF721DD083C002461E7 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				D788BC5021F6150F008FABDE /* UITextField+dismissNumberKeypad.h */,
+				D788BC5121F6150F008FABDE /* UITextField+dismissNumberKeypad.m */,
 				D709BBF821DD083C002461E7 /* UIColor+mdl.h */,
 				D709BBFB21DD083C002461E7 /* UIColor+mdl.m */,
 				D709BBF921DD083C002461E7 /* UIView+IBDesignable.m */,
@@ -445,6 +450,7 @@
 				D7B42EEF21F0D63C00EA25EE /* PharmacyInfoCell.m in Sources */,
 				D7A3E4A821D5323C0053D086 /* ProviderTypeView.m in Sources */,
 				D7617C4621D6B80D002063AE /* UpcomingApptCell.m in Sources */,
+				D788BC5221F6150F008FABDE /* UITextField+dismissNumberKeypad.m in Sources */,
 				D7F67C0921D512630006CCB3 /* PatientImageCell.m in Sources */,
 				D709BBFD21DD083C002461E7 /* UIColor+mdl.m in Sources */,
 				D74B9BCB21D66C7100E9FD1F /* ScheduleVisitController.m in Sources */,

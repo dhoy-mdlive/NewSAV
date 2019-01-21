@@ -9,6 +9,7 @@
 #import "YourAppointmentCell.h"
 #import "YourAppointmentController.h"
 #import "UIView+IBDesignable.h"
+#import "UITextField+dismissNumberKeypad.h"
 
 
 @implementation YourAppointmentCell
@@ -31,6 +32,7 @@
     
     [self.delegate nextButtonEnabled:NO];
     _phoneNumberTextField.delegate = self;
+    [_phoneNumberTextField addDismissToolbar];
 }
 
 
