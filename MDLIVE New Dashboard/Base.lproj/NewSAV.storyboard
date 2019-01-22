@@ -1689,7 +1689,7 @@ $99 follow ups</string>
         <scene sceneID="9Gw-3F-tfv">
             <objects>
                 <tableViewController storyboardIdentifier="PharmacyInfoController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Hmk-ch-Ivf" userLabel="Pharmacy Info Controller" customClass="PharmacyInfoController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="JcO-3d-3Ux" userLabel="Pharmacy Info Table View">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="JcO-3d-3Ux" userLabel="Pharmacy Info Table View">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1964,7 +1964,7 @@ $99 follow ups</string>
                                     <outlet property="mapView" destination="5FT-7c-qdp" id="mVV-Tg-Nuw"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PharmacyDetailCell" rowHeight="111" id="SPx-Hk-FCE" customClass="PharmacyDetailCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PharmacyDetailCell" rowHeight="111" id="SPx-Hk-FCE" customClass="PharmacyDetailCell">
                                 <rect key="frame" x="0.0" y="934" width="414" height="111"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SPx-Hk-FCE" id="xje-Py-v38">
@@ -1990,43 +1990,45 @@ $99 follow ups</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="SAN JOSE, CA 95110" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0oc-ti-sRu">
-                                                    <rect key="frame" x="8" y="50" width="121" height="19.666666666666671"/>
+                                                    <rect key="frame" x="8" y="50" width="121" height="15.666666666666671"/>
                                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
                                                     <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(408) 346-2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnS-9k-67O">
-                                                    <rect key="frame" x="8" y="71.666666666666671" width="90" height="20"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="20" id="Aep-Qj-x3e"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
-                                                    <color key="textColor" red="0.33725490200000002" green="0.74509803919999995" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.02 miles" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2N-NG-bUC">
-                                                    <rect key="frame" x="315" y="41" width="59" height="15"/>
+                                                    <rect key="frame" x="315" y="41" width="59" height="14.666666666666664"/>
                                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yH5-kc-Py6">
+                                                    <rect key="frame" x="8" y="67" width="92" height="27"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                                                    <state key="normal" title="(408) 555-1212">
+                                                        <color key="titleColor" red="0.33725490200000002" green="0.74509803919999995" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="phoneButtonTapped:" destination="SPx-Hk-FCE" eventType="touchUpInside" id="QFX-lW-2Ip"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="0ZP-18-Dy3" firstAttribute="leading" secondItem="kcV-6N-FpG" secondAttribute="leadingMargin" id="324-Xb-c6x"/>
+                                                <constraint firstItem="yH5-kc-Py6" firstAttribute="top" secondItem="n2N-NG-bUC" secondAttribute="bottom" constant="12" id="5nH-kA-vkO"/>
                                                 <constraint firstItem="Q2W-rw-rjy" firstAttribute="top" secondItem="0ZP-18-Dy3" secondAttribute="bottom" constant="2" id="64C-bC-8Cn"/>
                                                 <constraint firstItem="n2N-NG-bUC" firstAttribute="top" secondItem="kcV-6N-FpG" secondAttribute="top" constant="41" id="DJV-6k-neG"/>
                                                 <constraint firstItem="n2N-NG-bUC" firstAttribute="trailing" secondItem="kcV-6N-FpG" secondAttribute="trailingMargin" id="H8h-jV-7SB"/>
                                                 <constraint firstItem="0ZP-18-Dy3" firstAttribute="top" secondItem="kcV-6N-FpG" secondAttribute="top" constant="13" id="MQk-XS-HYw"/>
                                                 <constraint firstItem="0ZP-18-Dy3" firstAttribute="leading" secondItem="0oc-ti-sRu" secondAttribute="leading" id="UQp-KU-9Iy"/>
                                                 <constraint firstItem="n2N-NG-bUC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0oc-ti-sRu" secondAttribute="trailing" constant="8" symbolic="YES" id="b23-gc-s7o"/>
-                                                <constraint firstItem="VnS-9k-67O" firstAttribute="leading" secondItem="0oc-ti-sRu" secondAttribute="leading" id="bGU-no-lxS"/>
-                                                <constraint firstAttribute="bottom" secondItem="VnS-9k-67O" secondAttribute="bottom" constant="3" id="cbi-Nb-MWq"/>
                                                 <constraint firstItem="n2N-NG-bUC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Q2W-rw-rjy" secondAttribute="trailing" constant="8" symbolic="YES" id="cuJ-5Y-ls3"/>
+                                                <constraint firstItem="yH5-kc-Py6" firstAttribute="trailing" secondItem="n2N-NG-bUC" secondAttribute="trailing" constant="-274" id="eNJ-ab-xyi"/>
+                                                <constraint firstItem="yH5-kc-Py6" firstAttribute="top" secondItem="0oc-ti-sRu" secondAttribute="bottom" constant="2" id="jN6-Us-Nsn"/>
+                                                <constraint firstAttribute="bottom" secondItem="yH5-kc-Py6" secondAttribute="bottom" id="jlJ-OI-blp"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0ZP-18-Dy3" secondAttribute="trailing" constant="20" symbolic="YES" id="kts-aT-gg9"/>
-                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VnS-9k-67O" secondAttribute="trailing" constant="20" symbolic="YES" id="q5E-TU-i6a"/>
-                                                <constraint firstItem="VnS-9k-67O" firstAttribute="top" secondItem="0oc-ti-sRu" secondAttribute="bottom" constant="2" id="qex-xz-Swr"/>
                                                 <constraint firstItem="0oc-ti-sRu" firstAttribute="top" secondItem="0ZP-18-Dy3" secondAttribute="bottom" constant="17" id="r9Q-yH-fO7"/>
+                                                <constraint firstItem="yH5-kc-Py6" firstAttribute="leading" secondItem="0oc-ti-sRu" secondAttribute="leading" id="tfu-mM-enM"/>
                                                 <constraint firstItem="Q2W-rw-rjy" firstAttribute="leading" secondItem="0oc-ti-sRu" secondAttribute="leading" id="ub2-uF-9mG"/>
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
@@ -2053,12 +2055,14 @@ $99 follow ups</string>
                                 <connections>
                                     <outlet property="addressLine1Label" destination="Q2W-rw-rjy" id="2Lc-6B-HfJ"/>
                                     <outlet property="addressLine2Label" destination="0oc-ti-sRu" id="5LV-cQ-40d"/>
+                                    <outlet property="containerView" destination="kcV-6N-FpG" id="djR-a1-8Hq"/>
                                     <outlet property="distanceLabel" destination="n2N-NG-bUC" id="Yx0-UJ-kdz"/>
                                     <outlet property="pharmacyNameLabel" destination="0ZP-18-Dy3" id="Iet-gT-52c"/>
-                                    <outlet property="phoneNumberLabel" destination="VnS-9k-67O" id="O8a-T1-WWr"/>
+                                    <outlet property="phoneButton" destination="yH5-kc-Py6" id="h08-XT-iK3"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="Hmk-ch-Ivf" id="Voo-4a-cah"/>
                             <outlet property="delegate" destination="Hmk-ch-Ivf" id="Ymx-Gd-Ah9"/>
@@ -2161,7 +2165,7 @@ $99 follow ups</string>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="74" id="szF-vs-4GY"/>
                                                     </constraints>
                                                 </imageView>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="(555) 555-1212" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WdW-CS-8DA">
+                                                <textField opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="(555) 555-1212" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WdW-CS-8DA">
                                                     <rect key="frame" x="8" y="266.66666666666669" width="358" height="30"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>

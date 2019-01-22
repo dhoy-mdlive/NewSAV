@@ -25,4 +25,18 @@
     // Configure the view for the selected state
 }
 
+
+- (IBAction)phoneButtonTapped:(id)sender {
+    NSString *phoneNumber = [_phoneButton.titleLabel.text stringByReplacingOccurrencesOfString:@" "
+                                                                                    withString:@""];
+    NSString *telStr = [NSString stringWithFormat:@"tel:%@", phoneNumber];
+    NSURL *telURL = [NSURL URLWithString:telStr];
+    
+    UIApplication *app = [UIApplication sharedApplication];
+    if ([app canOpenURL:telURL]) {
+        [app openURL:telURL options:@{} completionHandler:^(BOOL success) {
+            NSLog(@"Open %@: %d", telURL, success);
+        }];
+    }
+}
 @end

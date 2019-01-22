@@ -68,6 +68,30 @@
 }
 
 
+-(CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    CGFloat height = self.view.frame.size.width;
+    return height*2;
+}
+
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSInteger numRows = [tableView numberOfRowsInSection:1];
+    for (NSInteger row = 0; row < numRows; row++) {
+        NSIndexPath *thisPath = [NSIndexPath indexPathForRow:row inSection:1];
+        UITableViewCell *cell = [tableView cellForRowAtIndexPath:thisPath];
+        if ([cell isKindOfClass:[PharmacyDetailCell class]])
+        {
+            PharmacyDetailCell *pdcell = (PharmacyDetailCell *)cell;
+            if (pdcell.selected) {
+                pdcell.containerView.layer.borderWidth = 2;
+            } else {
+                pdcell.containerView.layer.borderWidth = 0;
+            }
+        }
+    }
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = nil;
     

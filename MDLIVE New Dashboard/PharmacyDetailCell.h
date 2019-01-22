@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ScheduleVisitController.h"
+#import "ContainerView.h"
 
 @protocol PharmacyDetailCellProtocol <NSObject>
 @end
@@ -21,11 +22,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,retain) id<PharmacyDetailCellProtocol> delegate;
 
 // Interface Builder outlets
+@property (strong, nonatomic) IBOutlet ContainerView *containerView;
 @property (strong, nonatomic) IBOutlet UILabel *pharmacyNameLabel;
 @property (strong, nonatomic) IBOutlet UILabel *addressLine1Label;
 @property (strong, nonatomic) IBOutlet UILabel *addressLine2Label;
-@property (strong, nonatomic) IBOutlet UILabel *phoneNumberLabel;
 @property (strong, nonatomic) IBOutlet UILabel *distanceLabel;
+@property (strong, nonatomic) IBOutlet UIButton *phoneButton;
 
 @end
 
