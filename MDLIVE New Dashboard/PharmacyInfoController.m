@@ -34,20 +34,17 @@
     //_mapView.showsUserLocation = YES;
     //_mapView.mapType = MKMapTypeStandard;
     //_mapView.delegate = self;
+    
+    // Remove the map header.
+    self.tableView.tableHeaderView = nil;
+    self.pharmacyMapView.delegate = self;
+    self.pharmacyMapView.layer.cornerRadius = 10.0;
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    NSInteger   sections = 0;
-    
-    if (_mode == PharmacyControllerModeSearch) {
-        sections = 1;
-    }
-    else if (_mode == PharmacyControllerModeSelect) {
-        sections = 2;
-    }
-    return sections;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -57,28 +54,17 @@
         rows = 1;
     }
     else if (_mode == PharmacyControllerModeSelect) {
-        if (section == 0) {
-            rows = 1;
-        }
-        else {
-            rows = 5;       // change this to number of pharmacies found
-        }
+        rows = 5;       // change this to number of pharmacies found
     }
     return rows;
 }
 
 
--(CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    CGFloat height = self.view.frame.size.width;
-    return height*2;
-}
-
-
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    NSInteger numRows = [tableView numberOfRowsInSection:1];
+    NSInteger numRows = [tableView numberOfRowsInSection:0];
     for (NSInteger row = 0; row < numRows; row++) {
-        NSIndexPath *thisPath = [NSIndexPath indexPathForRow:row inSection:1];
+        NSIndexPath *thisPath = [NSIndexPath indexPathForRow:row inSection:0];
         UITableViewCell *cell = [tableView cellForRowAtIndexPath:thisPath];
         if ([cell isKindOfClass:[PharmacyDetailCell class]])
         {
@@ -92,6 +78,12 @@
     }
 }
 
+
+-(int)getRandomNumberBetween:(int)from and:(int)to {
+    return (int)from + arc4random() % (to-from+1);
+}
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = nil;
     
@@ -101,18 +93,13 @@
         cell = picell;
     }
     else if (_mode == PharmacyControllerModeSelect) {
-        if (indexPath.section == 0) {
-            PharmacyMapCell *pmcell = [tableView dequeueReusableCellWithIdentifier:@"PharmacyMapCell" forIndexPath:indexPath];
-            pmcell.delegate = self;
-            //_mapView = pmcell.mapView;  // store weak reference to map view
-            cell = pmcell;
-        }
-        else {
-            PharmacyDetailCell *pdcell = [tableView dequeueReusableCellWithIdentifier:@"PharmacyDetailCell" forIndexPath:indexPath];
-            pdcell.delegate = self;
-            
-            cell = pdcell;
-        }
+        PharmacyDetailCell *pdcell = [tableView dequeueReusableCellWithIdentifier:@"PharmacyDetailCell" forIndexPath:indexPath];
+        pdcell.delegate = self;
+        pdcell.pharmacyNameLabel.text = [NSString stringWithFormat:@"%d. CVS 12345 IN TARGET", (int)indexPath.row+1];
+        CGFloat distance = (CGFloat)[self getRandomNumberBetween:1 and:100] / 10.0;
+        pdcell.distanceLabel.text = [NSString stringWithFormat:@"%.1f miles", distance];
+        // fill in other pharmacy info here
+        cell = pdcell;
     }
     
     return cell;
@@ -166,27 +153,17 @@
 
 #pragma mark - PharmacyInfoCellProtocol method(s)
 
--(void)searchForPharmacy { //InMapView:(MKMapView *)mapView {
+-(void)searchForPharmacy {
     _mode = PharmacyControllerModeSelect;
+    self.tableView.tableHeaderView = _pharmacyHeaderView;
     [self.tableView reloadData];
     
-    //MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(_scheduleVisitController.currentLocation.coordinate,
-    //                                                                   3*METERS_PER_MILE,
-    //                                                                   3*METERS_PER_MILE);
-    //[_mapView setRegion:viewRegion];
-    
-   
+    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(_scheduleVisitController.currentLocation.coordinate,
+                                                                       3*METERS_PER_MILE,
+                                                                       3*METERS_PER_MILE);
+    [_pharmacyMapView setRegion:viewRegion];
 }
 
-#pragma mark - PharmacyMapCellProtocol method(s)
-
--(CLLocation *)currentLocation {
-    return _scheduleVisitController.currentLocation;
-}
-
-- (NSArray<CLLocation *> *)pharmacyLocations {
-    return nil;
-}
 
 #pragma mark - PharmacyDetailCellProtocol method(s)
 
@@ -204,37 +181,6 @@
    // region.span = span;
    // region.center = location;
    // [_mapView setRegion:region animated:YES];
-}
-
-
-
-- (void)tableView:(UITableView *)tableView
-  willDisplayCell:(UITableViewCell *)cell
-forRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    if ([cell isKindOfClass:[PharmacyMapCell class]]) {
-        PharmacyMapCell *pmcell = (PharmacyMapCell *)cell;
-        
-        CLLocation *currentlocation = [self currentLocation];
-        CLLocationCoordinate2D zoomLocation;
-        zoomLocation = currentlocation.coordinate;
-        
-        MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation,
-                                                                           3*METERS_PER_MILE,
-                                                                           3*METERS_PER_MILE);
-        pmcell.mapView.region = viewRegion;
-        pmcell.mapView.showsUserLocation = YES;
-        pmcell.mapView.mapType = MKMapTypeStandard;
-        //pmcell.mapView.delegate = self;
-        
-        // Add pharmacy locations as map annotations
-        NSArray <CLLocation *> *pharmacyLocations = [self pharmacyLocations];
-        for (CLLocation *location in pharmacyLocations) {
-            MKPointAnnotation *annotation = [MKPointAnnotation new];
-            annotation.coordinate = location.coordinate;
-            [pmcell.mapView addAnnotation:annotation];
-        }
-    }
 }
 
 @end

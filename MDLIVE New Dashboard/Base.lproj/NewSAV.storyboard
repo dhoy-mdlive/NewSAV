@@ -1692,10 +1692,57 @@ $99 follow ups</string>
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="JcO-3d-3Ux" userLabel="Pharmacy Info Table View">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="Yhg-o8-cbn" userLabel="Header View" customClass="PhamacyHeaderView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="310"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U0V-Js-UJa" customClass="ContainerView">
+                                    <rect key="frame" x="16" y="8" width="382" height="294"/>
+                                    <subviews>
+                                        <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WYN-rt-S2M">
+                                            <rect key="frame" x="0.0" y="0.0" width="382" height="294"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="dropShadowDepth">
+                                                    <integer key="value" value="2"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
+                                                    <color key="value" red="0.95181399830000002" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </mapView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="WYN-rt-S2M" firstAttribute="leading" secondItem="U0V-Js-UJa" secondAttribute="leading" id="3wj-n5-1l5"/>
+                                        <constraint firstAttribute="bottom" secondItem="WYN-rt-S2M" secondAttribute="bottom" id="A9D-Xz-nV5"/>
+                                        <constraint firstItem="WYN-rt-S2M" firstAttribute="top" secondItem="U0V-Js-UJa" secondAttribute="top" id="oAw-Ft-6q8"/>
+                                        <constraint firstAttribute="trailing" secondItem="WYN-rt-S2M" secondAttribute="trailing" id="uSp-Aw-IQC"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="dropShadowDepth">
+                                            <integer key="value" value="3"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
+                                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="U0V-Js-UJa" firstAttribute="top" secondItem="Yhg-o8-cbn" secondAttribute="top" constant="8" id="G3y-6f-PNf"/>
+                                <constraint firstItem="U0V-Js-UJa" firstAttribute="leading" secondItem="Yhg-o8-cbn" secondAttribute="leading" constant="16" id="Gq1-yS-Kts"/>
+                                <constraint firstAttribute="trailing" secondItem="U0V-Js-UJa" secondAttribute="trailing" constant="16" id="k4I-8m-hFV"/>
+                                <constraint firstAttribute="bottom" secondItem="U0V-Js-UJa" secondAttribute="bottom" constant="8" id="zhT-ez-wSx"/>
+                            </constraints>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PharmacyInfoCell" rowHeight="529" id="nEA-re-bjO" customClass="PharmacyInfoCell">
-                                <rect key="frame" x="0.0" y="28" width="414" height="529"/>
+                                <rect key="frame" x="0.0" y="338" width="414" height="529"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nEA-re-bjO" id="YZ8-Ea-Bje">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="529"/>
@@ -1874,101 +1921,11 @@ $99 follow ups</string>
                                     <outlet property="zipCodeTextField" destination="JIz-UA-xRC" id="4LD-Ft-Fzg"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="PharmacyMapCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PharmacyMapCell" rowHeight="377" id="89I-aG-xDV" userLabel="PharmacyMapCell" customClass="PharmacyMapCell">
-                                <rect key="frame" x="0.0" y="557" width="414" height="377"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="89I-aG-xDV" id="qsg-T2-10n" customClass="UIViewDesignable">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="377"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G4I-28-B8B" customClass="ContainerView">
-                                            <rect key="frame" x="16" y="8" width="382" height="361"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Map " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnX-Uv-1GE" userLabel="Map">
-                                                    <rect key="frame" x="170" y="338" width="38" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" mapType="standard" pitchEnabled="NO" showsUserLocation="YES" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5FT-7c-qdp">
-                                                    <rect key="frame" x="-2" y="0.0" width="382" height="339"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="339" id="dxh-nT-PRo"/>
-                                                    </constraints>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                            <integer key="value" value="0"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="6"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="dropShadowDepth">
-                                                            <integer key="value" value="3"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
-                                                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </mapView>
-                                            </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="rnX-Uv-1GE" secondAttribute="bottom" constant="2" id="1WA-oG-XDg"/>
-                                                <constraint firstItem="rnX-Uv-1GE" firstAttribute="leading" secondItem="G4I-28-B8B" secondAttribute="leading" constant="170" id="MZi-fh-PG6"/>
-                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rnX-Uv-1GE" secondAttribute="trailing" constant="20" symbolic="YES" id="Sdq-sx-H0L"/>
-                                                <constraint firstItem="5FT-7c-qdp" firstAttribute="leading" secondItem="G4I-28-B8B" secondAttribute="leading" constant="-2" id="WW6-Wm-vNM"/>
-                                                <constraint firstItem="5FT-7c-qdp" firstAttribute="top" secondItem="G4I-28-B8B" secondAttribute="top" id="gkQ-Ek-qId"/>
-                                                <constraint firstItem="5FT-7c-qdp" firstAttribute="centerX" secondItem="rnX-Uv-1GE" secondAttribute="centerX" id="rcm-7F-rf3"/>
-                                            </constraints>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                    <real key="value" value="5"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="dropShadowDepth">
-                                                    <integer key="value" value="3"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
-                                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                    <color key="value" red="0.33725490200000002" green="0.74509803919999995" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                    <integer key="value" value="1"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                        </view>
-                                    </subviews>
-                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                    <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="G4I-28-B8B" secondAttribute="bottom" constant="8" id="8QL-VA-5gD"/>
-                                        <constraint firstAttribute="bottom" secondItem="G4I-28-B8B" secondAttribute="bottom" constant="8" id="B9r-dq-rDb"/>
-                                        <constraint firstItem="G4I-28-B8B" firstAttribute="leading" secondItem="qsg-T2-10n" secondAttribute="leading" constant="16" id="Ps7-Tz-YWA"/>
-                                        <constraint firstItem="G4I-28-B8B" firstAttribute="top" secondItem="qsg-T2-10n" secondAttribute="top" constant="8" id="Rpf-e4-KJh"/>
-                                        <constraint firstItem="G4I-28-B8B" firstAttribute="leading" secondItem="qsg-T2-10n" secondAttribute="leading" constant="16" id="Ydc-x5-o8q"/>
-                                        <constraint firstItem="G4I-28-B8B" firstAttribute="top" secondItem="qsg-T2-10n" secondAttribute="top" constant="8" id="aRe-LU-W3Z"/>
-                                        <constraint firstAttribute="trailing" secondItem="G4I-28-B8B" secondAttribute="trailing" constant="16" id="eFE-ra-k8N"/>
-                                        <constraint firstAttribute="trailing" secondItem="G4I-28-B8B" secondAttribute="trailing" constant="16" id="msg-wz-gkd"/>
-                                    </constraints>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                            <integer key="value" value="1"/>
-                                        </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                            <color key="value" red="0.95181399830000002" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        </userDefinedRuntimeAttribute>
-                                    </userDefinedRuntimeAttributes>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <connections>
-                                    <outlet property="mapView" destination="5FT-7c-qdp" id="mVV-Tg-Nuw"/>
-                                </connections>
-                            </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PharmacyDetailCell" rowHeight="111" id="SPx-Hk-FCE" customClass="PharmacyDetailCell">
-                                <rect key="frame" x="0.0" y="934" width="414" height="111"/>
+                                <rect key="frame" x="0.0" y="867" width="414" height="111"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SPx-Hk-FCE" id="xje-Py-v38">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="111"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="110.66666666666667"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kcV-6N-FpG" customClass="ContainerView">
@@ -2002,7 +1959,7 @@ $99 follow ups</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yH5-kc-Py6">
-                                                    <rect key="frame" x="8" y="67" width="92" height="27"/>
+                                                    <rect key="frame" x="8" y="67.666666666666671" width="92" height="27"/>
                                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
                                                     <state key="normal" title="(408) 555-1212">
                                                         <color key="titleColor" red="0.33725490200000002" green="0.74509803919999995" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2068,6 +2025,10 @@ $99 follow ups</string>
                             <outlet property="delegate" destination="Hmk-ch-Ivf" id="Ymx-Gd-Ah9"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="pharmacyHeaderView" destination="Yhg-o8-cbn" id="jXW-BB-zBg"/>
+                        <outlet property="pharmacyMapView" destination="WYN-rt-S2M" id="Yvu-YW-SBW"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Orn-hf-gN0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

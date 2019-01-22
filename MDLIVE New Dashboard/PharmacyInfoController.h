@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import "PharmacyInfoCell.h"
-#import "PharmacyMapCell.h"
 #import "PharmacyDetailCell.h"
 #import "ScheduleVisitController.h"
+#import "PhamacyHeaderView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -20,13 +20,14 @@ typedef enum : NSUInteger {
     PharmacyControllerModeSelect
 } PharmacyControllerMode;
 
-@interface PharmacyInfoController : UITableViewController <PharmacyInfoCellProtocol, PharmacyDetailCellProtocol, PharmacyMapCellProtocol>
+@interface PharmacyInfoController : UITableViewController <PharmacyInfoCellProtocol, PharmacyDetailCellProtocol, MKMapViewDelegate>
 
 @property (nonatomic,weak) ScheduleVisitController *scheduleVisitController;
 
 @property (nonatomic,assign) PharmacyControllerMode mode;
+@property (strong, nonatomic) IBOutlet PhamacyHeaderView *pharmacyHeaderView;
+@property (strong, nonatomic) IBOutlet MKMapView *pharmacyMapView;
 
-//@property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
