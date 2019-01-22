@@ -1748,7 +1748,7 @@ $99 follow ups</string>
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="529"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sqN-7x-2Oo" customClass="UIViewDesignable">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sqN-7x-2Oo" customClass="ContainerView">
                                             <rect key="frame" x="16" y="8" width="382" height="513"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Choose a pharmacy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5N-yF-0sW">

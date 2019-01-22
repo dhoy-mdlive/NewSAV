@@ -43,17 +43,17 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
     
     // Do any additional setup after loading the view.
     self.pageIndx = 0;
-    self.pageTitles = @[ /*@"Provider Type",
+    self.pageTitles = @[ @"Provider Type",
                          @"Reason For Visit",
                          @"Your Appointment",
-                         @"Medical History",*/
+                         @"Medical History",
                          @"Pharmacy Information",
                          @"Choose Doctor",
                          @"Payment" ];
-    self.pageVCNames = @[ /*@"SelectProviderController",
+    self.pageVCNames = @[ @"SelectProviderController",
                           @"ReasonForVisitController",
                           @"YourAppointmentController",
-                          @"MedicalHistoryController",*/
+                          @"MedicalHistoryController",
                           @"PharmacyInfoController",
                           @"ChooseDoctorController",
                           @"PaymentController"];
