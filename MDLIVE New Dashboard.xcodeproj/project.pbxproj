@@ -118,14 +118,6 @@
 		D7B42EEE21F0D63C00EA25EE /* PharmacyInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PharmacyInfoCell.m; sourceTree = "<group>"; };
 		D7B42EF321F0F4A000EA25EE /* PharmacyDetailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PharmacyDetailCell.h; sourceTree = "<group>"; };
 		D7B42EF421F0F4A000EA25EE /* PharmacyDetailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PharmacyDetailCell.m; sourceTree = "<group>"; };
-		D7B42EF621F103F400EA25EE /* BEMAnimationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BEMAnimationManager.h; path = Classes/BEMAnimationManager.h; sourceTree = "<group>"; };
-		D7B42EF721F103F400EA25EE /* BEMAnimationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BEMAnimationManager.m; path = Classes/BEMAnimationManager.m; sourceTree = "<group>"; };
-		D7B42EF821F103F400EA25EE /* BEMCheckBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BEMCheckBox.h; path = Classes/BEMCheckBox.h; sourceTree = "<group>"; };
-		D7B42EF921F103F400EA25EE /* BEMCheckBox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BEMCheckBox.m; path = Classes/BEMCheckBox.m; sourceTree = "<group>"; };
-		D7B42EFA21F103F400EA25EE /* BEMCheckBoxGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BEMCheckBoxGroup.h; path = Classes/BEMCheckBoxGroup.h; sourceTree = "<group>"; };
-		D7B42EFB21F103F400EA25EE /* BEMCheckBoxGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BEMCheckBoxGroup.m; path = Classes/BEMCheckBoxGroup.m; sourceTree = "<group>"; };
-		D7B42EFC21F103F400EA25EE /* BEMPathManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BEMPathManager.h; path = Classes/BEMPathManager.h; sourceTree = "<group>"; };
-		D7B42EFD21F103F400EA25EE /* BEMPathManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BEMPathManager.m; path = Classes/BEMPathManager.m; sourceTree = "<group>"; };
 		D7E4FD9821DD198C00DCAB30 /* ReasonForVisitController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReasonForVisitController.m; sourceTree = "<group>"; };
 		D7E4FD9A21DD19CD00DCAB30 /* ReasonForVisitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReasonForVisitController.h; sourceTree = "<group>"; };
 		D7E4FD9B21DD1A3800DCAB30 /* ReasonForVisitCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReasonForVisitCell.h; sourceTree = "<group>"; };
@@ -265,7 +257,6 @@
 				D759843421E51D810008E4A4 /* ChooseDoctorCell.m */,
 				D758C0F621E69379007F0007 /* ContainerView.h */,
 				D758C0F721E69379007F0007 /* ContainerView.m */,
-				D7B42F0521F103F400EA25EE /* BEMCheckBox */,
 				D788BC4D21F257D4008FABDE /* UICheckboxButton.h */,
 				D788BC4E21F257D4008FABDE /* UICheckboxButton.m */,
 			);
@@ -286,21 +277,6 @@
 				D7B42EF421F0F4A000EA25EE /* PharmacyDetailCell.m */,
 			);
 			path = PharmacyInfoController;
-			sourceTree = "<group>";
-		};
-		D7B42F0521F103F400EA25EE /* BEMCheckBox */ = {
-			isa = PBXGroup;
-			children = (
-				D7B42EF621F103F400EA25EE /* BEMAnimationManager.h */,
-				D7B42EF721F103F400EA25EE /* BEMAnimationManager.m */,
-				D7B42EF821F103F400EA25EE /* BEMCheckBox.h */,
-				D7B42EF921F103F400EA25EE /* BEMCheckBox.m */,
-				D7B42EFA21F103F400EA25EE /* BEMCheckBoxGroup.h */,
-				D7B42EFB21F103F400EA25EE /* BEMCheckBoxGroup.m */,
-				D7B42EFC21F103F400EA25EE /* BEMPathManager.h */,
-				D7B42EFD21F103F400EA25EE /* BEMPathManager.m */,
-			);
-			path = BEMCheckBox;
 			sourceTree = "<group>";
 		};
 		F92B74CE0AE11F3E8D7C0EEB /* Pods */ = {
