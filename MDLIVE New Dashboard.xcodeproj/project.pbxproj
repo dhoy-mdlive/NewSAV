@@ -37,6 +37,7 @@
 		D79E4D2721DA4C6E004A8A53 /* MessagesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E4D2621DA4C6E004A8A53 /* MessagesCell.m */; };
 		D79E4D3321DA6564004A8A53 /* ProviderTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E4D3221DA6564004A8A53 /* ProviderTypeCell.m */; };
 		D79E4D3621DA6AAE004A8A53 /* SelectProviderController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E4D3521DA6AAE004A8A53 /* SelectProviderController.m */; };
+		D7A0ACF021F8B5C600DFD646 /* PharmacyInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A0ACEF21F8B1E800DFD646 /* PharmacyInfo.storyboard */; };
 		D7A3E4A821D5323C0053D086 /* ProviderTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A3E4A721D5323C0053D086 /* ProviderTypeView.m */; };
 		D7B42EEC21F0D61700EA25EE /* PharmacyInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B42EEB21F0D61700EA25EE /* PharmacyInfoController.m */; };
 		D7B42EEF21F0D63C00EA25EE /* PharmacyInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B42EEE21F0D63C00EA25EE /* PharmacyInfoCell.m */; };
@@ -111,6 +112,7 @@
 		D79E4D3221DA6564004A8A53 /* ProviderTypeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProviderTypeCell.m; sourceTree = "<group>"; };
 		D79E4D3421DA6AAE004A8A53 /* SelectProviderController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectProviderController.h; sourceTree = "<group>"; };
 		D79E4D3521DA6AAE004A8A53 /* SelectProviderController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectProviderController.m; sourceTree = "<group>"; };
+		D7A0ACEF21F8B1E800DFD646 /* PharmacyInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PharmacyInfo.storyboard; sourceTree = "<group>"; };
 		D7A3E4A621D5323C0053D086 /* ProviderTypeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProviderTypeView.h; sourceTree = "<group>"; };
 		D7A3E4A721D5323C0053D086 /* ProviderTypeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProviderTypeView.m; sourceTree = "<group>"; };
 		D7B42EEA21F0D61700EA25EE /* PharmacyInfoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PharmacyInfoController.h; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 				D7F67BF821D42A6E0006CCB3 /* EMKRoundButton.m */,
 				D74B9B9C21D5554A00E9FD1F /* Custom Fonts */,
 				D709BBF721DD083C002461E7 /* Categories */,
+				D7A0ACEE21F8B1A500DFD646 /* PharmacyInfoController */,
 				D780D11F21DF9E9D00D2D9A4 /* YourAppointmentController.h */,
 				D780D12021DF9E9D00D2D9A4 /* YourAppointmentController.m */,
 				D780D12221DF9FFD00D2D9A4 /* YourAppointmentCell.h */,
@@ -267,19 +270,27 @@
 				D759843421E51D810008E4A4 /* ChooseDoctorCell.m */,
 				D758C0F621E69379007F0007 /* ContainerView.h */,
 				D758C0F721E69379007F0007 /* ContainerView.m */,
+				D7B42F0521F103F400EA25EE /* BEMCheckBox */,
+				D788BC4D21F257D4008FABDE /* UICheckboxButton.h */,
+				D788BC4E21F257D4008FABDE /* UICheckboxButton.m */,
+			);
+			path = "MDLIVE New Dashboard";
+			sourceTree = "<group>";
+		};
+		D7A0ACEE21F8B1A500DFD646 /* PharmacyInfoController */ = {
+			isa = PBXGroup;
+			children = (
+				D7A0ACEF21F8B1E800DFD646 /* PharmacyInfo.storyboard */,
+				D788BC5921F76334008FABDE /* PhamacyHeaderView.h */,
+				D788BC5A21F76334008FABDE /* PhamacyHeaderView.m */,
 				D7B42EEA21F0D61700EA25EE /* PharmacyInfoController.h */,
 				D7B42EEB21F0D61700EA25EE /* PharmacyInfoController.m */,
 				D7B42EED21F0D63C00EA25EE /* PharmacyInfoCell.h */,
 				D7B42EEE21F0D63C00EA25EE /* PharmacyInfoCell.m */,
 				D7B42EF321F0F4A000EA25EE /* PharmacyDetailCell.h */,
 				D7B42EF421F0F4A000EA25EE /* PharmacyDetailCell.m */,
-				D7B42F0521F103F400EA25EE /* BEMCheckBox */,
-				D788BC4D21F257D4008FABDE /* UICheckboxButton.h */,
-				D788BC4E21F257D4008FABDE /* UICheckboxButton.m */,
-				D788BC5921F76334008FABDE /* PhamacyHeaderView.h */,
-				D788BC5A21F76334008FABDE /* PhamacyHeaderView.m */,
 			);
-			path = "MDLIVE New Dashboard";
+			path = PharmacyInfoController;
 			sourceTree = "<group>";
 		};
 		D7B42F0521F103F400EA25EE /* BEMCheckBox */ = {
@@ -366,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D74B9B9E21D5556200E9FD1F /* Montserrat-Bold.ttf in Resources */,
+				D7A0ACF021F8B5C600DFD646 /* PharmacyInfo.storyboard in Resources */,
 				D777F7C721D3E74100B45D24 /* LaunchScreen.storyboard in Resources */,
 				D777F7C421D3E74100B45D24 /* Assets.xcassets in Resources */,
 				D74B9BA021D5556B00E9FD1F /* Montserrat-Regular.ttf in Resources */,

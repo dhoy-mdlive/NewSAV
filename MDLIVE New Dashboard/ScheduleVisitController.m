@@ -24,12 +24,11 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
 
 @interface ScheduleVisitController ()
 
-@property (nonatomic, strong) CLLocationManager *locationManager;
-@property (nonatomic, assign) NSInteger             pageIndx;
-@property (nonatomic, strong) NSArray <NSString  *> *pageTitles;
-@property (nonatomic, strong) NSArray <NSString *>  *pageVCNames;
+@property (nonatomic, strong) CLLocationManager                   *locationManager;
+@property (nonatomic, assign) NSInteger                           pageIndx;
+@property (nonatomic, strong) NSArray <NSDictionary *>            *pages;
 @property (nonatomic, strong) NSMutableArray <UIViewController *> *viewControllers;
-@property (nonatomic, assign) Boolean               changesMade;
+@property (nonatomic, assign) Boolean                             changesMade;
 
 @end
 
@@ -42,22 +41,16 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
     [super viewDidLoad];
     
     // Do any additional setup after loading the view.
-    self.pageIndx = 0;
-    self.pageTitles = @[ @"Provider Type",
-                         @"Reason For Visit",
-                         @"Your Appointment",
-                         @"Medical History",
-                         @"Pharmacy Information",
-                         @"Choose Doctor",
-                         @"Payment" ];
-    self.pageVCNames = @[ @"SelectProviderController",
-                          @"ReasonForVisitController",
-                          @"YourAppointmentController",
-                          @"MedicalHistoryController",
-                          @"PharmacyInfoController",
-                          @"ChooseDoctorController",
-                          @"PaymentController"];
-    _viewControllers = [NSMutableArray arrayWithCapacity:_pageVCNames.count];
+    _pageIndx = 0;
+    _pages = @[ @{ @"title":@"Provider Type",        @"storyboard":@"NewSAV",       @"viewcontroller":@"SelectProviderController" },
+                @{ @"title":@"Reason For Visit",     @"storyboard":@"NewSAV",       @"viewcontroller":@"ReasonForVisitController" },
+                @{ @"title":@"Your Appointment",     @"storyboard":@"NewSAV",       @"viewcontroller":@"YourAppointmentController" },
+                @{ @"title":@"Medical History",      @"storyboard":@"NewSAV",       @"viewcontroller":@"MedicalHistoryController" },
+                @{ @"title":@"Pharmacy Information", @"storyboard":@"PharmacyInfo", @"viewcontroller":@"PharmacyInfoController" },
+                @{ @"title":@"Choose Doctor",        @"storyboard":@"NewSAV",       @"viewcontroller":@"ChooseDoctorController" },
+                @{ @"title":@"Payment",              @"storyboard":@"NewSAV",       @"viewcontroller":@"PaymentController" },
+              ];
+    _viewControllers = [NSMutableArray arrayWithCapacity:_pages.count];
     
     // Add left and right navigation arrows to Back and Next buttons
     [_backButton setImage:[UIImage imageNamed:@"nav_back.png"] forState:UIControlStateNormal];
@@ -69,8 +62,8 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
     [_nextButton setImage:[UIImage imageNamed:@"nav_next_disabled.png"] forState:UIControlStateDisabled];
     [_nextButton setTitle:@"Next " forState:UIControlStateNormal];
     
-    self.changesMade = NO;
-    [self setupPage:self.pageIndx];
+    _changesMade = NO;
+    [self setupPage:_pageIndx];
     
     
     // Set up and start the location manager to get the current GPS position
@@ -106,16 +99,17 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
     self.backButton.enabled = (page == 0) ? NO : YES;
     //self.nextButton.enabled = (page == self.pageTitles.count-1) ? NO : YES;
     _backButton.hidden = (page == 0) ? YES : NO;
-    _nextButton.hidden = (page >= _pageTitles.count-1) ? YES : NO;
+    _nextButton.hidden = (page >= _pages.count-1) ? YES : NO;
     
-    self.scheduleVisitPageTitleLabel.text = self.pageTitles[page];
+    _scheduleVisitPageTitleLabel.text = [_pages[page] objectForKey:@"title"];
     
-    self.scheduleVisitPageControl.numberOfPages = self.pageTitles.count;
-    self.scheduleVisitPageControl.currentPage   = page;
+    _scheduleVisitPageControl.numberOfPages = _pages.count;
+    _scheduleVisitPageControl.currentPage   = page;
     
     if (page >= _viewControllers.count) {
-        NSString *vcname = _pageVCNames[page];
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"NewSAV" bundle:nil];
+        NSString *sbname = [_pages[page] objectForKey:@"storyboard"];
+        NSString *vcname = [_pages[page] objectForKey:@"viewcontroller"];
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:sbname bundle:nil];
         UIViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:vcname];
         [_viewControllers addObject:viewController];
         [self addChildViewController:viewController];
@@ -151,7 +145,7 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
 - (IBAction)cancelButton:(id)sender {
     //NSLog(@"%s: sender=%@", __func__, sender);
     
-    if (self.changesMade) {
+    if (_changesMade) {
         __weak __typeof(self)weakSelf = self;
         UIAlertController* alert = [UIAlertController alertControllerWithTitle:nil
                                                                        message:@"Are you sure you want to cancel?"
@@ -185,20 +179,20 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
     
 - (IBAction)backButton:(id)sender {
     //NSLog(@"%s: sender=%@", __func__, sender);
-    if (self.pageIndx > 0) {
-        self.pageIndx--;
+    if (_pageIndx > 0) {
+        _pageIndx--;
     }
-    [self setupPage:self.pageIndx];
+    [self setupPage:_pageIndx];
 }
     
     
 - (IBAction)nextButton:(id)sender {
     //NSLog(@"%s: sender=%@", __func__, sender);
-    if (self.pageIndx < self.pageTitles.count) {
-        self.pageIndx++;
+    if (_pageIndx < _pages.count) {
+        _pageIndx++;
     }
-    [self setupPage:self.pageIndx];
-    self.changesMade = YES;
+    [self setupPage:_pageIndx];
+    _changesMade = YES;
 }
 
 
