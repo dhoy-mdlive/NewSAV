@@ -8,7 +8,6 @@
 
 #import "ScheduleVisitController.h"
 #import "ReasonForVisitController.h"
-#import "ProviderTypeView.h"
 
 
 typedef NS_ENUM(NSInteger, ScheduleVisitPage) {

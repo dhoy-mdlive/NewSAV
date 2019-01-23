@@ -38,7 +38,6 @@
 		D79E4D3321DA6564004A8A53 /* ProviderTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E4D3221DA6564004A8A53 /* ProviderTypeCell.m */; };
 		D79E4D3621DA6AAE004A8A53 /* SelectProviderController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E4D3521DA6AAE004A8A53 /* SelectProviderController.m */; };
 		D7A0ACF021F8B5C600DFD646 /* PharmacyInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A0ACEF21F8B1E800DFD646 /* PharmacyInfo.storyboard */; };
-		D7A3E4A821D5323C0053D086 /* ProviderTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A3E4A721D5323C0053D086 /* ProviderTypeView.m */; };
 		D7B42EEC21F0D61700EA25EE /* PharmacyInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B42EEB21F0D61700EA25EE /* PharmacyInfoController.m */; };
 		D7B42EEF21F0D63C00EA25EE /* PharmacyInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B42EEE21F0D63C00EA25EE /* PharmacyInfoCell.m */; };
 		D7B42EF521F0F4A000EA25EE /* PharmacyDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B42EF421F0F4A000EA25EE /* PharmacyDetailCell.m */; };
@@ -113,8 +112,6 @@
 		D79E4D3421DA6AAE004A8A53 /* SelectProviderController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectProviderController.h; sourceTree = "<group>"; };
 		D79E4D3521DA6AAE004A8A53 /* SelectProviderController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectProviderController.m; sourceTree = "<group>"; };
 		D7A0ACEF21F8B1E800DFD646 /* PharmacyInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PharmacyInfo.storyboard; sourceTree = "<group>"; };
-		D7A3E4A621D5323C0053D086 /* ProviderTypeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProviderTypeView.h; sourceTree = "<group>"; };
-		D7A3E4A721D5323C0053D086 /* ProviderTypeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProviderTypeView.m; sourceTree = "<group>"; };
 		D7B42EEA21F0D61700EA25EE /* PharmacyInfoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PharmacyInfoController.h; sourceTree = "<group>"; };
 		D7B42EEB21F0D61700EA25EE /* PharmacyInfoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PharmacyInfoController.m; sourceTree = "<group>"; };
 		D7B42EED21F0D63C00EA25EE /* PharmacyInfoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PharmacyInfoCell.h; sourceTree = "<group>"; };
@@ -225,8 +222,6 @@
 				D7F67BFC21D42B340006CCB3 /* HomeViewController.m */,
 				D7F67C0721D512620006CCB3 /* PatientImageCell.m */,
 				D7F67C0821D512630006CCB3 /* PatientImageCell.h */,
-				D7A3E4A621D5323C0053D086 /* ProviderTypeView.h */,
-				D7A3E4A721D5323C0053D086 /* ProviderTypeView.m */,
 				D74B9BC921D66C7100E9FD1F /* ScheduleVisitController.h */,
 				D74B9BCA21D66C7100E9FD1F /* ScheduleVisitController.m */,
 				D79E4D3121DA6564004A8A53 /* ProviderTypeCell.h */,
@@ -459,7 +454,6 @@
 				D7F33DEE21E3E17700799130 /* UIImageView+badge.m in Sources */,
 				D73C629821DE996C00DC9F7B /* MedicalHistoryController.m in Sources */,
 				D7B42EEF21F0D63C00EA25EE /* PharmacyInfoCell.m in Sources */,
-				D7A3E4A821D5323C0053D086 /* ProviderTypeView.m in Sources */,
 				D7617C4621D6B80D002063AE /* UpcomingApptCell.m in Sources */,
 				D788BC5221F6150F008FABDE /* UITextField+dismissNumberKeypad.m in Sources */,
 				D7F67C0921D512630006CCB3 /* PatientImageCell.m in Sources */,
