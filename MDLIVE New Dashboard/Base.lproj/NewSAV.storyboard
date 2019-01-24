@@ -1557,9 +1557,14 @@ $99 follow ups</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="dHF-fz-S7O" customClass="MDLSearchBar">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ChooseDoctorCell" focusStyle="custom" rowHeight="103" id="h3J-ge-qgD" userLabel="Doctor Cell" customClass="ChooseDoctorCell">
-                                <rect key="frame" x="0.0" y="28" width="414" height="103"/>
+                                <rect key="frame" x="0.0" y="72" width="414" height="103"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h3J-ge-qgD" id="WEZ-0N-QnG">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="103"/>
@@ -1659,6 +1664,7 @@ $99 follow ups</string>
                     </tableView>
                     <connections>
                         <outlet property="chooseDoctorTableView" destination="16d-1M-ehU" id="8yN-kZ-PYX"/>
+                        <outlet property="searchBar" destination="dHF-fz-S7O" id="vlj-Fc-d4k"/>
                         <outlet property="searchDisplayController" destination="nmB-km-4ap" id="Edx-b4-Dkz"/>
                     </connections>
                 </tableViewController>

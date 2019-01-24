@@ -8,12 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import "ChooseDoctorCell.h"
+#import "ScheduleVisitController.h"
+#import "MDLSearchBar.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ChooseDoctorController : UITableViewController <ChooseDoctorCellProtcol, UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating>
+@interface ChooseDoctorController : UITableViewController <ChooseDoctorCellProtcol, UISearchBarDelegate>
 
+@property (strong, nonatomic) IBOutlet MDLSearchBar *searchBar;
 @property (strong, nonatomic) IBOutlet UITableView *chooseDoctorTableView;
+
+@property (nonatomic,weak) ScheduleVisitController *scheduleVisitController;
+
 @end
 
 /*

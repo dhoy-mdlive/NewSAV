@@ -8,11 +8,12 @@
 
 #import "ChooseDoctorController.h"
 #import "UIColor+mdl.h"
+#import "MDLSearchController.h"
 
 @interface ChooseDoctorController ()
 
 //@property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
-@property (strong, nonatomic) UISearchController *searchController;
+//@property (strong, nonatomic) MDLSearchController *searchController;
 @property (nonatomic, strong) NSArray <NSDictionary *> *doctorInfo;
 @property (nonatomic, strong) NSArray <NSDictionary *> *filteredDoctorInfo;
 
@@ -29,7 +30,7 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 
-    _doctorInfo = @[ @{ @"name":@"Dr. Edgar Allen Poe",@"specialty":@"Anything macabre",    @"availability":@"Nevermore..." },
+    _doctorInfo = @[ @{ @"name":@"Dr. Edgar Allen Poe", @"specialty":@"Anything macabre",   @"availability":@"Nevermore..." },
                      @{ @"name":@"Dr. William Gibson",  @"specialty":@"Neuromancy",         @"availability":@"Now" },
                      @{ @"name":@"Dr. Ray Bradbury",    @"specialty":@"Book burning",       @"availability":@"Yesterday at 4:51pm" },
                      @{ @"name":@"Dr. Kurt Vonnegut",   @"specialty":@"Slaughtering",       @"availability":@"Tomorrow at 3:33am" },
@@ -44,22 +45,23 @@
                      @{ @"name":@"Dr. Doctor",          @"specialty":@"Some weird stuff",   @"availability":@"He killed Kenny" },
                      @{ @"name":@"Dr. Doolittle",       @"specialty":@"Vetinary",           @"availability":@"Ask the animals" } ];
     
-    _searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
-    _searchController.searchResultsUpdater = self;
-    _searchController.dimsBackgroundDuringPresentation = NO;
-    _searchController.searchBar.delegate = self;
-    _searchController.searchBar.tintColor = [UIColor mdliveTeal];
-    _chooseDoctorTableView.tableHeaderView = _searchController.searchBar;
+    //_searchController = [[MDLSearchController alloc] initWithSearchResultsController:nil];
+    //_searchController.searchResultsUpdater = self;
+    //_searchController.dimsBackgroundDuringPresentation = NO;
+    //_searchController.searchBar.delegate = self;
+    //_searchController.searchBar.tintColor = [UIColor mdliveTeal];
+    //_chooseDoctorTableView.tableHeaderView = _searchController.searchBar;
     
-    [self.searchController.searchBar sizeToFit];
-    _searchController.searchBar.barTintColor = _chooseDoctorTableView.backgroundColor;
-    _searchController.searchBar.layer.borderWidth = 1;
-    _searchController.searchBar.layer.borderColor = _chooseDoctorTableView.backgroundColor.CGColor;
-    _searchController.searchBar.placeholder = @"Search for a physician by name...";
-    _searchController.searchBar.searchBarStyle = UISearchBarStyleMinimal;
-    _searchController.searchBar.showsCancelButton = NO;
+   // [_searchBar sizeToFit];
+    _searchBar.delegate = self;
+    _searchBar.barTintColor = _chooseDoctorTableView.backgroundColor;
+    _searchBar.layer.borderWidth = 1;
+    _searchBar.layer.borderColor = _chooseDoctorTableView.backgroundColor.CGColor;
+    _searchBar.placeholder = @"Search for a physician by name...";
+    _searchBar.searchBarStyle = UISearchBarStyleMinimal;
+    _searchBar.showsCancelButton = NO;
     
-    UITextField *textField = [_searchController.searchBar valueForKey:@"_searchField"];
+    UITextField *textField = [_searchBar valueForKey:@"_searchField"];
     textField.textColor = [UIColor whiteColor];
     textField.tintColor = [UIColor whiteColor];
     [textField setValue:[UIColor whiteColor] forKeyPath:@"_placeholderLabel.textColor"];
@@ -68,19 +70,29 @@
     backgroundView.backgroundColor = [UIColor mdliveTeal];
     backgroundView.layer.cornerRadius = 6;
     backgroundView.layer.masksToBounds = YES;
-    textField.leftView.tintColor = [UIColor whiteColor];
     textField.rightView.tintColor = [UIColor whiteColor];
+    UIImageView *imgView = (UIImageView*)textField.leftView;
+    imgView.image = [imgView.image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    imgView.tintColor = [UIColor whiteColor];
                                       
     self.definesPresentationContext = YES;
+    
+    _scheduleVisitController = (ScheduleVisitController *)[self parentViewController];
+}
+
+
+-(void)viewWillAppear:(BOOL)animated {
+    NSLog(@"%s:", __func__);
 }
 
 -(void)viewDidLayoutSubviews {
+    NSLog(@"%s:", __func__);
     [super viewDidLayoutSubviews];
     
     // Resize the search bar to match the doctor cells in width
-    CGSize barSize = [_searchController.searchBar sizeThatFits:_chooseDoctorTableView.contentSize];
+    CGSize barSize = [_searchBar sizeThatFits:_chooseDoctorTableView.contentSize];
     CGRect barFrame = CGRectMake(8, 0, barSize.width-16, barSize.height);
-    _searchController.searchBar.frame = barFrame;
+    _searchBar.frame = barFrame;
 }
 
 
@@ -90,6 +102,7 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     NSInteger ret = 0;
@@ -131,6 +144,10 @@
             cell.containerView.layer.borderWidth = 0;
         }
     }
+    _scheduleVisitController.nextButton.enabled = YES;
+    UITextField *textField = [_searchBar valueForKey:@"_searchField"];
+    [textField resignFirstResponder];
+    [_searchBar resignFirstResponder];
 }
 
 /*
@@ -177,24 +194,19 @@
 }
 */
 
-#pragma mark - UISearchController methods
+#pragma mark - UISearchBarProtocol methods
 
-- (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
-    NSString *searchString = searchController.searchBar.text;
-    if (searchString.length != 0) {
+
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(nonnull NSString *)searchText {
+    if (searchText.length != 0) {
         // strip out all the leading and trailing spaces
-        NSString *strippedString = [searchString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+        NSString *strippedString = [searchText stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
         NSPredicate* predicate = [NSPredicate predicateWithFormat:@"%K contains[cd] %@", @"name", strippedString];
         _filteredDoctorInfo = [_doctorInfo filteredArrayUsingPredicate:predicate];
     } else {
         _filteredDoctorInfo = nil;
     }
     [self.tableView reloadData];
-}
-
-
-- (void)searchBar:(UISearchBar *)searchBar selectedScopeButtonIndexDidChange:(NSInteger)selectedScope {
-    [self updateSearchResultsForSearchController:self.searchController];
 }
 
 #pragma mark - UISearchBarDelegate
@@ -232,8 +244,7 @@
 //    // do something after the search controller is dismissed
 //}
 
--(void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar {
-}
+
 
 -(void)searchBarTextDidEndEditing:(UISearchBar *)searchBar {
     [self resignFirstResponder];

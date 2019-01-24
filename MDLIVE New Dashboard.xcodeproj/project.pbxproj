@@ -41,6 +41,8 @@
 		D7B42EEC21F0D61700EA25EE /* PharmacyInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B42EEB21F0D61700EA25EE /* PharmacyInfoController.m */; };
 		D7B42EEF21F0D63C00EA25EE /* PharmacyInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B42EEE21F0D63C00EA25EE /* PharmacyInfoCell.m */; };
 		D7B42EF521F0F4A000EA25EE /* PharmacyDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B42EF421F0F4A000EA25EE /* PharmacyDetailCell.m */; };
+		D7D3D4DC21FA532000FAAE80 /* MDLSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D3D4DB21FA532000FAAE80 /* MDLSearchBar.m */; };
+		D7D3D4DF21FA537D00FAAE80 /* MDLSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D3D4DE21FA537D00FAAE80 /* MDLSearchController.m */; };
 		D7E4FD9921DD198C00DCAB30 /* ReasonForVisitController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E4FD9821DD198C00DCAB30 /* ReasonForVisitController.m */; };
 		D7E4FD9D21DD1A3800DCAB30 /* ReasonForVisitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E4FD9C21DD1A3800DCAB30 /* ReasonForVisitCell.m */; };
 		D7F33DEE21E3E17700799130 /* UIImageView+badge.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F33DED21E3E17700799130 /* UIImageView+badge.m */; };
@@ -118,6 +120,10 @@
 		D7B42EEE21F0D63C00EA25EE /* PharmacyInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PharmacyInfoCell.m; sourceTree = "<group>"; };
 		D7B42EF321F0F4A000EA25EE /* PharmacyDetailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PharmacyDetailCell.h; sourceTree = "<group>"; };
 		D7B42EF421F0F4A000EA25EE /* PharmacyDetailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PharmacyDetailCell.m; sourceTree = "<group>"; };
+		D7D3D4DA21FA532000FAAE80 /* MDLSearchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDLSearchBar.h; sourceTree = "<group>"; };
+		D7D3D4DB21FA532000FAAE80 /* MDLSearchBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDLSearchBar.m; sourceTree = "<group>"; };
+		D7D3D4DD21FA537D00FAAE80 /* MDLSearchController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDLSearchController.h; sourceTree = "<group>"; };
+		D7D3D4DE21FA537D00FAAE80 /* MDLSearchController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDLSearchController.m; sourceTree = "<group>"; };
 		D7E4FD9821DD198C00DCAB30 /* ReasonForVisitController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReasonForVisitController.m; sourceTree = "<group>"; };
 		D7E4FD9A21DD19CD00DCAB30 /* ReasonForVisitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReasonForVisitController.h; sourceTree = "<group>"; };
 		D7E4FD9B21DD1A3800DCAB30 /* ReasonForVisitCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReasonForVisitCell.h; sourceTree = "<group>"; };
@@ -167,6 +173,10 @@
 				D7F33DED21E3E17700799130 /* UIImageView+badge.m */,
 				D7F33DEF21E4DC0D00799130 /* UIViewDesignable.h */,
 				D7F33DF021E4DC0D00799130 /* UIViewDesignable.m */,
+				D7D3D4DA21FA532000FAAE80 /* MDLSearchBar.h */,
+				D7D3D4DB21FA532000FAAE80 /* MDLSearchBar.m */,
+				D7D3D4DD21FA537D00FAAE80 /* MDLSearchController.h */,
+				D7D3D4DE21FA537D00FAAE80 /* MDLSearchController.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -435,6 +445,7 @@
 				D7F67C0921D512630006CCB3 /* PatientImageCell.m in Sources */,
 				D788BC5B21F76334008FABDE /* PhamacyHeaderView.m in Sources */,
 				D709BBFD21DD083C002461E7 /* UIColor+mdl.m in Sources */,
+				D7D3D4DC21FA532000FAAE80 /* MDLSearchBar.m in Sources */,
 				D74B9BCB21D66C7100E9FD1F /* ScheduleVisitController.m in Sources */,
 				D79E4D3321DA6564004A8A53 /* ProviderTypeCell.m in Sources */,
 				D759843221E508450008E4A4 /* ChooseDoctorController.m in Sources */,
@@ -442,6 +453,7 @@
 				D788BC4F21F257D4008FABDE /* UICheckboxButton.m in Sources */,
 				D7E4FD9921DD198C00DCAB30 /* ReasonForVisitController.m in Sources */,
 				D759842C21E4E1760008E4A4 /* PaymentCell.m in Sources */,
+				D7D3D4DF21FA537D00FAAE80 /* MDLSearchController.m in Sources */,
 				D73C629B21DE99D800DC9F7B /* MedicalHistoryCell.m in Sources */,
 				D79E4D3621DA6AAE004A8A53 /* SelectProviderController.m in Sources */,
 				D7E4FD9D21DD1A3800DCAB30 /* ReasonForVisitCell.m in Sources */,
