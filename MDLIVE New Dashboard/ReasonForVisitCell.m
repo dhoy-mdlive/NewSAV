@@ -10,6 +10,7 @@
 #import "ReasonForVisitCell.h"
 #import "EMKRoundButton.h"
 #import "UIView+IBDesignable.h"
+#import "UITextField+addDoneToolbar.h"
 
 //@interface ReasonForVisitCell ()
 //@property (nonatomic, weak) ReasonForVisitController *viewController;
@@ -28,6 +29,8 @@
     _imagePicker.delegate = self;
     _containerView.borderWidth = 0;
     _containerView.dashedBorder = YES;
+    
+    [_symptomTextField addDoneToolbar];
     
     //[self.delegate nextButtonEnabled:NO];
 }

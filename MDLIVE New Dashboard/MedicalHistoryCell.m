@@ -7,6 +7,7 @@
 //
 
 #import "MedicalHistoryCell.h"
+#import "UITextField+addDoneToolbar.h"
 
 @implementation MedicalHistoryCell
 
@@ -15,21 +16,28 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    [_allergyTextField addDoneToolbar];
+    [_healthConditionTextField addDoneToolbar];
 }
+
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
     // Configure the view for the selected state
 }
+
+
 - (IBAction)buttonTapped:(id)sender {
     NSLog(@"%s: sender=%@", __func__, sender);
 }
+
 
 - (IBAction)allergySegmentedControlChanged:(UISegmentedControl *)sender {
     if (sender.selectedSegmentIndex == 0) {
         _allergyTextField.enabled = TRUE;
     }
 }
+
 
 - (IBAction)allergyTextFieldChanged:(UITextField *)sender {
     if (sender.text.length > 0) {

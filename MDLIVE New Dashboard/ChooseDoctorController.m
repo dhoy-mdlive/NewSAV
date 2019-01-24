@@ -48,8 +48,8 @@
     _searchController.searchResultsUpdater = self;
     _searchController.dimsBackgroundDuringPresentation = NO;
     _searchController.searchBar.delegate = self;
+    _searchController.searchBar.tintColor = [UIColor mdliveTeal];
     _chooseDoctorTableView.tableHeaderView = _searchController.searchBar;
-    
     
     [self.searchController.searchBar sizeToFit];
     _searchController.searchBar.barTintColor = _chooseDoctorTableView.backgroundColor;
@@ -62,10 +62,10 @@
     UITextField *textField = [_searchController.searchBar valueForKey:@"_searchField"];
     textField.textColor = [UIColor whiteColor];
     textField.tintColor = [UIColor whiteColor];
-    [textField setValue:[UIColor lightGrayColor] forKeyPath:@"_placeholderLabel.textColor"];
+    [textField setValue:[UIColor whiteColor] forKeyPath:@"_placeholderLabel.textColor"];
     textField.font = [UIFont fontWithName:@"Montserrat" size:14.0];
     UIView *backgroundView = textField.subviews.firstObject;
-    backgroundView.backgroundColor = [UIColor colorFromHexString:@"#278cc9"];
+    backgroundView.backgroundColor = [UIColor mdliveTeal];
     backgroundView.layer.cornerRadius = 6;
     backgroundView.layer.masksToBounds = YES;
     textField.leftView.tintColor = [UIColor whiteColor];
@@ -126,7 +126,7 @@
         ChooseDoctorCell *cell = [tableView cellForRowAtIndexPath:thisPath];
         if (cell.selected) {
             cell.containerView.layer.borderWidth = 2;
-            cell.containerView.layer.borderColor = [UIColor colorFromHexString:@"#278cc9"].CGColor;
+            cell.containerView.layer.borderColor = [UIColor mdliveTeal].CGColor;
         } else {
             cell.containerView.layer.borderWidth = 0;
         }
@@ -236,6 +236,7 @@
 }
 
 -(void)searchBarTextDidEndEditing:(UISearchBar *)searchBar {
+    [self resignFirstResponder];
 }
 
 

@@ -9,7 +9,7 @@
 #import "YourAppointmentCell.h"
 #import "YourAppointmentController.h"
 #import "UIView+IBDesignable.h"
-#import "UITextField+dismissNumberKeypad.h"
+#import "UITextField+addDoneToolbar.h"
 
 
 @implementation YourAppointmentCell
@@ -32,7 +32,7 @@
     
     [self.delegate nextButtonEnabled:NO];
     _phoneNumberTextField.delegate = self;
-    [_phoneNumberTextField addDismissToolbar];
+    [_phoneNumberTextField addDoneToolbar];
 }
 
 
@@ -42,26 +42,28 @@
 
 
 - (void)phoneImageTapped {
-    NSLog(@"%s:", __func__);
+    //NSLog(@"%s:", __func__);
     if (_phoneImageView.highlighted == NO) {
         _phoneImageView.highlighted = YES;
         _videoImageView.highlighted = NO;
         [self.delegate nextButtonEnabled:YES];
     }
-    if ([_phoneNumberTextField isFirstResponder])
+    if ([_phoneNumberTextField isFirstResponder]) {
         [_phoneNumberTextField resignFirstResponder];
+    }
 }
 
 
 - (void)videoImageTapped {
-    NSLog(@"%s:", __func__);
+    //NSLog(@"%s:", __func__);
     if (_videoImageView.highlighted == NO) {
         _phoneImageView.highlighted = NO;
         _videoImageView.highlighted = YES;
         [self.delegate nextButtonEnabled:YES];
     }
-    if ([_phoneNumberTextField isFirstResponder])
+    if ([_phoneNumberTextField isFirstResponder]) {
         [_phoneNumberTextField resignFirstResponder];
+    }
 }
 
 

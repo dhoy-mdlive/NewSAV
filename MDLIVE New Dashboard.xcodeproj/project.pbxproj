@@ -32,7 +32,7 @@
 		D780D12121DF9E9D00D2D9A4 /* YourAppointmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = D780D12021DF9E9D00D2D9A4 /* YourAppointmentController.m */; };
 		D780D12421DF9FFD00D2D9A4 /* YourAppointmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D780D12321DF9FFD00D2D9A4 /* YourAppointmentCell.m */; };
 		D788BC4F21F257D4008FABDE /* UICheckboxButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D788BC4E21F257D4008FABDE /* UICheckboxButton.m */; };
-		D788BC5221F6150F008FABDE /* UITextField+dismissNumberKeypad.m in Sources */ = {isa = PBXBuildFile; fileRef = D788BC5121F6150F008FABDE /* UITextField+dismissNumberKeypad.m */; };
+		D788BC5221F6150F008FABDE /* UITextField+addDoneToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = D788BC5121F6150F008FABDE /* UITextField+addDoneToolbar.m */; };
 		D788BC5B21F76334008FABDE /* PhamacyHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D788BC5A21F76334008FABDE /* PhamacyHeaderView.m */; };
 		D79E4D2721DA4C6E004A8A53 /* MessagesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E4D2621DA4C6E004A8A53 /* MessagesCell.m */; };
 		D79E4D3321DA6564004A8A53 /* ProviderTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E4D3221DA6564004A8A53 /* ProviderTypeCell.m */; };
@@ -101,8 +101,8 @@
 		D780D12321DF9FFD00D2D9A4 /* YourAppointmentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YourAppointmentCell.m; sourceTree = "<group>"; };
 		D788BC4D21F257D4008FABDE /* UICheckboxButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UICheckboxButton.h; sourceTree = "<group>"; };
 		D788BC4E21F257D4008FABDE /* UICheckboxButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICheckboxButton.m; sourceTree = "<group>"; };
-		D788BC5021F6150F008FABDE /* UITextField+dismissNumberKeypad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+dismissNumberKeypad.h"; sourceTree = "<group>"; };
-		D788BC5121F6150F008FABDE /* UITextField+dismissNumberKeypad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+dismissNumberKeypad.m"; sourceTree = "<group>"; };
+		D788BC5021F6150F008FABDE /* UITextField+addDoneToolbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+addDoneToolbar.h"; sourceTree = "<group>"; };
+		D788BC5121F6150F008FABDE /* UITextField+addDoneToolbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+addDoneToolbar.m"; sourceTree = "<group>"; };
 		D788BC5921F76334008FABDE /* PhamacyHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhamacyHeaderView.h; sourceTree = "<group>"; };
 		D788BC5A21F76334008FABDE /* PhamacyHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhamacyHeaderView.m; sourceTree = "<group>"; };
 		D79E4D2521DA4C6E004A8A53 /* MessagesCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessagesCell.h; sourceTree = "<group>"; };
@@ -157,8 +157,8 @@
 		D709BBF721DD083C002461E7 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				D788BC5021F6150F008FABDE /* UITextField+dismissNumberKeypad.h */,
-				D788BC5121F6150F008FABDE /* UITextField+dismissNumberKeypad.m */,
+				D788BC5021F6150F008FABDE /* UITextField+addDoneToolbar.h */,
+				D788BC5121F6150F008FABDE /* UITextField+addDoneToolbar.m */,
 				D709BBF821DD083C002461E7 /* UIColor+mdl.h */,
 				D709BBFB21DD083C002461E7 /* UIColor+mdl.m */,
 				D709BBF921DD083C002461E7 /* UIView+IBDesignable.m */,
@@ -431,7 +431,7 @@
 				D73C629821DE996C00DC9F7B /* MedicalHistoryController.m in Sources */,
 				D7B42EEF21F0D63C00EA25EE /* PharmacyInfoCell.m in Sources */,
 				D7617C4621D6B80D002063AE /* UpcomingApptCell.m in Sources */,
-				D788BC5221F6150F008FABDE /* UITextField+dismissNumberKeypad.m in Sources */,
+				D788BC5221F6150F008FABDE /* UITextField+addDoneToolbar.m in Sources */,
 				D7F67C0921D512630006CCB3 /* PatientImageCell.m in Sources */,
 				D788BC5B21F76334008FABDE /* PhamacyHeaderView.m in Sources */,
 				D709BBFD21DD083C002461E7 /* UIColor+mdl.m in Sources */,

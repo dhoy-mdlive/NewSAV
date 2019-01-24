@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIColor (mdl)
 + (UIColor *)colorFromHexString:(NSString *)hexString;
++ (UIColor *)mdliveTeal;
 @end
 
 NS_ASSUME_NONNULL_END

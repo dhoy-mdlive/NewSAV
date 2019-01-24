@@ -57,6 +57,9 @@
             cell.priceLabel.text = @"$75";
             cell.priceBasisLabel.text = @"Per Visit";
             [cell.containerView createLeftBorderWithWidth:7 andColor:color];
+            cell.selected = YES;
+            cell.containerView.layer.borderWidth = 2;
+            cell.radioButton.image = [UIImage imageNamed:@"selected-radio-button"];
             break;
             
         case 1:
@@ -90,6 +93,8 @@
     CALayer *borderLayer = [cell.containerView createLeftBorderWithWidth:6 andColor:color];
     borderLayer.cornerRadius = 5;
     [cell.containerView.layer addSublayer:borderLayer];
+    
+    _scheduleVisitController.nextButton.enabled = YES;
  
     return cell;
 }

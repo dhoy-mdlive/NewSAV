@@ -1,5 +1,5 @@
 //
-//  UITextField+dismissNumberKeypad.h
+//  UITextField+addDoneToolbar.h
 //  MDLIVE New Dashboard
 //
 //  Created by David Hoy on 1/21/19.
@@ -10,9 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UITextField (dismissNumberKeypad)
+@interface UITextField (addDoneToolbar)
 
--(void)addDismissToolbar;
+-(void)addDoneToolbar;
 
 @end
 
