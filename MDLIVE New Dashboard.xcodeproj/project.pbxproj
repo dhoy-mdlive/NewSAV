@@ -46,6 +46,7 @@
 		D7DEAEAB21FB629F0066BDE5 /* MedicalHistory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DEAEAA21FB629F0066BDE5 /* MedicalHistory.storyboard */; };
 		D7DEAEAE21FB63EE0066BDE5 /* YourAppointment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DEAEAD21FB63EE0066BDE5 /* YourAppointment.storyboard */; };
 		D7DEAEAF21FB64E80066BDE5 /* YourAppointmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D780D12321DF9FFD00D2D9A4 /* YourAppointmentCell.m */; };
+		D7DEAEB221FB679A0066BDE5 /* Payment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DEAEB121FB679A0066BDE5 /* Payment.storyboard */; };
 		D7E4FD9921DD198C00DCAB30 /* ReasonForVisitController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E4FD9821DD198C00DCAB30 /* ReasonForVisitController.m */; };
 		D7E4FD9D21DD1A3800DCAB30 /* ReasonForVisitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E4FD9C21DD1A3800DCAB30 /* ReasonForVisitCell.m */; };
 		D7F33DEE21E3E17700799130 /* UIImageView+badge.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F33DED21E3E17700799130 /* UIImageView+badge.m */; };
@@ -130,6 +131,7 @@
 		D7DEAEA721FB5B210066BDE5 /* ChooseDoctor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChooseDoctor.storyboard; sourceTree = "<group>"; };
 		D7DEAEAA21FB629F0066BDE5 /* MedicalHistory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MedicalHistory.storyboard; sourceTree = "<group>"; };
 		D7DEAEAD21FB63EE0066BDE5 /* YourAppointment.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YourAppointment.storyboard; sourceTree = "<group>"; };
+		D7DEAEB121FB679A0066BDE5 /* Payment.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Payment.storyboard; sourceTree = "<group>"; };
 		D7E4FD9821DD198C00DCAB30 /* ReasonForVisitController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReasonForVisitController.m; sourceTree = "<group>"; };
 		D7E4FD9A21DD19CD00DCAB30 /* ReasonForVisitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReasonForVisitController.h; sourceTree = "<group>"; };
 		D7E4FD9B21DD1A3800DCAB30 /* ReasonForVisitCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReasonForVisitCell.h; sourceTree = "<group>"; };
@@ -258,10 +260,7 @@
 				D7A0ACEE21F8B1A500DFD646 /* PharmacyInfoController */,
 				D7DEAEA921FB62220066BDE5 /* MedicalHistoryController */,
 				D7DEAEA621FB5ABC0066BDE5 /* ChooseDoctorController */,
-				D759842721E4E1400008E4A4 /* PaymentController.h */,
-				D759842821E4E1400008E4A4 /* PaymentController.m */,
-				D759842A21E4E1760008E4A4 /* PaymentCell.h */,
-				D759842B21E4E1760008E4A4 /* PaymentCell.m */,
+				D7DEAEB021FB67560066BDE5 /* PaymentController */,
 				D758C0F621E69379007F0007 /* ContainerView.h */,
 				D758C0F721E69379007F0007 /* ContainerView.m */,
 				D788BC4D21F257D4008FABDE /* UICheckboxButton.h */,
@@ -320,6 +319,18 @@
 				D780D12321DF9FFD00D2D9A4 /* YourAppointmentCell.m */,
 			);
 			path = YourAppointmentController;
+			sourceTree = "<group>";
+		};
+		D7DEAEB021FB67560066BDE5 /* PaymentController */ = {
+			isa = PBXGroup;
+			children = (
+				D7DEAEB121FB679A0066BDE5 /* Payment.storyboard */,
+				D759842721E4E1400008E4A4 /* PaymentController.h */,
+				D759842821E4E1400008E4A4 /* PaymentController.m */,
+				D759842A21E4E1760008E4A4 /* PaymentCell.h */,
+				D759842B21E4E1760008E4A4 /* PaymentCell.m */,
+			);
+			path = PaymentController;
 			sourceTree = "<group>";
 		};
 		F92B74CE0AE11F3E8D7C0EEB /* Pods */ = {
@@ -391,6 +402,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D74B9B9E21D5556200E9FD1F /* Montserrat-Bold.ttf in Resources */,
+				D7DEAEB221FB679A0066BDE5 /* Payment.storyboard in Resources */,
 				D7DEAEAE21FB63EE0066BDE5 /* YourAppointment.storyboard in Resources */,
 				D7DEAEAB21FB629F0066BDE5 /* MedicalHistory.storyboard in Resources */,
 				D7A0ACF021F8B5C600DFD646 /* PharmacyInfo.storyboard in Resources */,
