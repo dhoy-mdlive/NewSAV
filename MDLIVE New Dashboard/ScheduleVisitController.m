@@ -41,12 +41,12 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
     
     // Do any additional setup after loading the view.
     _pageIndx = 0;
-    _pages = @[ @{ @"title":@"Provider Type",        @"storyboard":@"NewSAV",         @"viewcontroller":@"SelectProviderController" },
-                @{ @"title":@"Reason For Visit",     @"storyboard":@"NewSAV",         @"viewcontroller":@"ReasonForVisitController" },
-                @{ @"title":@"Your Appointment",     @"storyboard":@"YourAppointment",         @"viewcontroller":@"YourAppointmentController" },
-                @{ @"title":@"Medical History",      @"storyboard":@"MedicalHistory", @"viewcontroller":@"MedicalHistoryController" },
-                @{ @"title":@"Pharmacy Information", @"storyboard":@"PharmacyInfo",   @"viewcontroller":@"PharmacyInfoController" },
-                @{ @"title":@"Choose Doctor",        @"storyboard":@"ChooseDoctor",   @"viewcontroller":@"ChooseDoctorController" },
+    _pages = @[ @{ @"title":@"Provider Type",        @"storyboard":@"SelectProvider",  @"viewcontroller":@"SelectProviderController" },
+                @{ @"title":@"Reason For Visit",     @"storyboard":@"ReasonForVisit",  @"viewcontroller":@"ReasonForVisitController" },
+                @{ @"title":@"Your Appointment",     @"storyboard":@"YourAppointment", @"viewcontroller":@"YourAppointmentController" },
+                @{ @"title":@"Medical History",      @"storyboard":@"MedicalHistory",  @"viewcontroller":@"MedicalHistoryController" },
+                @{ @"title":@"Pharmacy Information", @"storyboard":@"PharmacyInfo",    @"viewcontroller":@"PharmacyInfoController" },
+                @{ @"title":@"Choose Doctor",        @"storyboard":@"ChooseDoctor",    @"viewcontroller":@"ChooseDoctorController" },
                 @{ @"title":@"Payment",              @"storyboard":@"Payment",         @"viewcontroller":@"PaymentController" },
               ];
     _viewControllers = [NSMutableArray arrayWithCapacity:_pages.count];
@@ -63,7 +63,6 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
     
     _changesMade = NO;
     [self setupPage:_pageIndx];
-    
     
     // Set up and start the location manager to get the current GPS position
     _locationManager = [[CLLocationManager alloc] init];

@@ -51,6 +51,8 @@
 		D7DEAEB821FB6B030066BDE5 /* SelectProvider.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DEAEB721FB6B030066BDE5 /* SelectProvider.storyboard */; };
 		D7DEAEBB21FB70C60066BDE5 /* AppointmentsTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DEAEBA21FB70C60066BDE5 /* AppointmentsTab.storyboard */; };
 		D7DEAEBE21FB725E0066BDE5 /* MessagesTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DEAEBD21FB725E0066BDE5 /* MessagesTab.storyboard */; };
+		D7DEAEC121FB733D0066BDE5 /* MyHealthTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DEAEC021FB733D0066BDE5 /* MyHealthTab.storyboard */; };
+		D7DEAEC421FB759A0066BDE5 /* MoreTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DEAEC321FB759A0066BDE5 /* MoreTab.storyboard */; };
 		D7E4FD9921DD198C00DCAB30 /* ReasonForVisitController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E4FD9821DD198C00DCAB30 /* ReasonForVisitController.m */; };
 		D7E4FD9D21DD1A3800DCAB30 /* ReasonForVisitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E4FD9C21DD1A3800DCAB30 /* ReasonForVisitCell.m */; };
 		D7F33DEE21E3E17700799130 /* UIImageView+badge.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F33DED21E3E17700799130 /* UIImageView+badge.m */; };
@@ -140,6 +142,8 @@
 		D7DEAEB721FB6B030066BDE5 /* SelectProvider.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelectProvider.storyboard; sourceTree = "<group>"; };
 		D7DEAEBA21FB70C60066BDE5 /* AppointmentsTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AppointmentsTab.storyboard; sourceTree = "<group>"; };
 		D7DEAEBD21FB725E0066BDE5 /* MessagesTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MessagesTab.storyboard; sourceTree = "<group>"; };
+		D7DEAEC021FB733D0066BDE5 /* MyHealthTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyHealthTab.storyboard; sourceTree = "<group>"; };
+		D7DEAEC321FB759A0066BDE5 /* MoreTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MoreTab.storyboard; sourceTree = "<group>"; };
 		D7E4FD9821DD198C00DCAB30 /* ReasonForVisitController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReasonForVisitController.m; sourceTree = "<group>"; };
 		D7E4FD9A21DD19CD00DCAB30 /* ReasonForVisitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReasonForVisitController.h; sourceTree = "<group>"; };
 		D7E4FD9B21DD1A3800DCAB30 /* ReasonForVisitCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReasonForVisitCell.h; sourceTree = "<group>"; };
@@ -252,6 +256,8 @@
 				D771890721DD68D40053944A /* AccountNotVerifiedCell.m */,
 				D7DEAEBC21FB72200066BDE5 /* MessagesTab */,
 				D7DEAEB921FB70970066BDE5 /* AppointmentsTab */,
+				D7DEAEBF21FB73170066BDE5 /* MyHealthTab */,
+				D7DEAEC221FB757C0066BDE5 /* MoreTab */,
 				D7DEAEB621FB6A980066BDE5 /* SelectProviderController */,
 				D7DEAEB321FB68EB0066BDE5 /* ReasonForVisitController */,
 				D7DEAEAC21FB63AF0066BDE5 /* YourAppointmentController */,
@@ -377,6 +383,22 @@
 			path = MessagesTab;
 			sourceTree = "<group>";
 		};
+		D7DEAEBF21FB73170066BDE5 /* MyHealthTab */ = {
+			isa = PBXGroup;
+			children = (
+				D7DEAEC021FB733D0066BDE5 /* MyHealthTab.storyboard */,
+			);
+			path = MyHealthTab;
+			sourceTree = "<group>";
+		};
+		D7DEAEC221FB757C0066BDE5 /* MoreTab */ = {
+			isa = PBXGroup;
+			children = (
+				D7DEAEC321FB759A0066BDE5 /* MoreTab.storyboard */,
+			);
+			path = MoreTab;
+			sourceTree = "<group>";
+		};
 		F92B74CE0AE11F3E8D7C0EEB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -448,7 +470,9 @@
 				D7DEAEBE21FB725E0066BDE5 /* MessagesTab.storyboard in Resources */,
 				D74B9B9E21D5556200E9FD1F /* Montserrat-Bold.ttf in Resources */,
 				D7DEAEB221FB679A0066BDE5 /* Payment.storyboard in Resources */,
+				D7DEAEC421FB759A0066BDE5 /* MoreTab.storyboard in Resources */,
 				D7DEAEAE21FB63EE0066BDE5 /* YourAppointment.storyboard in Resources */,
+				D7DEAEC121FB733D0066BDE5 /* MyHealthTab.storyboard in Resources */,
 				D7DEAEB821FB6B030066BDE5 /* SelectProvider.storyboard in Resources */,
 				D7DEAEAB21FB629F0066BDE5 /* MedicalHistory.storyboard in Resources */,
 				D7A0ACF021F8B5C600DFD646 /* PharmacyInfo.storyboard in Resources */,
