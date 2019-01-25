@@ -33,6 +33,8 @@
 		D788BC4F21F257D4008FABDE /* UICheckboxButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D788BC4E21F257D4008FABDE /* UICheckboxButton.m */; };
 		D788BC5221F6150F008FABDE /* UITextField+addDoneToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = D788BC5121F6150F008FABDE /* UITextField+addDoneToolbar.m */; };
 		D788BC5B21F76334008FABDE /* PhamacyHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D788BC5A21F76334008FABDE /* PhamacyHeaderView.m */; };
+		D790B1DA21FBA043004DE70A /* UpcomingApptDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D790B1D921FBA043004DE70A /* UpcomingApptDetailCell.m */; };
+		D790B1DD21FBABFA004DE70A /* AppointmentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D790B1DC21FBABFA004DE70A /* AppointmentDetailViewController.m */; };
 		D79E4D2721DA4C6E004A8A53 /* MessagesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E4D2621DA4C6E004A8A53 /* MessagesCell.m */; };
 		D79E4D3321DA6564004A8A53 /* ProviderTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E4D3221DA6564004A8A53 /* ProviderTypeCell.m */; };
 		D79E4D3621DA6AAE004A8A53 /* SelectProviderController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E4D3521DA6AAE004A8A53 /* SelectProviderController.m */; };
@@ -53,6 +55,9 @@
 		D7DEAEBE21FB725E0066BDE5 /* MessagesTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DEAEBD21FB725E0066BDE5 /* MessagesTab.storyboard */; };
 		D7DEAEC121FB733D0066BDE5 /* MyHealthTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DEAEC021FB733D0066BDE5 /* MyHealthTab.storyboard */; };
 		D7DEAEC421FB759A0066BDE5 /* MoreTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DEAEC321FB759A0066BDE5 /* MoreTab.storyboard */; };
+		D7DEAEC721FB835D0066BDE5 /* PastApptCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DEAEC621FB835C0066BDE5 /* PastApptCell.m */; };
+		D7DEAECA21FB89C10066BDE5 /* ApptSummaryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DEAEC921FB89C10066BDE5 /* ApptSummaryCell.m */; };
+		D7DEAECD21FB8A810066BDE5 /* ApptHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DEAECC21FB8A810066BDE5 /* ApptHeaderCell.m */; };
 		D7E4FD9921DD198C00DCAB30 /* ReasonForVisitController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E4FD9821DD198C00DCAB30 /* ReasonForVisitController.m */; };
 		D7E4FD9D21DD1A3800DCAB30 /* ReasonForVisitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E4FD9C21DD1A3800DCAB30 /* ReasonForVisitCell.m */; };
 		D7F33DEE21E3E17700799130 /* UIImageView+badge.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F33DED21E3E17700799130 /* UIImageView+badge.m */; };
@@ -117,6 +122,10 @@
 		D788BC5121F6150F008FABDE /* UITextField+addDoneToolbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+addDoneToolbar.m"; sourceTree = "<group>"; };
 		D788BC5921F76334008FABDE /* PhamacyHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhamacyHeaderView.h; sourceTree = "<group>"; };
 		D788BC5A21F76334008FABDE /* PhamacyHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhamacyHeaderView.m; sourceTree = "<group>"; };
+		D790B1D821FBA043004DE70A /* UpcomingApptDetailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpcomingApptDetailCell.h; sourceTree = "<group>"; };
+		D790B1D921FBA043004DE70A /* UpcomingApptDetailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpcomingApptDetailCell.m; sourceTree = "<group>"; };
+		D790B1DB21FBABFA004DE70A /* AppointmentDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppointmentDetailViewController.h; sourceTree = "<group>"; };
+		D790B1DC21FBABFA004DE70A /* AppointmentDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppointmentDetailViewController.m; sourceTree = "<group>"; };
 		D79E4D2521DA4C6E004A8A53 /* MessagesCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessagesCell.h; sourceTree = "<group>"; };
 		D79E4D2621DA4C6E004A8A53 /* MessagesCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessagesCell.m; sourceTree = "<group>"; };
 		D79E4D3121DA6564004A8A53 /* ProviderTypeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProviderTypeCell.h; sourceTree = "<group>"; };
@@ -144,6 +153,12 @@
 		D7DEAEBD21FB725E0066BDE5 /* MessagesTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MessagesTab.storyboard; sourceTree = "<group>"; };
 		D7DEAEC021FB733D0066BDE5 /* MyHealthTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyHealthTab.storyboard; sourceTree = "<group>"; };
 		D7DEAEC321FB759A0066BDE5 /* MoreTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MoreTab.storyboard; sourceTree = "<group>"; };
+		D7DEAEC521FB835C0066BDE5 /* PastApptCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PastApptCell.h; sourceTree = "<group>"; };
+		D7DEAEC621FB835C0066BDE5 /* PastApptCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PastApptCell.m; sourceTree = "<group>"; };
+		D7DEAEC821FB89C10066BDE5 /* ApptSummaryCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApptSummaryCell.h; sourceTree = "<group>"; };
+		D7DEAEC921FB89C10066BDE5 /* ApptSummaryCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApptSummaryCell.m; sourceTree = "<group>"; };
+		D7DEAECB21FB8A810066BDE5 /* ApptHeaderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApptHeaderCell.h; sourceTree = "<group>"; };
+		D7DEAECC21FB8A810066BDE5 /* ApptHeaderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApptHeaderCell.m; sourceTree = "<group>"; };
 		D7E4FD9821DD198C00DCAB30 /* ReasonForVisitController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReasonForVisitController.m; sourceTree = "<group>"; };
 		D7E4FD9A21DD19CD00DCAB30 /* ReasonForVisitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReasonForVisitController.h; sourceTree = "<group>"; };
 		D7E4FD9B21DD1A3800DCAB30 /* ReasonForVisitCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReasonForVisitCell.h; sourceTree = "<group>"; };
@@ -362,11 +377,21 @@
 		D7DEAEB921FB70970066BDE5 /* AppointmentsTab */ = {
 			isa = PBXGroup;
 			children = (
+				D7DEAEBA21FB70C60066BDE5 /* AppointmentsTab.storyboard */,
 				D771890021DD59200053944A /* AppointmentsViewController.h */,
 				D771890121DD59200053944A /* AppointmentsViewController.m */,
 				D7617C4521D6B80D002063AE /* UpcomingApptCell.m */,
 				D7617C4421D6B80D002063AE /* UpcomingApptCell.h */,
-				D7DEAEBA21FB70C60066BDE5 /* AppointmentsTab.storyboard */,
+				D7DEAEC521FB835C0066BDE5 /* PastApptCell.h */,
+				D7DEAEC621FB835C0066BDE5 /* PastApptCell.m */,
+				D7DEAEC821FB89C10066BDE5 /* ApptSummaryCell.h */,
+				D7DEAEC921FB89C10066BDE5 /* ApptSummaryCell.m */,
+				D7DEAECB21FB8A810066BDE5 /* ApptHeaderCell.h */,
+				D7DEAECC21FB8A810066BDE5 /* ApptHeaderCell.m */,
+				D790B1D821FBA043004DE70A /* UpcomingApptDetailCell.h */,
+				D790B1D921FBA043004DE70A /* UpcomingApptDetailCell.m */,
+				D790B1DB21FBABFA004DE70A /* AppointmentDetailViewController.h */,
+				D790B1DC21FBABFA004DE70A /* AppointmentDetailViewController.m */,
 			);
 			path = AppointmentsTab;
 			sourceTree = "<group>";
@@ -553,12 +578,15 @@
 				D7F33DF121E4DC0D00799130 /* UIViewDesignable.m in Sources */,
 				D771890521DD5E850053944A /* MessagesViewController.m in Sources */,
 				D777F7CA21D3E74100B45D24 /* main.m in Sources */,
+				D7DEAECD21FB8A810066BDE5 /* ApptHeaderCell.m in Sources */,
+				D790B1DA21FBA043004DE70A /* UpcomingApptDetailCell.m in Sources */,
 				D777F7BC21D3E73F00B45D24 /* AppDelegate.m in Sources */,
 				D759843521E51D810008E4A4 /* ChooseDoctorCell.m in Sources */,
 				D7DEAEAF21FB64E80066BDE5 /* YourAppointmentCell.m in Sources */,
 				D771890221DD59200053944A /* AppointmentsViewController.m in Sources */,
 				D7F33DEE21E3E17700799130 /* UIImageView+badge.m in Sources */,
 				D73C629821DE996C00DC9F7B /* MedicalHistoryController.m in Sources */,
+				D790B1DD21FBABFA004DE70A /* AppointmentDetailViewController.m in Sources */,
 				D7B42EEF21F0D63C00EA25EE /* PharmacyInfoCell.m in Sources */,
 				D7617C4621D6B80D002063AE /* UpcomingApptCell.m in Sources */,
 				D788BC5221F6150F008FABDE /* UITextField+addDoneToolbar.m in Sources */,
@@ -572,6 +600,7 @@
 				D79E4D2721DA4C6E004A8A53 /* MessagesCell.m in Sources */,
 				D788BC4F21F257D4008FABDE /* UICheckboxButton.m in Sources */,
 				D7E4FD9921DD198C00DCAB30 /* ReasonForVisitController.m in Sources */,
+				D7DEAEC721FB835D0066BDE5 /* PastApptCell.m in Sources */,
 				D759842C21E4E1760008E4A4 /* PaymentCell.m in Sources */,
 				D7D3D4DF21FA537D00FAAE80 /* MDLSearchController.m in Sources */,
 				D73C629B21DE99D800DC9F7B /* MedicalHistoryCell.m in Sources */,
@@ -581,6 +610,7 @@
 				D771890821DD68D40053944A /* AccountNotVerifiedCell.m in Sources */,
 				D759842921E4E1400008E4A4 /* PaymentController.m in Sources */,
 				D7F67BFD21D42B340006CCB3 /* HomeViewController.m in Sources */,
+				D7DEAECA21FB89C10066BDE5 /* ApptSummaryCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
