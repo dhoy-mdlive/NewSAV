@@ -9,6 +9,7 @@
 #import "ChooseDoctorController.h"
 #import "UIColor+mdl.h"
 #import "MDLSearchController.h"
+#import "UITextField+addDoneToolbar.h"
 
 @interface ChooseDoctorController ()
 
@@ -16,6 +17,7 @@
 //@property (strong, nonatomic) MDLSearchController *searchController;
 @property (nonatomic, strong) NSArray <NSDictionary *> *doctorInfo;
 @property (nonatomic, strong) NSArray <NSDictionary *> *filteredDoctorInfo;
+@property (nonatomic, strong) NSString *selectedDoctor;
 
 @end
 
@@ -44,15 +46,8 @@
                      @{ @"name":@"Dr. Strange",         @"specialty":@"Magic",              @"availability":@"Always" },
                      @{ @"name":@"Dr. Doctor",          @"specialty":@"Some weird stuff",   @"availability":@"He killed Kenny" },
                      @{ @"name":@"Dr. Doolittle",       @"specialty":@"Vetinary",           @"availability":@"Ask the animals" } ];
+    _selectedDoctor = nil;
     
-    //_searchController = [[MDLSearchController alloc] initWithSearchResultsController:nil];
-    //_searchController.searchResultsUpdater = self;
-    //_searchController.dimsBackgroundDuringPresentation = NO;
-    //_searchController.searchBar.delegate = self;
-    //_searchController.searchBar.tintColor = [UIColor mdliveTeal];
-    //_chooseDoctorTableView.tableHeaderView = _searchController.searchBar;
-    
-   // [_searchBar sizeToFit];
     _searchBar.delegate = self;
     _searchBar.barTintColor = _chooseDoctorTableView.backgroundColor;
     _searchBar.layer.borderWidth = 1;
@@ -60,8 +55,10 @@
     _searchBar.placeholder = @"Search for a physician by name...";
     _searchBar.searchBarStyle = UISearchBarStyleMinimal;
     _searchBar.showsCancelButton = NO;
+    [_searchBar sizeToFit];
     
     UITextField *textField = [_searchBar valueForKey:@"_searchField"];
+    [textField addDoneToolbar];
     textField.textColor = [UIColor whiteColor];
     textField.tintColor = [UIColor whiteColor];
     [textField setValue:[UIColor whiteColor] forKeyPath:@"_placeholderLabel.textColor"];
@@ -74,19 +71,12 @@
     UIImageView *imgView = (UIImageView*)textField.leftView;
     imgView.image = [imgView.image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     imgView.tintColor = [UIColor whiteColor];
-                                      
-    self.definesPresentationContext = YES;
     
     _scheduleVisitController = (ScheduleVisitController *)[self parentViewController];
 }
 
 
--(void)viewWillAppear:(BOOL)animated {
-    NSLog(@"%s:", __func__);
-}
-
 -(void)viewDidLayoutSubviews {
-    NSLog(@"%s:", __func__);
     [super viewDidLayoutSubviews];
     
     // Resize the search bar to match the doctor cells in width
@@ -116,7 +106,7 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    //NSLog(@"%s: indexPath=%@", __func__, indexPath);
+    NSLog(@"%s: indexPath=%@", __func__, indexPath);
     ChooseDoctorCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ChooseDoctorCell"];
     cell.delegate = self;
     NSDictionary *doctorInfo;
@@ -128,77 +118,46 @@
     cell.doctorNameLabel.text   = doctorInfo[@"name"];
     cell.practiceTypeLabel.text = doctorInfo[@"specialty"];
     cell.availabilityLabel.text = doctorInfo[@"availability"];
+    
+    if ([_selectedDoctor isEqualToString:cell.doctorNameLabel.text]) {
+        cell.containerView.layer.borderWidth = 2;
+        cell.containerView.layer.borderColor = [UIColor mdliveTeal].CGColor;
+    }
+    else {
+        cell.containerView.layer.borderWidth = 0;
+        cell.containerView.layer.borderColor = nil;
+    }
+    
     return cell;
 }
 
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    _selectedDoctor = nil;
     NSInteger numRows = [tableView numberOfRowsInSection:indexPath.section];
+    NSLog(@"%s: numRows=%d", __func__, (int)numRows);
     for (NSInteger row = 0; row < numRows; row++) {
         NSIndexPath *thisPath = [NSIndexPath indexPathForRow:row inSection:indexPath.section];
         ChooseDoctorCell *cell = [tableView cellForRowAtIndexPath:thisPath];
         if (cell.selected) {
-            cell.containerView.layer.borderWidth = 2;
-            cell.containerView.layer.borderColor = [UIColor mdliveTeal].CGColor;
-        } else {
-            cell.containerView.layer.borderWidth = 0;
+            _selectedDoctor = cell.doctorNameLabel.text;
         }
     }
-    _scheduleVisitController.nextButton.enabled = YES;
+    
+    _scheduleVisitController.nextButton.enabled = (_selectedDoctor != nil);
     UITextField *textField = [_searchBar valueForKey:@"_searchField"];
     [textField resignFirstResponder];
     [_searchBar resignFirstResponder];
+    [tableView reloadData];
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 #pragma mark - UISearchBarProtocol methods
 
-
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(nonnull NSString *)searchText {
     if (searchText.length != 0) {
+        _selectedDoctor = nil;
+        _scheduleVisitController.nextButton.enabled = NO;
         // strip out all the leading and trailing spaces
         NSString *strippedString = [searchText stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
         NSPredicate* predicate = [NSPredicate predicateWithFormat:@"%K contains[cd] %@", @"name", strippedString];
@@ -209,48 +168,10 @@
     [self.tableView reloadData];
 }
 
-#pragma mark - UISearchBarDelegate
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
     [searchBar resignFirstResponder];
 }
-
-#pragma mark - UISearchControllerDelegate
-
-// Called after the search controller's search bar has agreed to begin editing or when
-// 'active' is set to YES.
-// If you choose not to present the controller yourself or do not implement this method,
-// a default presentation is performed on your behalf.
-//
-// Implement this method if the default presentation is not adequate for your purposes.
-//
-//- (void)presentSearchController:(UISearchController *)searchController {
-//    // do something when the search controller is presented
-//}
-
-//- (void)willPresentSearchController:(UISearchController *)searchController {
-//    // do something before the search controller is presented
-//}
-
-//- (void)didPresentSearchController:(UISearchController *)searchController {
-//    // do something after the search controller is presented
-//}
-
-//- (void)willDismissSearchController:(UISearchController *)searchController {
-//    // do something before the search controller is dismissed
-//}
-
-//- (void)didDismissSearchController:(UISearchController *)searchController {
-//    // do something after the search controller is dismissed
-//}
-
-
-
--(void)searchBarTextDidEndEditing:(UISearchBar *)searchBar {
-    [self resignFirstResponder];
-}
-
-
 
 
 @end

@@ -48,8 +48,7 @@
     cell.delegate = self;
     UIColor *color = nil;
     
-    switch (indexPath.row)
-    {
+    switch (indexPath.row) {
         case 0:
             color = [UIColor colorFromHexString:@"#27884d"];
             cell.containerView.layer.borderColor = color.CGColor;

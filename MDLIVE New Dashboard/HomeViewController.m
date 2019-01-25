@@ -61,6 +61,8 @@
     
 - (IBAction)getStartedButtonTapped:(id)sender
 {
+    // A segue in the storyboard links to the appropriate action for this button
+    
     //NSLog(@"User tapped 'Get Started' button");
 }
 
@@ -131,32 +133,16 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 }
 
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 4;
 }
 
-/*
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    int ret = 0;
-    switch (indexPath.row) {
-        case 0:
-            UpcomingAppointmentView *cell = [[UpcomingAppointmentView alloc] init];
-            
-            
-    }
-    
-    return rtnVal;
-}
- */
 
 -(UITableViewCell *)tableView:(UITableView *)tableView
         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = nil;
-    switch (indexPath.row)
-    {
-        case 0:
-        {
+    switch (indexPath.row) {
+        case 0: {
             cell = [tableView dequeueReusableCellWithIdentifier:@"AccountNotVerifiedCell"];
             cell.accessibilityIdentifier = @"homescreen_accountnotverified";
             AccountNotVerifiedCell *anvCell = (AccountNotVerifiedCell *)cell;
@@ -184,14 +170,15 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 }
 
 
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"%s: indexPath=%@", __func__, indexPath);
 }
 
+
 #pragma mark - AccountNotVerifiedCellProtocol method(s)
 
--(void)resendConfirmationEmail
-{
+
+-(void)resendConfirmationEmail {
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:nil
                                                                    message:@"Email confirmation being sent."
                                                             preferredStyle:UIAlertControllerStyleAlert];
