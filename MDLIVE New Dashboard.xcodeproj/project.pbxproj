@@ -175,6 +175,12 @@
 		D709BBF721DD083C002461E7 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				D7F67BF921D42A6E0006CCB3 /* EMKRoundButton.h */,
+				D7F67BF821D42A6E0006CCB3 /* EMKRoundButton.m */,
+				D788BC4D21F257D4008FABDE /* UICheckboxButton.h */,
+				D788BC4E21F257D4008FABDE /* UICheckboxButton.m */,
+				D758C0F721E69379007F0007 /* ContainerView.m */,
+				D758C0F621E69379007F0007 /* ContainerView.h */,
 				D788BC5021F6150F008FABDE /* UITextField+addDoneToolbar.h */,
 				D788BC5121F6150F008FABDE /* UITextField+addDoneToolbar.m */,
 				D709BBF821DD083C002461E7 /* UIColor+mdl.h */,
@@ -248,8 +254,6 @@
 				D79E4D2621DA4C6E004A8A53 /* MessagesCell.m */,
 				D771890621DD68D40053944A /* AccountNotVerifiedCell.h */,
 				D771890721DD68D40053944A /* AccountNotVerifiedCell.m */,
-				D7F67BF921D42A6E0006CCB3 /* EMKRoundButton.h */,
-				D7F67BF821D42A6E0006CCB3 /* EMKRoundButton.m */,
 				D74B9B9C21D5554A00E9FD1F /* Custom Fonts */,
 				D709BBF721DD083C002461E7 /* Categories */,
 				D7DEAEB621FB6A980066BDE5 /* SelectProviderController */,
@@ -259,10 +263,6 @@
 				D7DEAEA921FB62220066BDE5 /* MedicalHistoryController */,
 				D7DEAEA621FB5ABC0066BDE5 /* ChooseDoctorController */,
 				D7DEAEB021FB67560066BDE5 /* PaymentController */,
-				D758C0F621E69379007F0007 /* ContainerView.h */,
-				D758C0F721E69379007F0007 /* ContainerView.m */,
-				D788BC4D21F257D4008FABDE /* UICheckboxButton.h */,
-				D788BC4E21F257D4008FABDE /* UICheckboxButton.m */,
 			);
 			path = "MDLIVE New Dashboard";
 			sourceTree = "<group>";
