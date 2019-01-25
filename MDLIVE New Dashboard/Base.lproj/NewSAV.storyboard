@@ -18,174 +18,6 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Appointments-->
-        <scene sceneID="spb-3Y-fsI">
-            <objects>
-                <viewController storyboardIdentifier="AppointmentsViewController" id="n1J-Na-IbG" userLabel="Appointments" customClass="AppointmentsViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7Kf-sU-mMn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Appointments" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWF-P4-yJt">
-                                <rect key="frame" x="8" y="20" width="398" height="21"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rw3-kI-bLJ">
-                                <rect key="frame" x="0.0" y="49" width="414" height="638"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <color key="sectionIndexBackgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UpcomingApptCell" rowHeight="119" id="4K4-m9-sWL" customClass="UpcomingApptCell">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="119"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4K4-m9-sWL" id="FVD-U5-t4t">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="119"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xlq-4M-Og6" customClass="UpcomingApptCell">
-                                                    <rect key="frame" x="16" y="8" width="382" height="103"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="UPCOMING APPOINTMENT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Utb-JZ-DeO">
-                                                            <rect key="frame" x="81.999999999999986" y="11" width="167.66666666666663" height="14"/>
-                                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
-                                                            <color key="textColor" red="0.051083846830000001" green="0.17872469190000001" blue="0.35450594190000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr. Test Doctor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j27-Rb-FJd">
-                                                            <rect key="frame" x="82" y="32" width="106.33333333333331" height="17"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="17" id="HOZ-eN-Kvh"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6:45 pm" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMI-Vc-kiU">
-                                                            <rect key="frame" x="317.33333333333331" y="32" width="56.666666666666686" height="17"/>
-                                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="General Medical Cough-Chronic, Video Call" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UI2-g2-Unl" userLabel="General Medical  Cough,Chronic, Video Call">
-                                                            <rect key="frame" x="82" y="56" width="292" height="47"/>
-                                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
-                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yw1-fj-y9P">
-                                                            <rect key="frame" x="20" y="24" width="20" height="25"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="uSj-2B-KUm"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OCT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBD-7k-8fQ">
-                                                            <rect key="frame" x="15" y="52" width="33" height="18"/>
-                                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <constraints>
-                                                        <constraint firstItem="UI2-g2-Unl" firstAttribute="leading" secondItem="Utb-JZ-DeO" secondAttribute="leading" id="0Qk-hQ-Yh2"/>
-                                                        <constraint firstItem="j27-Rb-FJd" firstAttribute="centerY" secondItem="kMI-Vc-kiU" secondAttribute="centerY" id="2ox-1t-hmA"/>
-                                                        <constraint firstItem="j27-Rb-FJd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Yw1-fj-y9P" secondAttribute="trailing" constant="8" symbolic="YES" id="3Sq-OS-ZNj"/>
-                                                        <constraint firstItem="Yw1-fj-y9P" firstAttribute="leading" secondItem="Xlq-4M-Og6" secondAttribute="leading" constant="20" id="58q-f1-E8e"/>
-                                                        <constraint firstAttribute="trailing" secondItem="UI2-g2-Unl" secondAttribute="trailing" constant="8" id="9Ib-ws-tH2"/>
-                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Utb-JZ-DeO" secondAttribute="trailing" constant="20" symbolic="YES" id="AvQ-Ve-rM4"/>
-                                                        <constraint firstItem="j27-Rb-FJd" firstAttribute="firstBaseline" secondItem="kMI-Vc-kiU" secondAttribute="firstBaseline" id="Bbv-T1-nfT"/>
-                                                        <constraint firstItem="j27-Rb-FJd" firstAttribute="leading" secondItem="Utb-JZ-DeO" secondAttribute="leading" id="DwH-kP-r8x"/>
-                                                        <constraint firstItem="Utb-JZ-DeO" firstAttribute="leading" secondItem="Xlq-4M-Og6" secondAttribute="leading" constant="82" id="IxW-ma-eUJ"/>
-                                                        <constraint firstItem="j27-Rb-FJd" firstAttribute="bottom" secondItem="Yw1-fj-y9P" secondAttribute="bottom" id="Lzn-LD-WRv"/>
-                                                        <constraint firstItem="j27-Rb-FJd" firstAttribute="baseline" secondItem="kMI-Vc-kiU" secondAttribute="baseline" id="N37-ax-p8J"/>
-                                                        <constraint firstItem="kMI-Vc-kiU" firstAttribute="top" secondItem="Utb-JZ-DeO" secondAttribute="bottom" constant="7" id="Naj-gV-cTO"/>
-                                                        <constraint firstItem="j27-Rb-FJd" firstAttribute="bottom" secondItem="kMI-Vc-kiU" secondAttribute="bottom" id="Rrg-8W-55k"/>
-                                                        <constraint firstItem="j27-Rb-FJd" firstAttribute="top" secondItem="Utb-JZ-DeO" secondAttribute="bottom" constant="7" id="Tvv-2R-hQx"/>
-                                                        <constraint firstItem="UI2-g2-Unl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aBD-7k-8fQ" secondAttribute="trailing" constant="8" symbolic="YES" id="VQL-bw-eA2"/>
-                                                        <constraint firstItem="Yw1-fj-y9P" firstAttribute="top" secondItem="Xlq-4M-Og6" secondAttribute="top" constant="24" id="XA7-cF-Pk2"/>
-                                                        <constraint firstAttribute="trailing" secondItem="kMI-Vc-kiU" secondAttribute="trailing" constant="8" id="Xni-Mz-UW2"/>
-                                                        <constraint firstItem="kMI-Vc-kiU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="j27-Rb-FJd" secondAttribute="trailing" constant="-16.5" id="Y8Q-ve-ujB"/>
-                                                        <constraint firstItem="aBD-7k-8fQ" firstAttribute="leading" secondItem="Xlq-4M-Og6" secondAttribute="leading" constant="15" id="aiI-QG-THy"/>
-                                                        <constraint firstItem="aBD-7k-8fQ" firstAttribute="top" secondItem="Yw1-fj-y9P" secondAttribute="bottom" constant="3" id="cJl-pU-lgy"/>
-                                                        <constraint firstAttribute="bottom" secondItem="UI2-g2-Unl" secondAttribute="bottom" id="hNb-OD-Ahp"/>
-                                                        <constraint firstItem="UI2-g2-Unl" firstAttribute="top" secondItem="j27-Rb-FJd" secondAttribute="bottom" constant="7" id="iR6-rN-ULg"/>
-                                                        <constraint firstItem="j27-Rb-FJd" firstAttribute="top" secondItem="Utb-JZ-DeO" secondAttribute="bottom" constant="7" id="kQP-DB-SgD"/>
-                                                        <constraint firstItem="Utb-JZ-DeO" firstAttribute="top" secondItem="Xlq-4M-Og6" secondAttribute="top" constant="11" id="khN-8r-mHL"/>
-                                                        <constraint firstItem="j27-Rb-FJd" firstAttribute="top" secondItem="Xlq-4M-Og6" secondAttribute="top" constant="32" id="vIm-4d-NMo"/>
-                                                    </constraints>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="4"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
-                                                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="dropShadowDepth">
-                                                            <integer key="value" value="2"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                    <connections>
-                                                        <outlet property="apptDayLabel" destination="Yw1-fj-y9P" id="J00-iS-Izz"/>
-                                                        <outlet property="apptMonthLabel" destination="aBD-7k-8fQ" id="M7b-2k-C75"/>
-                                                        <outlet property="apptTimeLabel" destination="kMI-Vc-kiU" id="lqn-NZ-uWV"/>
-                                                        <outlet property="doctorNameLabel" destination="j27-Rb-FJd" id="ZbM-ma-yXw"/>
-                                                        <outlet property="notesLabel" destination="UI2-g2-Unl" id="jFS-jl-Foc"/>
-                                                    </connections>
-                                                </view>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="Xlq-4M-Og6" firstAttribute="leading" secondItem="FVD-U5-t4t" secondAttribute="leading" constant="16" id="ZoV-W9-FJv"/>
-                                                <constraint firstItem="Xlq-4M-Og6" firstAttribute="top" secondItem="FVD-U5-t4t" secondAttribute="top" constant="8" id="dAm-JK-jNq"/>
-                                                <constraint firstAttribute="trailing" secondItem="Xlq-4M-Og6" secondAttribute="trailing" constant="16" id="kZb-Jt-bnv"/>
-                                                <constraint firstAttribute="bottom" secondItem="Xlq-4M-Og6" secondAttribute="bottom" constant="8" id="sJA-ED-2JO"/>
-                                            </constraints>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                    <integer key="value" value="0"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
-                                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="dropShadowDepth">
-                                                    <integer key="value" value="0"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="HWF-P4-yJt" firstAttribute="top" secondItem="9BE-5d-U7Z" secondAttribute="top" id="1ZU-TT-kBk"/>
-                            <constraint firstItem="9BE-5d-U7Z" firstAttribute="trailing" secondItem="HWF-P4-yJt" secondAttribute="trailing" constant="8" id="Gni-JB-VS0"/>
-                            <constraint firstItem="rw3-kI-bLJ" firstAttribute="trailing" secondItem="9BE-5d-U7Z" secondAttribute="trailing" id="JQL-P0-c3Q"/>
-                            <constraint firstItem="rw3-kI-bLJ" firstAttribute="top" secondItem="HWF-P4-yJt" secondAttribute="bottom" constant="8" id="OEJ-dJ-g9z"/>
-                            <constraint firstItem="HWF-P4-yJt" firstAttribute="top" secondItem="9BE-5d-U7Z" secondAttribute="top" id="Tuc-3f-8Ai"/>
-                            <constraint firstItem="HWF-P4-yJt" firstAttribute="leading" secondItem="9BE-5d-U7Z" secondAttribute="leading" constant="8" id="k9Z-Gu-2wM"/>
-                            <constraint firstItem="rw3-kI-bLJ" firstAttribute="leading" secondItem="9BE-5d-U7Z" secondAttribute="leading" id="tlc-kj-of2"/>
-                            <constraint firstItem="rw3-kI-bLJ" firstAttribute="bottom" secondItem="9BE-5d-U7Z" secondAttribute="bottom" id="z8k-4F-IOW"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="9BE-5d-U7Z"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Appointments" image="tab_calendar" badgeValue="1" selectedImage="tab_calendar" id="c1I-jC-Pfr" userLabel="Appointments"/>
-                    <connections>
-                        <outlet property="tableView" destination="rw3-kI-bLJ" id="utN-YS-uHI"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EVI-CJ-TcO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-472.80000000000001" y="115.59220389805098"/>
-        </scene>
         <!--Messages-->
         <scene sceneID="wig-v7-a1d">
             <objects>
@@ -920,7 +752,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="sv7-We-PTK" kind="relationship" relationship="viewControllers" id="JCY-HP-jhe"/>
-                        <segue destination="n1J-Na-IbG" kind="relationship" relationship="viewControllers" id="oez-Ve-33x"/>
+                        <segue destination="7Zo-3z-Q1j" kind="relationship" relationship="viewControllers" id="oez-Ve-33x"/>
                         <segue destination="wZr-nI-Icf" kind="relationship" relationship="viewControllers" id="T3V-kA-DvE"/>
                         <segue destination="dqz-2t-t9r" kind="relationship" relationship="viewControllers" id="Nal-lH-vCW"/>
                         <segue destination="vwn-5I-ZJD" kind="relationship" relationship="viewControllers" id="JYo-V6-FUH"/>
@@ -1073,6 +905,16 @@
             </objects>
             <point key="canvasLocation" x="-874" y="633"/>
         </scene>
+        <!--AppointmentsViewController-->
+        <scene sceneID="6l4-5g-NwG">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="AppointmentsViewController" storyboardName="AppointmentsTab" referencedIdentifier="AppointmentsViewController" id="7Zo-3z-Q1j" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="sC6-EJ-PYx"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4lK-7k-tKr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-472.80000000000001" y="115.59220389805098"/>
+        </scene>
     </scenes>
     <resources>
         <image name="app_logo_orange" width="215" height="39"/>
@@ -1080,7 +922,6 @@
         <image name="mdl_envelope" width="31" height="23"/>
         <image name="mdl_location_pin" width="20" height="27"/>
         <image name="mdl_user_selected" width="76" height="70"/>
-        <image name="tab_calendar" width="26" height="25"/>
         <image name="tab_home" width="25" height="25"/>
         <image name="tab_messages" width="25" height="25"/>
         <image name="tab_more" width="24" height="7"/>
