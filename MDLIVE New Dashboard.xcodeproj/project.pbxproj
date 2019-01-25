@@ -50,6 +50,7 @@
 		D7DEAEB521FB692F0066BDE5 /* ReasonForVisit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DEAEB421FB692F0066BDE5 /* ReasonForVisit.storyboard */; };
 		D7DEAEB821FB6B030066BDE5 /* SelectProvider.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DEAEB721FB6B030066BDE5 /* SelectProvider.storyboard */; };
 		D7DEAEBB21FB70C60066BDE5 /* AppointmentsTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DEAEBA21FB70C60066BDE5 /* AppointmentsTab.storyboard */; };
+		D7DEAEBE21FB725E0066BDE5 /* MessagesTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DEAEBD21FB725E0066BDE5 /* MessagesTab.storyboard */; };
 		D7E4FD9921DD198C00DCAB30 /* ReasonForVisitController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E4FD9821DD198C00DCAB30 /* ReasonForVisitController.m */; };
 		D7E4FD9D21DD1A3800DCAB30 /* ReasonForVisitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E4FD9C21DD1A3800DCAB30 /* ReasonForVisitCell.m */; };
 		D7F33DEE21E3E17700799130 /* UIImageView+badge.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F33DED21E3E17700799130 /* UIImageView+badge.m */; };
@@ -138,6 +139,7 @@
 		D7DEAEB421FB692F0066BDE5 /* ReasonForVisit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ReasonForVisit.storyboard; sourceTree = "<group>"; };
 		D7DEAEB721FB6B030066BDE5 /* SelectProvider.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelectProvider.storyboard; sourceTree = "<group>"; };
 		D7DEAEBA21FB70C60066BDE5 /* AppointmentsTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AppointmentsTab.storyboard; sourceTree = "<group>"; };
+		D7DEAEBD21FB725E0066BDE5 /* MessagesTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MessagesTab.storyboard; sourceTree = "<group>"; };
 		D7E4FD9821DD198C00DCAB30 /* ReasonForVisitController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReasonForVisitController.m; sourceTree = "<group>"; };
 		D7E4FD9A21DD19CD00DCAB30 /* ReasonForVisitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReasonForVisitController.h; sourceTree = "<group>"; };
 		D7E4FD9B21DD1A3800DCAB30 /* ReasonForVisitCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReasonForVisitCell.h; sourceTree = "<group>"; };
@@ -246,12 +248,9 @@
 				D7F67C0821D512630006CCB3 /* PatientImageCell.h */,
 				D74B9BC921D66C7100E9FD1F /* ScheduleVisitController.h */,
 				D74B9BCA21D66C7100E9FD1F /* ScheduleVisitController.m */,
-				D771890321DD5E850053944A /* MessagesViewController.h */,
-				D771890421DD5E850053944A /* MessagesViewController.m */,
-				D79E4D2521DA4C6E004A8A53 /* MessagesCell.h */,
-				D79E4D2621DA4C6E004A8A53 /* MessagesCell.m */,
 				D771890621DD68D40053944A /* AccountNotVerifiedCell.h */,
 				D771890721DD68D40053944A /* AccountNotVerifiedCell.m */,
+				D7DEAEBC21FB72200066BDE5 /* MessagesTab */,
 				D7DEAEB921FB70970066BDE5 /* AppointmentsTab */,
 				D7DEAEB621FB6A980066BDE5 /* SelectProviderController */,
 				D7DEAEB321FB68EB0066BDE5 /* ReasonForVisitController */,
@@ -366,6 +365,18 @@
 			path = AppointmentsTab;
 			sourceTree = "<group>";
 		};
+		D7DEAEBC21FB72200066BDE5 /* MessagesTab */ = {
+			isa = PBXGroup;
+			children = (
+				D7DEAEBD21FB725E0066BDE5 /* MessagesTab.storyboard */,
+				D771890321DD5E850053944A /* MessagesViewController.h */,
+				D771890421DD5E850053944A /* MessagesViewController.m */,
+				D79E4D2521DA4C6E004A8A53 /* MessagesCell.h */,
+				D79E4D2621DA4C6E004A8A53 /* MessagesCell.m */,
+			);
+			path = MessagesTab;
+			sourceTree = "<group>";
+		};
 		F92B74CE0AE11F3E8D7C0EEB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -434,6 +445,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7DEAEBE21FB725E0066BDE5 /* MessagesTab.storyboard in Resources */,
 				D74B9B9E21D5556200E9FD1F /* Montserrat-Bold.ttf in Resources */,
 				D7DEAEB221FB679A0066BDE5 /* Payment.storyboard in Resources */,
 				D7DEAEAE21FB63EE0066BDE5 /* YourAppointment.storyboard in Resources */,
