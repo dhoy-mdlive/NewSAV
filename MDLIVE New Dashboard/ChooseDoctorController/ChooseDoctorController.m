@@ -13,8 +13,6 @@
 
 @interface ChooseDoctorController ()
 
-//@property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
-//@property (strong, nonatomic) MDLSearchController *searchController;
 @property (nonatomic, strong) NSArray <NSDictionary *> *doctorInfo;
 @property (nonatomic, strong) NSArray <NSDictionary *> *filteredDoctorInfo;
 @property (nonatomic, strong) NSString *selectedDoctor;
@@ -25,12 +23,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 
     _doctorInfo = @[ @{ @"name":@"Dr. Edgar Allen Poe", @"specialty":@"Anything macabre",   @"availability":@"Nevermore..." },
                      @{ @"name":@"Dr. William Gibson",  @"specialty":@"Neuromancy",         @"availability":@"Now" },
@@ -106,7 +98,7 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"%s: indexPath=%@", __func__, indexPath);
+    //NSLog(@"%s: indexPath=%@", __func__, indexPath);
     ChooseDoctorCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ChooseDoctorCell"];
     cell.delegate = self;
     NSDictionary *doctorInfo;
@@ -134,8 +126,8 @@
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     _selectedDoctor = nil;
+    
     NSInteger numRows = [tableView numberOfRowsInSection:indexPath.section];
-    NSLog(@"%s: numRows=%d", __func__, (int)numRows);
     for (NSInteger row = 0; row < numRows; row++) {
         NSIndexPath *thisPath = [NSIndexPath indexPathForRow:row inSection:indexPath.section];
         ChooseDoctorCell *cell = [tableView cellForRowAtIndexPath:thisPath];
