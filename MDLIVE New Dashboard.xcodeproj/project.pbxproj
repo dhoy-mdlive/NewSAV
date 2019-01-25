@@ -47,6 +47,7 @@
 		D7DEAEAE21FB63EE0066BDE5 /* YourAppointment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DEAEAD21FB63EE0066BDE5 /* YourAppointment.storyboard */; };
 		D7DEAEAF21FB64E80066BDE5 /* YourAppointmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D780D12321DF9FFD00D2D9A4 /* YourAppointmentCell.m */; };
 		D7DEAEB221FB679A0066BDE5 /* Payment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DEAEB121FB679A0066BDE5 /* Payment.storyboard */; };
+		D7DEAEB521FB692F0066BDE5 /* ReasonForVisit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DEAEB421FB692F0066BDE5 /* ReasonForVisit.storyboard */; };
 		D7E4FD9921DD198C00DCAB30 /* ReasonForVisitController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E4FD9821DD198C00DCAB30 /* ReasonForVisitController.m */; };
 		D7E4FD9D21DD1A3800DCAB30 /* ReasonForVisitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E4FD9C21DD1A3800DCAB30 /* ReasonForVisitCell.m */; };
 		D7F33DEE21E3E17700799130 /* UIImageView+badge.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F33DED21E3E17700799130 /* UIImageView+badge.m */; };
@@ -132,6 +133,7 @@
 		D7DEAEAA21FB629F0066BDE5 /* MedicalHistory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MedicalHistory.storyboard; sourceTree = "<group>"; };
 		D7DEAEAD21FB63EE0066BDE5 /* YourAppointment.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YourAppointment.storyboard; sourceTree = "<group>"; };
 		D7DEAEB121FB679A0066BDE5 /* Payment.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Payment.storyboard; sourceTree = "<group>"; };
+		D7DEAEB421FB692F0066BDE5 /* ReasonForVisit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ReasonForVisit.storyboard; sourceTree = "<group>"; };
 		D7E4FD9821DD198C00DCAB30 /* ReasonForVisitController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReasonForVisitController.m; sourceTree = "<group>"; };
 		D7E4FD9A21DD19CD00DCAB30 /* ReasonForVisitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReasonForVisitController.h; sourceTree = "<group>"; };
 		D7E4FD9B21DD1A3800DCAB30 /* ReasonForVisitCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReasonForVisitCell.h; sourceTree = "<group>"; };
@@ -238,10 +240,6 @@
 				D79E4D3221DA6564004A8A53 /* ProviderTypeCell.m */,
 				D79E4D3421DA6AAE004A8A53 /* SelectProviderController.h */,
 				D79E4D3521DA6AAE004A8A53 /* SelectProviderController.m */,
-				D7E4FD9A21DD19CD00DCAB30 /* ReasonForVisitController.h */,
-				D7E4FD9821DD198C00DCAB30 /* ReasonForVisitController.m */,
-				D7E4FD9B21DD1A3800DCAB30 /* ReasonForVisitCell.h */,
-				D7E4FD9C21DD1A3800DCAB30 /* ReasonForVisitCell.m */,
 				D771890021DD59200053944A /* AppointmentsViewController.h */,
 				D771890121DD59200053944A /* AppointmentsViewController.m */,
 				D7617C4521D6B80D002063AE /* UpcomingApptCell.m */,
@@ -256,6 +254,7 @@
 				D7F67BF821D42A6E0006CCB3 /* EMKRoundButton.m */,
 				D74B9B9C21D5554A00E9FD1F /* Custom Fonts */,
 				D709BBF721DD083C002461E7 /* Categories */,
+				D7DEAEB321FB68EB0066BDE5 /* ReasonForVisitController */,
 				D7DEAEAC21FB63AF0066BDE5 /* YourAppointmentController */,
 				D7A0ACEE21F8B1A500DFD646 /* PharmacyInfoController */,
 				D7DEAEA921FB62220066BDE5 /* MedicalHistoryController */,
@@ -333,6 +332,18 @@
 			path = PaymentController;
 			sourceTree = "<group>";
 		};
+		D7DEAEB321FB68EB0066BDE5 /* ReasonForVisitController */ = {
+			isa = PBXGroup;
+			children = (
+				D7DEAEB421FB692F0066BDE5 /* ReasonForVisit.storyboard */,
+				D7E4FD9A21DD19CD00DCAB30 /* ReasonForVisitController.h */,
+				D7E4FD9821DD198C00DCAB30 /* ReasonForVisitController.m */,
+				D7E4FD9B21DD1A3800DCAB30 /* ReasonForVisitCell.h */,
+				D7E4FD9C21DD1A3800DCAB30 /* ReasonForVisitCell.m */,
+			);
+			path = ReasonForVisitController;
+			sourceTree = "<group>";
+		};
 		F92B74CE0AE11F3E8D7C0EEB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -408,6 +419,7 @@
 				D7A0ACF021F8B5C600DFD646 /* PharmacyInfo.storyboard in Resources */,
 				D777F7C721D3E74100B45D24 /* LaunchScreen.storyboard in Resources */,
 				D777F7C421D3E74100B45D24 /* Assets.xcassets in Resources */,
+				D7DEAEB521FB692F0066BDE5 /* ReasonForVisit.storyboard in Resources */,
 				D74B9BA021D5556B00E9FD1F /* Montserrat-Regular.ttf in Resources */,
 				D7DEAEA821FB5B210066BDE5 /* ChooseDoctor.storyboard in Resources */,
 				D777F7C221D3E73F00B45D24 /* NewSAV.storyboard in Resources */,
