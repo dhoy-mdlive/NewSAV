@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Your Appointment Controller-->
+        <scene sceneID="gUl-Uj-rvQ">
+            <objects>
+                <tableViewController storyboardIdentifier="YourAppointmentController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6uD-Yg-9tZ" userLabel="Your Appointment Controller" customClass="YourAppointmentController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1TE-8B-nrJ" userLabel="Appointment Table View">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="YourAppointmentCell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="YourAppointmentCell" rowHeight="355" id="s58-1f-zrE" userLabel="YourAppointmentCell" customClass="YourAppointmentCell">
+                                <rect key="frame" x="0.0" y="28" width="414" height="355"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="s58-1f-zrE" id="oQ1-da-rNK">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="355"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TX0-um-OWo" customClass="ContainerView">
+                                            <rect key="frame" x="20" y="11" width="374" height="333"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which type of appointment would you like?" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z90-09-i6R">
+                                                    <rect key="frame" x="8" y="8.0000000000000018" width="358" height="19.666666666666671"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GUO-TI-Bwc" userLabel="Separator">
+                                                    <rect key="frame" x="8" y="161.33333333333334" width="358" height="19.666666666666657"/>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <integer key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the best number to reach you during your visit?" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hW-jO-a8N">
+                                                    <rect key="frame" x="8" y="189" width="358" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="kTv-1d-1Jj"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Phone Number" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAB-Rk-3qJ">
+                                                    <rect key="frame" x="8" y="245" width="85" height="13.666666666666686"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="11"/>
+                                                    <color key="textColor" red="0.33725490200000002" green="0.74509803919999995" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ov3-QR-Su6">
+                                                    <rect key="frame" x="173.66666666666666" y="69.666666666666671" width="26.666666666666657" height="21.666666666666671"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDR-jP-Vr8">
+                                                    <rect key="frame" x="63" y="125.33333333333334" width="49" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJA-RM-pvw">
+                                                    <rect key="frame" x="268" y="125.33333333333334" width="44" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video-circle" highlightedImage="video-circle-selected" translatesAutoresizingMaskIntoConstraints="NO" id="zj3-ld-kvv">
+                                                    <rect key="frame" x="253" y="43.333333333333343" width="74" height="74"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                                    </accessibility>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="74" id="4Yh-jR-3BK"/>
+                                                        <constraint firstAttribute="height" constant="74" id="MhE-PO-c8y"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone-circle" highlightedImage="phone-circle-selected" translatesAutoresizingMaskIntoConstraints="NO" id="YQ4-5G-ZbI">
+                                                    <rect key="frame" x="50" y="43.333333333333343" width="74" height="74"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                                    </accessibility>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="74" id="YYq-2u-aSq"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="74" id="aDf-cc-xp6"/>
+                                                        <constraint firstAttribute="height" constant="74" id="gA8-bD-OSz"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="74" id="szF-vs-4GY"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <textField opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="(555) 555-1212" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WdW-CS-8DA">
+                                                    <rect key="frame" x="8" y="266.66666666666669" width="358" height="30"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="phonePad" smartDashesType="yes" smartInsertDeleteType="yes" textContentType="tel"/>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="0hW-jO-a8N" firstAttribute="leading" secondItem="TX0-um-OWo" secondAttribute="leading" constant="8" id="0wb-bH-nZL"/>
+                                                <constraint firstItem="zj3-ld-kvv" firstAttribute="top" secondItem="z90-09-i6R" secondAttribute="bottom" constant="15.5" id="1Xj-F1-muz"/>
+                                                <constraint firstItem="ov3-QR-Su6" firstAttribute="top" secondItem="z90-09-i6R" secondAttribute="bottom" constant="42" id="2B3-ZD-jYr"/>
+                                                <constraint firstItem="GUO-TI-Bwc" firstAttribute="top" secondItem="ov3-QR-Su6" secondAttribute="bottom" constant="70" id="4b9-kG-9P7"/>
+                                                <constraint firstItem="VJA-RM-pvw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="GDR-jP-Vr8" secondAttribute="trailing" constant="8" symbolic="YES" id="4hY-1n-dfF"/>
+                                                <constraint firstAttribute="bottom" secondItem="WdW-CS-8DA" secondAttribute="bottom" constant="36.5" id="5tn-x8-NUS"/>
+                                                <constraint firstAttribute="trailing" secondItem="z90-09-i6R" secondAttribute="trailing" constant="8" id="7ip-BM-8f4"/>
+                                                <constraint firstItem="WdW-CS-8DA" firstAttribute="top" secondItem="CAB-Rk-3qJ" secondAttribute="bottom" constant="8" id="7wm-TV-gMw"/>
+                                                <constraint firstItem="ov3-QR-Su6" firstAttribute="centerX" secondItem="GUO-TI-Bwc" secondAttribute="centerX" id="OPh-Vq-2Tt"/>
+                                                <constraint firstItem="0hW-jO-a8N" firstAttribute="top" secondItem="GUO-TI-Bwc" secondAttribute="bottom" constant="8" id="QZW-Fb-R4D"/>
+                                                <constraint firstAttribute="trailing" secondItem="GUO-TI-Bwc" secondAttribute="trailing" constant="8" id="QyG-Zy-9F2"/>
+                                                <constraint firstItem="CAB-Rk-3qJ" firstAttribute="top" secondItem="0hW-jO-a8N" secondAttribute="bottom" constant="16" id="Tf5-wc-Puy"/>
+                                                <constraint firstItem="0hW-jO-a8N" firstAttribute="leading" secondItem="CAB-Rk-3qJ" secondAttribute="leading" id="Yrz-Qx-1ch"/>
+                                                <constraint firstAttribute="trailing" secondItem="zj3-ld-kvv" secondAttribute="trailing" constant="47" id="dhz-q7-7e2"/>
+                                                <constraint firstItem="CAB-Rk-3qJ" firstAttribute="leading" secondItem="TX0-um-OWo" secondAttribute="leading" constant="8" id="dtk-P7-h9w"/>
+                                                <constraint firstItem="VJA-RM-pvw" firstAttribute="baseline" secondItem="GDR-jP-Vr8" secondAttribute="baseline" id="ezD-iY-kyu"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CAB-Rk-3qJ" secondAttribute="trailing" constant="20" symbolic="YES" id="fl0-pv-4ex"/>
+                                                <constraint firstItem="YQ4-5G-ZbI" firstAttribute="top" secondItem="z90-09-i6R" secondAttribute="bottom" constant="15.5" id="ggz-eR-cww"/>
+                                                <constraint firstItem="YQ4-5G-ZbI" firstAttribute="leading" secondItem="TX0-um-OWo" secondAttribute="leading" constant="50" id="hQ1-Re-GdH"/>
+                                                <constraint firstItem="WdW-CS-8DA" firstAttribute="leading" secondItem="TX0-um-OWo" secondAttribute="leading" constant="8" id="ixA-H9-KP6"/>
+                                                <constraint firstItem="z90-09-i6R" firstAttribute="top" secondItem="TX0-um-OWo" secondAttribute="top" constant="8" id="lSf-Au-ovr"/>
+                                                <constraint firstItem="VJA-RM-pvw" firstAttribute="top" secondItem="zj3-ld-kvv" secondAttribute="bottom" constant="8" symbolic="YES" id="qnh-Qz-iki"/>
+                                                <constraint firstItem="ov3-QR-Su6" firstAttribute="centerX" secondItem="z90-09-i6R" secondAttribute="centerX" id="seA-FG-RHS"/>
+                                                <constraint firstItem="ov3-QR-Su6" firstAttribute="centerX" secondItem="0hW-jO-a8N" secondAttribute="centerX" id="tSt-I9-pkk"/>
+                                                <constraint firstItem="GUO-TI-Bwc" firstAttribute="top" secondItem="VJA-RM-pvw" secondAttribute="bottom" constant="15" id="tZ7-pm-HSR"/>
+                                                <constraint firstItem="GUO-TI-Bwc" firstAttribute="leading" secondItem="TX0-um-OWo" secondAttribute="leading" constant="8" id="upI-hT-tLf"/>
+                                                <constraint firstItem="0hW-jO-a8N" firstAttribute="top" secondItem="TX0-um-OWo" secondAttribute="top" constant="189" id="vFH-rw-meH"/>
+                                                <constraint firstItem="VJA-RM-pvw" firstAttribute="centerX" secondItem="zj3-ld-kvv" secondAttribute="centerX" id="vGy-CP-zis"/>
+                                                <constraint firstAttribute="trailing" secondItem="WdW-CS-8DA" secondAttribute="trailing" constant="8" id="vRF-ce-CAO"/>
+                                                <constraint firstItem="GDR-jP-Vr8" firstAttribute="leading" secondItem="TX0-um-OWo" secondAttribute="leading" constant="63" id="vhj-az-Rgt"/>
+                                                <constraint firstAttribute="trailing" secondItem="0hW-jO-a8N" secondAttribute="trailing" constant="8" id="zGW-9i-f8b"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="dropShadowDepth">
+                                                    <integer key="value" value="2"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
+                                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="TX0-um-OWo" secondAttribute="bottom" id="Ptx-hg-AZa"/>
+                                        <constraint firstItem="TX0-um-OWo" firstAttribute="top" secondItem="oQ1-da-rNK" secondAttribute="topMargin" id="VAX-37-Jba"/>
+                                        <constraint firstItem="TX0-um-OWo" firstAttribute="leading" secondItem="oQ1-da-rNK" secondAttribute="leadingMargin" id="XY4-NW-4mv"/>
+                                        <constraint firstItem="TX0-um-OWo" firstAttribute="trailing" secondItem="oQ1-da-rNK" secondAttribute="trailingMargin" id="tq2-ra-nF9"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="containerView" destination="TX0-um-OWo" id="kTo-HQ-gd2"/>
+                                    <outlet property="phoneImageView" destination="YQ4-5G-ZbI" id="lsG-Jx-yvN"/>
+                                    <outlet property="phoneNumberTextField" destination="WdW-CS-8DA" id="aHy-LS-T6w"/>
+                                    <outlet property="videoImageView" destination="zj3-ld-kvv" id="Kuq-Ew-aJ7"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="6uD-Yg-9tZ" id="Eel-fh-bLg"/>
+                            <outlet property="delegate" destination="6uD-Yg-9tZ" id="UDh-jQ-TpA"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="appointmentTableView" destination="1TE-8B-nrJ" id="87n-54-ymi"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YKX-3H-hxr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="584.79999999999995" y="921.58920539730138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="phone-circle" width="74" height="74"/>
+        <image name="phone-circle-selected" width="74" height="74"/>
+        <image name="video-circle" width="74" height="74"/>
+        <image name="video-circle-selected" width="74" height="74"/>
+    </resources>
+</document>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--MedicalHistoryController-->
+        <scene sceneID="ycq-WD-AjZ">
+            <objects>
+                <tableViewController storyboardIdentifier="MedicalHistoryController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vwk-lQ-L1E" userLabel="MedicalHistoryController" customClass="MedicalHistoryController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="nk3-Mn-Ong" userLabel="Medical History Table View">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="YourAppointmentCell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MedicalHistoryCell" rowHeight="401" id="bzz-oh-HEK" userLabel="MedicalHistoryCell" customClass="MedicalHistoryCell">
+                                <rect key="frame" x="0.0" y="28" width="414" height="401"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bzz-oh-HEK" id="aQo-0Q-CPL">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="401"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CQI-sH-SUo" customClass="ContainerView">
+                                            <rect key="frame" x="16.333333333333343" y="8" width="383" height="385"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you have any allergies or drug sensitivities?" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKV-8J-WJc">
+                                                    <rect key="frame" x="8" y="8" width="367" height="47"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="327" id="Kex-XF-SwB"/>
+                                                        <constraint firstAttribute="height" constant="47" id="mEb-hQ-pqh"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter allergy..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GDo-Zi-EpQ">
+                                                    <rect key="frame" x="8" y="110" width="247" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="x1V-KT-WO0"/>
+                                                    </constraints>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAF-lx-0xI" customClass="EMKRoundButton">
+                                                    <rect key="frame" x="275" y="111" width="100" height="30"/>
+                                                    <color key="backgroundColor" red="0.33725490200000002" green="0.74509803919999995" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="Yyk-th-lTD"/>
+                                                        <constraint firstAttribute="width" constant="100" id="dRL-NV-1cv"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="fnK-Nx-cQV"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" title="Add"/>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you have any health conditions?" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13O-ro-izS">
+                                                    <rect key="frame" x="8" y="172" width="367" height="47"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="327" id="HTF-Mv-jIb"/>
+                                                        <constraint firstAttribute="height" constant="47" id="m9h-bK-Mp2"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ty0-3P-9hq">
+                                                    <rect key="frame" x="8" y="227" width="367" height="35"/>
+                                                    <segments>
+                                                        <segment title="Yes"/>
+                                                        <segment title="No"/>
+                                                    </segments>
+                                                    <color key="tintColor" red="0.33725490200000002" green="0.74509803919999995" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </segmentedControl>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter health condition..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="grT-wK-eLp">
+                                                    <rect key="frame" x="8" y="285" width="247" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="247" id="2tk-8R-aH1"/>
+                                                        <constraint firstAttribute="height" constant="30" id="MWs-A4-sf5"/>
+                                                        <constraint firstAttribute="height" constant="30" id="bfE-Dv-ChL"/>
+                                                    </constraints>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0iS-aJ-BHs" customClass="EMKRoundButton">
+                                                    <rect key="frame" x="275" y="285" width="100" height="30"/>
+                                                    <color key="backgroundColor" red="0.33725490200000002" green="0.74509803919999995" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="1c1-Ii-v7i"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="B16-9i-VnA"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="i6L-Zq-0e7"/>
+                                                        <constraint firstAttribute="height" constant="30" id="wxM-Wi-dof"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" title="Add"/>
+                                                </button>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="8nn-GR-LjW">
+                                                    <rect key="frame" x="8" y="63" width="367" height="29"/>
+                                                    <segments>
+                                                        <segment title="Yes"/>
+                                                        <segment title="No"/>
+                                                    </segments>
+                                                    <color key="tintColor" red="0.33725490200000002" green="0.74509803919999995" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </segmentedControl>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="0iS-aJ-BHs" firstAttribute="top" secondItem="Ty0-3P-9hq" secondAttribute="bottom" constant="24" id="0B2-ta-Yzv"/>
+                                                <constraint firstItem="0iS-aJ-BHs" firstAttribute="trailing" secondItem="ZKV-8J-WJc" secondAttribute="trailing" id="0QW-a1-vnK"/>
+                                                <constraint firstAttribute="bottom" secondItem="grT-wK-eLp" secondAttribute="bottom" constant="70" id="2na-jr-M4U"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ty0-3P-9hq" secondAttribute="trailing" constant="8" id="3w1-DJ-178"/>
+                                                <constraint firstItem="Ty0-3P-9hq" firstAttribute="top" secondItem="13O-ro-izS" secondAttribute="bottom" constant="8" id="8xS-8n-mny"/>
+                                                <constraint firstItem="rAF-lx-0xI" firstAttribute="top" secondItem="8nn-GR-LjW" secondAttribute="bottom" constant="20" id="98R-3U-Qbz"/>
+                                                <constraint firstItem="grT-wK-eLp" firstAttribute="leading" secondItem="ZKV-8J-WJc" secondAttribute="leading" id="9df-rp-KCO"/>
+                                                <constraint firstItem="grT-wK-eLp" firstAttribute="leading" secondItem="CQI-sH-SUo" secondAttribute="leading" constant="8" id="9f0-Il-EK7"/>
+                                                <constraint firstAttribute="trailing" secondItem="0iS-aJ-BHs" secondAttribute="trailing" constant="8" id="AVg-oF-hJC"/>
+                                                <constraint firstItem="grT-wK-eLp" firstAttribute="leading" secondItem="13O-ro-izS" secondAttribute="leading" id="Bqk-vU-Q2o"/>
+                                                <constraint firstItem="grT-wK-eLp" firstAttribute="leading" secondItem="CQI-sH-SUo" secondAttribute="leading" constant="8" id="BuL-cj-RgA"/>
+                                                <constraint firstAttribute="trailing" secondItem="rAF-lx-0xI" secondAttribute="trailing" constant="8" id="Bz1-k4-zMS"/>
+                                                <constraint firstItem="GDo-Zi-EpQ" firstAttribute="top" secondItem="8nn-GR-LjW" secondAttribute="bottom" constant="19" id="CHP-kY-fKp"/>
+                                                <constraint firstItem="0iS-aJ-BHs" firstAttribute="trailing" secondItem="rAF-lx-0xI" secondAttribute="trailing" id="D1W-AU-ciw"/>
+                                                <constraint firstItem="8nn-GR-LjW" firstAttribute="top" secondItem="ZKV-8J-WJc" secondAttribute="bottom" constant="8" id="Efz-4v-9K4"/>
+                                                <constraint firstItem="0iS-aJ-BHs" firstAttribute="top" secondItem="Ty0-3P-9hq" secondAttribute="bottom" constant="24" id="Fpz-zt-jzt"/>
+                                                <constraint firstItem="13O-ro-izS" firstAttribute="top" secondItem="rAF-lx-0xI" secondAttribute="bottom" constant="31" id="HIF-dw-auv"/>
+                                                <constraint firstItem="0iS-aJ-BHs" firstAttribute="leading" secondItem="grT-wK-eLp" secondAttribute="trailing" constant="20" id="HSy-0s-N69"/>
+                                                <constraint firstAttribute="trailing" secondItem="0iS-aJ-BHs" secondAttribute="trailing" constant="8" id="IJ0-RU-pMx"/>
+                                                <constraint firstItem="rAF-lx-0xI" firstAttribute="leading" secondItem="GDo-Zi-EpQ" secondAttribute="trailing" constant="20" id="K3G-O7-Dfy"/>
+                                                <constraint firstItem="0iS-aJ-BHs" firstAttribute="trailing" secondItem="Ty0-3P-9hq" secondAttribute="trailing" id="OPf-jT-4we"/>
+                                                <constraint firstItem="0iS-aJ-BHs" firstAttribute="centerX" secondItem="rAF-lx-0xI" secondAttribute="centerX" id="Q1V-H3-rPq"/>
+                                                <constraint firstItem="grT-wK-eLp" firstAttribute="leading" secondItem="GDo-Zi-EpQ" secondAttribute="leading" id="QlY-WK-pst"/>
+                                                <constraint firstItem="0iS-aJ-BHs" firstAttribute="leading" secondItem="rAF-lx-0xI" secondAttribute="leading" id="Upj-jJ-GgK"/>
+                                                <constraint firstAttribute="trailing" secondItem="8nn-GR-LjW" secondAttribute="trailing" constant="8" id="V4Y-0a-AAr"/>
+                                                <constraint firstItem="13O-ro-izS" firstAttribute="leading" secondItem="CQI-sH-SUo" secondAttribute="leading" constant="8" id="VsU-x3-4qu"/>
+                                                <constraint firstAttribute="trailing" secondItem="13O-ro-izS" secondAttribute="trailing" constant="8" id="Xjh-gb-6cj"/>
+                                                <constraint firstAttribute="bottom" secondItem="grT-wK-eLp" secondAttribute="bottom" constant="70" id="ZQR-AT-TMb"/>
+                                                <constraint firstAttribute="bottom" secondItem="0iS-aJ-BHs" secondAttribute="bottom" constant="70" id="b4H-tD-BDA"/>
+                                                <constraint firstItem="grT-wK-eLp" firstAttribute="leading" secondItem="CQI-sH-SUo" secondAttribute="leading" constant="8" id="cKl-5v-R4e"/>
+                                                <constraint firstItem="grT-wK-eLp" firstAttribute="leading" secondItem="8nn-GR-LjW" secondAttribute="leading" id="ds7-Hw-krc"/>
+                                                <constraint firstAttribute="trailing" secondItem="0iS-aJ-BHs" secondAttribute="trailing" constant="8" id="giQ-LZ-Jo2"/>
+                                                <constraint firstItem="grT-wK-eLp" firstAttribute="leading" secondItem="Ty0-3P-9hq" secondAttribute="leading" id="h9S-Lv-s53"/>
+                                                <constraint firstItem="grT-wK-eLp" firstAttribute="trailing" secondItem="GDo-Zi-EpQ" secondAttribute="trailing" id="h9p-q8-qED"/>
+                                                <constraint firstItem="0iS-aJ-BHs" firstAttribute="trailing" secondItem="13O-ro-izS" secondAttribute="trailing" id="iT6-jx-ETE"/>
+                                                <constraint firstItem="Ty0-3P-9hq" firstAttribute="leading" secondItem="CQI-sH-SUo" secondAttribute="leading" constant="8" id="kuV-Bv-9he"/>
+                                                <constraint firstAttribute="trailing" secondItem="ZKV-8J-WJc" secondAttribute="trailing" constant="8" id="kxj-gc-pEU"/>
+                                                <constraint firstItem="grT-wK-eLp" firstAttribute="top" secondItem="Ty0-3P-9hq" secondAttribute="bottom" constant="24" id="nUC-WS-TOv"/>
+                                                <constraint firstItem="grT-wK-eLp" firstAttribute="centerX" secondItem="GDo-Zi-EpQ" secondAttribute="centerX" id="nms-FV-i0Z"/>
+                                                <constraint firstItem="grT-wK-eLp" firstAttribute="leading" secondItem="CQI-sH-SUo" secondAttribute="leading" constant="8" id="oi2-WV-Byp"/>
+                                                <constraint firstItem="ZKV-8J-WJc" firstAttribute="top" secondItem="CQI-sH-SUo" secondAttribute="top" constant="8" id="qj2-35-LHO"/>
+                                                <constraint firstItem="0iS-aJ-BHs" firstAttribute="trailing" secondItem="8nn-GR-LjW" secondAttribute="trailing" id="ry3-ht-hEE"/>
+                                                <constraint firstAttribute="bottom" secondItem="0iS-aJ-BHs" secondAttribute="bottom" constant="70" id="sv6-3d-0j1"/>
+                                                <constraint firstItem="0iS-aJ-BHs" firstAttribute="leading" secondItem="grT-wK-eLp" secondAttribute="trailing" constant="20" id="t5V-K9-tl5"/>
+                                                <constraint firstItem="8nn-GR-LjW" firstAttribute="leading" secondItem="CQI-sH-SUo" secondAttribute="leading" constant="8" id="tim-Zu-hw7"/>
+                                                <constraint firstItem="0iS-aJ-BHs" firstAttribute="leading" secondItem="CQI-sH-SUo" secondAttribute="leading" constant="275" id="uI8-XR-COd"/>
+                                                <constraint firstItem="grT-wK-eLp" firstAttribute="top" secondItem="Ty0-3P-9hq" secondAttribute="bottom" constant="24" id="uta-YL-l9r"/>
+                                                <constraint firstItem="0iS-aJ-BHs" firstAttribute="bottom" secondItem="grT-wK-eLp" secondAttribute="bottom" id="vLQ-M2-rgc"/>
+                                                <constraint firstItem="ZKV-8J-WJc" firstAttribute="leading" secondItem="CQI-sH-SUo" secondAttribute="leading" constant="8" id="vSn-Rg-E8V"/>
+                                                <constraint firstItem="0iS-aJ-BHs" firstAttribute="top" secondItem="grT-wK-eLp" secondAttribute="top" id="xTS-9V-GMU"/>
+                                                <constraint firstItem="grT-wK-eLp" firstAttribute="centerY" secondItem="0iS-aJ-BHs" secondAttribute="centerY" id="z6q-cO-SRd"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="dropShadowDepth">
+                                                    <integer key="value" value="2"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
+                                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="CQI-sH-SUo" secondAttribute="bottom" constant="8" id="BEl-I4-nEr"/>
+                                        <constraint firstItem="CQI-sH-SUo" firstAttribute="leading" secondItem="aQo-0Q-CPL" secondAttribute="leading" constant="16" id="GEi-xQ-MAL"/>
+                                        <constraint firstAttribute="trailing" secondItem="CQI-sH-SUo" secondAttribute="trailing" constant="16" id="ZTf-yD-YYX"/>
+                                        <constraint firstItem="CQI-sH-SUo" firstAttribute="top" secondItem="aQo-0Q-CPL" secondAttribute="top" constant="8" id="pwr-ds-bJk"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="allergyAddButton" destination="rAF-lx-0xI" id="qYZ-EG-CB4"/>
+                                    <outlet property="allergySegmentedControl" destination="8nn-GR-LjW" id="GNP-Us-jBI"/>
+                                    <outlet property="allergyTextField" destination="GDo-Zi-EpQ" id="G1M-hF-400"/>
+                                    <outlet property="containerView" destination="CQI-sH-SUo" id="Iym-XI-UiD"/>
+                                    <outlet property="healthConditionAddButton" destination="0iS-aJ-BHs" id="zNg-9V-8Ky"/>
+                                    <outlet property="healthConditionSegmentedControl" destination="Ty0-3P-9hq" id="qgy-b8-e1G"/>
+                                    <outlet property="healthConditionTextField" destination="grT-wK-eLp" id="s3f-Ay-qG7"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="vwk-lQ-L1E" id="AzB-Hz-DBL"/>
+                            <outlet property="delegate" destination="vwk-lQ-L1E" id="rit-tr-BuT"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zMZ-re-NY5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1242" y="922"/>
+        </scene>
+    </scenes>
+</document>

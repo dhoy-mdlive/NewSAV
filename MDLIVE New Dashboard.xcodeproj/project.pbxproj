@@ -30,7 +30,6 @@
 		D777F7C721D3E74100B45D24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D777F7C521D3E74100B45D24 /* LaunchScreen.storyboard */; };
 		D777F7CA21D3E74100B45D24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D777F7C921D3E74100B45D24 /* main.m */; };
 		D780D12121DF9E9D00D2D9A4 /* YourAppointmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = D780D12021DF9E9D00D2D9A4 /* YourAppointmentController.m */; };
-		D780D12421DF9FFD00D2D9A4 /* YourAppointmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D780D12321DF9FFD00D2D9A4 /* YourAppointmentCell.m */; };
 		D788BC4F21F257D4008FABDE /* UICheckboxButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D788BC4E21F257D4008FABDE /* UICheckboxButton.m */; };
 		D788BC5221F6150F008FABDE /* UITextField+addDoneToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = D788BC5121F6150F008FABDE /* UITextField+addDoneToolbar.m */; };
 		D788BC5B21F76334008FABDE /* PhamacyHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D788BC5A21F76334008FABDE /* PhamacyHeaderView.m */; };
@@ -44,6 +43,9 @@
 		D7D3D4DC21FA532000FAAE80 /* MDLSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D3D4DB21FA532000FAAE80 /* MDLSearchBar.m */; };
 		D7D3D4DF21FA537D00FAAE80 /* MDLSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D3D4DE21FA537D00FAAE80 /* MDLSearchController.m */; };
 		D7DEAEA821FB5B210066BDE5 /* ChooseDoctor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DEAEA721FB5B210066BDE5 /* ChooseDoctor.storyboard */; };
+		D7DEAEAB21FB629F0066BDE5 /* MedicalHistory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DEAEAA21FB629F0066BDE5 /* MedicalHistory.storyboard */; };
+		D7DEAEAE21FB63EE0066BDE5 /* YourAppointment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DEAEAD21FB63EE0066BDE5 /* YourAppointment.storyboard */; };
+		D7DEAEAF21FB64E80066BDE5 /* YourAppointmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D780D12321DF9FFD00D2D9A4 /* YourAppointmentCell.m */; };
 		D7E4FD9921DD198C00DCAB30 /* ReasonForVisitController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E4FD9821DD198C00DCAB30 /* ReasonForVisitController.m */; };
 		D7E4FD9D21DD1A3800DCAB30 /* ReasonForVisitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E4FD9C21DD1A3800DCAB30 /* ReasonForVisitCell.m */; };
 		D7F33DEE21E3E17700799130 /* UIImageView+badge.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F33DED21E3E17700799130 /* UIImageView+badge.m */; };
@@ -126,6 +128,8 @@
 		D7D3D4DD21FA537D00FAAE80 /* MDLSearchController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDLSearchController.h; sourceTree = "<group>"; };
 		D7D3D4DE21FA537D00FAAE80 /* MDLSearchController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDLSearchController.m; sourceTree = "<group>"; };
 		D7DEAEA721FB5B210066BDE5 /* ChooseDoctor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChooseDoctor.storyboard; sourceTree = "<group>"; };
+		D7DEAEAA21FB629F0066BDE5 /* MedicalHistory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MedicalHistory.storyboard; sourceTree = "<group>"; };
+		D7DEAEAD21FB63EE0066BDE5 /* YourAppointment.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YourAppointment.storyboard; sourceTree = "<group>"; };
 		D7E4FD9821DD198C00DCAB30 /* ReasonForVisitController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReasonForVisitController.m; sourceTree = "<group>"; };
 		D7E4FD9A21DD19CD00DCAB30 /* ReasonForVisitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReasonForVisitController.h; sourceTree = "<group>"; };
 		D7E4FD9B21DD1A3800DCAB30 /* ReasonForVisitCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReasonForVisitCell.h; sourceTree = "<group>"; };
@@ -246,20 +250,14 @@
 				D79E4D2621DA4C6E004A8A53 /* MessagesCell.m */,
 				D771890621DD68D40053944A /* AccountNotVerifiedCell.h */,
 				D771890721DD68D40053944A /* AccountNotVerifiedCell.m */,
-				D73C629621DE995100DC9F7B /* MedicalHistoryController.h */,
-				D73C629721DE996C00DC9F7B /* MedicalHistoryController.m */,
-				D73C629921DE99D800DC9F7B /* MedicalHistoryCell.h */,
-				D73C629A21DE99D800DC9F7B /* MedicalHistoryCell.m */,
 				D7F67BF921D42A6E0006CCB3 /* EMKRoundButton.h */,
 				D7F67BF821D42A6E0006CCB3 /* EMKRoundButton.m */,
 				D74B9B9C21D5554A00E9FD1F /* Custom Fonts */,
 				D709BBF721DD083C002461E7 /* Categories */,
+				D7DEAEAC21FB63AF0066BDE5 /* YourAppointmentController */,
 				D7A0ACEE21F8B1A500DFD646 /* PharmacyInfoController */,
+				D7DEAEA921FB62220066BDE5 /* MedicalHistoryController */,
 				D7DEAEA621FB5ABC0066BDE5 /* ChooseDoctorController */,
-				D780D11F21DF9E9D00D2D9A4 /* YourAppointmentController.h */,
-				D780D12021DF9E9D00D2D9A4 /* YourAppointmentController.m */,
-				D780D12221DF9FFD00D2D9A4 /* YourAppointmentCell.h */,
-				D780D12321DF9FFD00D2D9A4 /* YourAppointmentCell.m */,
 				D759842721E4E1400008E4A4 /* PaymentController.h */,
 				D759842821E4E1400008E4A4 /* PaymentController.m */,
 				D759842A21E4E1760008E4A4 /* PaymentCell.h */,
@@ -298,6 +296,30 @@
 				D759843421E51D810008E4A4 /* ChooseDoctorCell.m */,
 			);
 			path = ChooseDoctorController;
+			sourceTree = "<group>";
+		};
+		D7DEAEA921FB62220066BDE5 /* MedicalHistoryController */ = {
+			isa = PBXGroup;
+			children = (
+				D7DEAEAA21FB629F0066BDE5 /* MedicalHistory.storyboard */,
+				D73C629621DE995100DC9F7B /* MedicalHistoryController.h */,
+				D73C629721DE996C00DC9F7B /* MedicalHistoryController.m */,
+				D73C629921DE99D800DC9F7B /* MedicalHistoryCell.h */,
+				D73C629A21DE99D800DC9F7B /* MedicalHistoryCell.m */,
+			);
+			path = MedicalHistoryController;
+			sourceTree = "<group>";
+		};
+		D7DEAEAC21FB63AF0066BDE5 /* YourAppointmentController */ = {
+			isa = PBXGroup;
+			children = (
+				D7DEAEAD21FB63EE0066BDE5 /* YourAppointment.storyboard */,
+				D780D11F21DF9E9D00D2D9A4 /* YourAppointmentController.h */,
+				D780D12021DF9E9D00D2D9A4 /* YourAppointmentController.m */,
+				D780D12221DF9FFD00D2D9A4 /* YourAppointmentCell.h */,
+				D780D12321DF9FFD00D2D9A4 /* YourAppointmentCell.m */,
+			);
+			path = YourAppointmentController;
 			sourceTree = "<group>";
 		};
 		F92B74CE0AE11F3E8D7C0EEB /* Pods */ = {
@@ -369,6 +391,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D74B9B9E21D5556200E9FD1F /* Montserrat-Bold.ttf in Resources */,
+				D7DEAEAE21FB63EE0066BDE5 /* YourAppointment.storyboard in Resources */,
+				D7DEAEAB21FB629F0066BDE5 /* MedicalHistory.storyboard in Resources */,
 				D7A0ACF021F8B5C600DFD646 /* PharmacyInfo.storyboard in Resources */,
 				D777F7C721D3E74100B45D24 /* LaunchScreen.storyboard in Resources */,
 				D777F7C421D3E74100B45D24 /* Assets.xcassets in Resources */,
@@ -436,7 +460,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D780D12421DF9FFD00D2D9A4 /* YourAppointmentCell.m in Sources */,
 				D780D12121DF9E9D00D2D9A4 /* YourAppointmentController.m in Sources */,
 				D758C0F821E69379007F0007 /* ContainerView.m in Sources */,
 				D7B42EF521F0F4A000EA25EE /* PharmacyDetailCell.m in Sources */,
@@ -448,6 +471,7 @@
 				D777F7CA21D3E74100B45D24 /* main.m in Sources */,
 				D777F7BC21D3E73F00B45D24 /* AppDelegate.m in Sources */,
 				D759843521E51D810008E4A4 /* ChooseDoctorCell.m in Sources */,
+				D7DEAEAF21FB64E80066BDE5 /* YourAppointmentCell.m in Sources */,
 				D771890221DD59200053944A /* AppointmentsViewController.m in Sources */,
 				D7F33DEE21E3E17700799130 /* UIImageView+badge.m in Sources */,
 				D73C629821DE996C00DC9F7B /* MedicalHistoryController.m in Sources */,
