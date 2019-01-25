@@ -46,7 +46,7 @@ typedef NS_ENUM(NSInteger, ScheduleVisitPage) {
                 //@{ @"title":@"Your Appointment",     @"storyboard":@"NewSAV",       @"viewcontroller":@"YourAppointmentController" },
                 //@{ @"title":@"Medical History",      @"storyboard":@"NewSAV",       @"viewcontroller":@"MedicalHistoryController" },
                 //@{ @"title":@"Pharmacy Information", @"storyboard":@"PharmacyInfo", @"viewcontroller":@"PharmacyInfoController" },
-                @{ @"title":@"Choose Doctor",        @"storyboard":@"NewSAV",       @"viewcontroller":@"ChooseDoctorController" },
+                @{ @"title":@"Choose Doctor",        @"storyboard":@"ChooseDoctor", @"viewcontroller":@"ChooseDoctorController" },
                 @{ @"title":@"Payment",              @"storyboard":@"NewSAV",       @"viewcontroller":@"PaymentController" },
               ];
     _viewControllers = [NSMutableArray arrayWithCapacity:_pages.count];

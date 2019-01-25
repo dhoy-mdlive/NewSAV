@@ -43,6 +43,7 @@
 		D7B42EF521F0F4A000EA25EE /* PharmacyDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B42EF421F0F4A000EA25EE /* PharmacyDetailCell.m */; };
 		D7D3D4DC21FA532000FAAE80 /* MDLSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D3D4DB21FA532000FAAE80 /* MDLSearchBar.m */; };
 		D7D3D4DF21FA537D00FAAE80 /* MDLSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D3D4DE21FA537D00FAAE80 /* MDLSearchController.m */; };
+		D7DEAEA821FB5B210066BDE5 /* ChooseDoctor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DEAEA721FB5B210066BDE5 /* ChooseDoctor.storyboard */; };
 		D7E4FD9921DD198C00DCAB30 /* ReasonForVisitController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E4FD9821DD198C00DCAB30 /* ReasonForVisitController.m */; };
 		D7E4FD9D21DD1A3800DCAB30 /* ReasonForVisitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E4FD9C21DD1A3800DCAB30 /* ReasonForVisitCell.m */; };
 		D7F33DEE21E3E17700799130 /* UIImageView+badge.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F33DED21E3E17700799130 /* UIImageView+badge.m */; };
@@ -124,6 +125,7 @@
 		D7D3D4DB21FA532000FAAE80 /* MDLSearchBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDLSearchBar.m; sourceTree = "<group>"; };
 		D7D3D4DD21FA537D00FAAE80 /* MDLSearchController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDLSearchController.h; sourceTree = "<group>"; };
 		D7D3D4DE21FA537D00FAAE80 /* MDLSearchController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDLSearchController.m; sourceTree = "<group>"; };
+		D7DEAEA721FB5B210066BDE5 /* ChooseDoctor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChooseDoctor.storyboard; sourceTree = "<group>"; };
 		D7E4FD9821DD198C00DCAB30 /* ReasonForVisitController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReasonForVisitController.m; sourceTree = "<group>"; };
 		D7E4FD9A21DD19CD00DCAB30 /* ReasonForVisitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReasonForVisitController.h; sourceTree = "<group>"; };
 		D7E4FD9B21DD1A3800DCAB30 /* ReasonForVisitCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReasonForVisitCell.h; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 				D74B9B9C21D5554A00E9FD1F /* Custom Fonts */,
 				D709BBF721DD083C002461E7 /* Categories */,
 				D7A0ACEE21F8B1A500DFD646 /* PharmacyInfoController */,
+				D7DEAEA621FB5ABC0066BDE5 /* ChooseDoctorController */,
 				D780D11F21DF9E9D00D2D9A4 /* YourAppointmentController.h */,
 				D780D12021DF9E9D00D2D9A4 /* YourAppointmentController.m */,
 				D780D12221DF9FFD00D2D9A4 /* YourAppointmentCell.h */,
@@ -261,10 +264,6 @@
 				D759842821E4E1400008E4A4 /* PaymentController.m */,
 				D759842A21E4E1760008E4A4 /* PaymentCell.h */,
 				D759842B21E4E1760008E4A4 /* PaymentCell.m */,
-				D759843021E508450008E4A4 /* ChooseDoctorController.h */,
-				D759843121E508450008E4A4 /* ChooseDoctorController.m */,
-				D759843321E51D810008E4A4 /* ChooseDoctorCell.h */,
-				D759843421E51D810008E4A4 /* ChooseDoctorCell.m */,
 				D758C0F621E69379007F0007 /* ContainerView.h */,
 				D758C0F721E69379007F0007 /* ContainerView.m */,
 				D788BC4D21F257D4008FABDE /* UICheckboxButton.h */,
@@ -287,6 +286,18 @@
 				D7B42EF421F0F4A000EA25EE /* PharmacyDetailCell.m */,
 			);
 			path = PharmacyInfoController;
+			sourceTree = "<group>";
+		};
+		D7DEAEA621FB5ABC0066BDE5 /* ChooseDoctorController */ = {
+			isa = PBXGroup;
+			children = (
+				D7DEAEA721FB5B210066BDE5 /* ChooseDoctor.storyboard */,
+				D759843021E508450008E4A4 /* ChooseDoctorController.h */,
+				D759843121E508450008E4A4 /* ChooseDoctorController.m */,
+				D759843321E51D810008E4A4 /* ChooseDoctorCell.h */,
+				D759843421E51D810008E4A4 /* ChooseDoctorCell.m */,
+			);
+			path = ChooseDoctorController;
 			sourceTree = "<group>";
 		};
 		F92B74CE0AE11F3E8D7C0EEB /* Pods */ = {
@@ -362,6 +373,7 @@
 				D777F7C721D3E74100B45D24 /* LaunchScreen.storyboard in Resources */,
 				D777F7C421D3E74100B45D24 /* Assets.xcassets in Resources */,
 				D74B9BA021D5556B00E9FD1F /* Montserrat-Regular.ttf in Resources */,
+				D7DEAEA821FB5B210066BDE5 /* ChooseDoctor.storyboard in Resources */,
 				D777F7C221D3E73F00B45D24 /* NewSAV.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
