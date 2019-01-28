@@ -1,0 +1,6 @@
+framework module Pods_MDLIVE_New_Dashboard {
+  umbrella header "Pods-MDLIVE New Dashboard-umbrella.h"
+
+  export *
+  module * { export * }
+}
