@@ -310,7 +310,6 @@
                                                     </userDefinedRuntimeAttributes>
                                                     <connections>
                                                         <outlet property="apptDayLabel" destination="dSC-tg-IyN" id="ija-yN-Nio"/>
-                                                        <outlet property="apptMonthLabel" destination="eIW-ei-hA4" id="loO-N6-D8f"/>
                                                         <outlet property="apptTimeLabel" destination="XGY-9t-MRo" id="22f-ou-QxI"/>
                                                         <outlet property="doctorNameLabel" destination="Q1O-IS-3fn" id="4po-IZ-Rth"/>
                                                         <outlet property="notesLabel" destination="w7D-KP-Np6" id="ldq-gl-4bH"/>

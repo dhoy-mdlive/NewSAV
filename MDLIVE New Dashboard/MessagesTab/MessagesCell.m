@@ -9,6 +9,7 @@
 #import "MessagesCell.h"
 #import "UIImageView+badge.h"
 #import "UIColor+mdl.h"
+#import "MessagesMock.h"
 
 @implementation MessagesCell
 
@@ -17,7 +18,20 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
-    [_envelopeImage addBadge:@"0" withColor:[UIColor colorFromHexString:@"#63A0FA"]];
+    
+    MessagesMock *mock = [MessagesMock sharedInstance];
+    NSArray *messages = [mock unreadMessages];
+    
+    if (messages.count > 0) {
+        NSString *badge = [NSString stringWithFormat:@"%d", (int)messages.count];
+        [_envelopeImage addBadge:badge withColor:[UIColor redColor]];
+        NSString *text = [NSString stringWithFormat:@"You have %d unread messages.", (int)messages.count];
+        self.messageLabel.text = text;
+    }
+    else {
+        [_envelopeImage addBadge:@"0" withColor:[UIColor mdliveTeal]];
+        self.messageLabel.text = @"You have no unread messages.";
+    }
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

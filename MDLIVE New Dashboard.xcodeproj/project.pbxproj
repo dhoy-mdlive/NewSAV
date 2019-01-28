@@ -60,6 +60,11 @@
 		D7DEAECD21FB8A810066BDE5 /* ApptHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DEAECC21FB8A810066BDE5 /* ApptHeaderCell.m */; };
 		D7E4FD9921DD198C00DCAB30 /* ReasonForVisitController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E4FD9821DD198C00DCAB30 /* ReasonForVisitController.m */; };
 		D7E4FD9D21DD1A3800DCAB30 /* ReasonForVisitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E4FD9C21DD1A3800DCAB30 /* ReasonForVisitCell.m */; };
+		D7E9A90821FF33C000654AD9 /* Appointment.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E9A90721FF33C000654AD9 /* Appointment.m */; };
+		D7E9A90B21FF3FA700654AD9 /* PastApptDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E9A90A21FF3FA700654AD9 /* PastApptDetailCell.m */; };
+		D7E9A90E21FF446900654AD9 /* AppointmentsMock.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E9A90D21FF446900654AD9 /* AppointmentsMock.m */; };
+		D7E9A91221FF6B5600654AD9 /* MessagesMock.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E9A91121FF6B5600654AD9 /* MessagesMock.m */; };
+		D7E9A91521FF6B6E00654AD9 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E9A91421FF6B6E00654AD9 /* Message.m */; };
 		D7F33DEE21E3E17700799130 /* UIImageView+badge.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F33DED21E3E17700799130 /* UIImageView+badge.m */; };
 		D7F33DF121E4DC0D00799130 /* UIViewDesignable.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F33DF021E4DC0D00799130 /* UIViewDesignable.m */; };
 		D7F67BFA21D42A6E0006CCB3 /* EMKRoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F67BF821D42A6E0006CCB3 /* EMKRoundButton.m */; };
@@ -163,6 +168,16 @@
 		D7E4FD9A21DD19CD00DCAB30 /* ReasonForVisitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReasonForVisitController.h; sourceTree = "<group>"; };
 		D7E4FD9B21DD1A3800DCAB30 /* ReasonForVisitCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReasonForVisitCell.h; sourceTree = "<group>"; };
 		D7E4FD9C21DD1A3800DCAB30 /* ReasonForVisitCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReasonForVisitCell.m; sourceTree = "<group>"; };
+		D7E9A90621FF33C000654AD9 /* Appointment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Appointment.h; sourceTree = "<group>"; };
+		D7E9A90721FF33C000654AD9 /* Appointment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Appointment.m; sourceTree = "<group>"; };
+		D7E9A90921FF3F9800654AD9 /* PastApptDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PastApptDetailCell.h; sourceTree = "<group>"; };
+		D7E9A90A21FF3FA700654AD9 /* PastApptDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PastApptDetailCell.m; sourceTree = "<group>"; };
+		D7E9A90C21FF43EA00654AD9 /* AppointmentsMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppointmentsMock.h; sourceTree = "<group>"; };
+		D7E9A90D21FF446900654AD9 /* AppointmentsMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppointmentsMock.m; sourceTree = "<group>"; };
+		D7E9A91021FF6B0B00654AD9 /* MessagesMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesMock.h; sourceTree = "<group>"; };
+		D7E9A91121FF6B5600654AD9 /* MessagesMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesMock.m; sourceTree = "<group>"; };
+		D7E9A91321FF6B6400654AD9 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		D7E9A91421FF6B6E00654AD9 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
 		D7F33DEC21E3E17700799130 /* UIImageView+badge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+badge.h"; sourceTree = "<group>"; };
 		D7F33DED21E3E17700799130 /* UIImageView+badge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+badge.m"; sourceTree = "<group>"; };
 		D7F33DEF21E4DC0D00799130 /* UIViewDesignable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIViewDesignable.h; sourceTree = "<group>"; };
@@ -252,6 +267,7 @@
 		D777F7B921D3E73F00B45D24 /* MDLIVE New Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				D7E9A90F21FF6AD300654AD9 /* DataModel */,
 				D777F7C821D3E74100B45D24 /* Info.plist */,
 				D777F7C921D3E74100B45D24 /* main.m */,
 				D777F7BA21D3E73F00B45D24 /* AppDelegate.h */,
@@ -380,8 +396,8 @@
 				D7DEAEBA21FB70C60066BDE5 /* AppointmentsTab.storyboard */,
 				D771890021DD59200053944A /* AppointmentsViewController.h */,
 				D771890121DD59200053944A /* AppointmentsViewController.m */,
-				D7617C4521D6B80D002063AE /* UpcomingApptCell.m */,
 				D7617C4421D6B80D002063AE /* UpcomingApptCell.h */,
+				D7617C4521D6B80D002063AE /* UpcomingApptCell.m */,
 				D7DEAEC521FB835C0066BDE5 /* PastApptCell.h */,
 				D7DEAEC621FB835C0066BDE5 /* PastApptCell.m */,
 				D7DEAEC821FB89C10066BDE5 /* ApptSummaryCell.h */,
@@ -390,6 +406,8 @@
 				D7DEAECC21FB8A810066BDE5 /* ApptHeaderCell.m */,
 				D790B1D821FBA043004DE70A /* UpcomingApptDetailCell.h */,
 				D790B1D921FBA043004DE70A /* UpcomingApptDetailCell.m */,
+				D7E9A90921FF3F9800654AD9 /* PastApptDetailCell.h */,
+				D7E9A90A21FF3FA700654AD9 /* PastApptDetailCell.m */,
 				D790B1DB21FBABFA004DE70A /* AppointmentDetailViewController.h */,
 				D790B1DC21FBABFA004DE70A /* AppointmentDetailViewController.m */,
 			);
@@ -422,6 +440,21 @@
 				D7DEAEC321FB759A0066BDE5 /* MoreTab.storyboard */,
 			);
 			path = MoreTab;
+			sourceTree = "<group>";
+		};
+		D7E9A90F21FF6AD300654AD9 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				D7E9A90621FF33C000654AD9 /* Appointment.h */,
+				D7E9A90721FF33C000654AD9 /* Appointment.m */,
+				D7E9A90C21FF43EA00654AD9 /* AppointmentsMock.h */,
+				D7E9A90D21FF446900654AD9 /* AppointmentsMock.m */,
+				D7E9A91321FF6B6400654AD9 /* Message.h */,
+				D7E9A91421FF6B6E00654AD9 /* Message.m */,
+				D7E9A91021FF6B0B00654AD9 /* MessagesMock.h */,
+				D7E9A91121FF6B5600654AD9 /* MessagesMock.m */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 		F92B74CE0AE11F3E8D7C0EEB /* Pods */ = {
@@ -570,6 +603,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D780D12121DF9E9D00D2D9A4 /* YourAppointmentController.m in Sources */,
+				D7E9A90E21FF446900654AD9 /* AppointmentsMock.m in Sources */,
 				D758C0F821E69379007F0007 /* ContainerView.m in Sources */,
 				D7B42EF521F0F4A000EA25EE /* PharmacyDetailCell.m in Sources */,
 				D7B42EEC21F0D61700EA25EE /* PharmacyInfoController.m in Sources */,
@@ -580,6 +614,7 @@
 				D777F7CA21D3E74100B45D24 /* main.m in Sources */,
 				D7DEAECD21FB8A810066BDE5 /* ApptHeaderCell.m in Sources */,
 				D790B1DA21FBA043004DE70A /* UpcomingApptDetailCell.m in Sources */,
+				D7E9A90821FF33C000654AD9 /* Appointment.m in Sources */,
 				D777F7BC21D3E73F00B45D24 /* AppDelegate.m in Sources */,
 				D759843521E51D810008E4A4 /* ChooseDoctorCell.m in Sources */,
 				D7DEAEAF21FB64E80066BDE5 /* YourAppointmentCell.m in Sources */,
@@ -594,6 +629,8 @@
 				D788BC5B21F76334008FABDE /* PhamacyHeaderView.m in Sources */,
 				D709BBFD21DD083C002461E7 /* UIColor+mdl.m in Sources */,
 				D7D3D4DC21FA532000FAAE80 /* MDLSearchBar.m in Sources */,
+				D7E9A91221FF6B5600654AD9 /* MessagesMock.m in Sources */,
+				D7E9A91521FF6B6E00654AD9 /* Message.m in Sources */,
 				D74B9BCB21D66C7100E9FD1F /* ScheduleVisitController.m in Sources */,
 				D79E4D3321DA6564004A8A53 /* ProviderTypeCell.m in Sources */,
 				D759843221E508450008E4A4 /* ChooseDoctorController.m in Sources */,
@@ -607,6 +644,7 @@
 				D79E4D3621DA6AAE004A8A53 /* SelectProviderController.m in Sources */,
 				D7E4FD9D21DD1A3800DCAB30 /* ReasonForVisitCell.m in Sources */,
 				D709BBFC21DD083C002461E7 /* UIView+IBDesignable.m in Sources */,
+				D7E9A90B21FF3FA700654AD9 /* PastApptDetailCell.m in Sources */,
 				D771890821DD68D40053944A /* AccountNotVerifiedCell.m in Sources */,
 				D759842921E4E1400008E4A4 /* PaymentController.m in Sources */,
 				D7F67BFD21D42B340006CCB3 /* HomeViewController.m in Sources */,

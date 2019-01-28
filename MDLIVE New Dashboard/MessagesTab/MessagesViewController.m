@@ -7,10 +7,14 @@
 //
 
 #import "MessagesViewController.h"
+#import "MessagesMock.h"
 
-@interface MessagesViewController ()
+@interface MessagesViewController () {
+    NSArray <Message *> *_messages;
+}
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
+    
 
 @end
 
@@ -22,6 +26,11 @@
     
     _tableView.delegate = self;
     _tableView.dataSource = self;
+    
+    // Update badge on Messages tab bar item to reflect number of unread messages
+    MessagesMock *mock = [MessagesMock sharedInstance];
+    _messages = [mock unreadMessages];
+
 }
 
 /*
@@ -44,7 +53,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 3;
+    return _messages.count;
 }
 
 
@@ -54,6 +63,7 @@
     MessagesCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MessagesCell"];
     cell.accessibilityIdentifier = @"homescreen_upcomingapp";
     cell.delegate = self;
+    cell.messageLabel.text = _messages[indexPath.row].text;
     return cell;
 }
 

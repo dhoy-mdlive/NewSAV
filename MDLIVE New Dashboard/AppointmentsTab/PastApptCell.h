@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Appointment.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -16,10 +17,15 @@ NS_ASSUME_NONNULL_BEGIN
 @interface PastApptCell : UITableViewCell
 
 @property (nonatomic,strong) id<PastApptCellProtocol> delegate;
+@property (nonatomic,strong) Appointment *appointment;
 
 @property (strong, nonatomic) IBOutlet UIImageView *doctorImageView;
 @property (strong, nonatomic) IBOutlet UILabel *doctorNameLabel;
 @property (strong, nonatomic) IBOutlet UILabel *apptDateTimeLabel;
+    
+- (void)updateWithAppointment:(Appointment *)appt;
+    
 @end
+
 
 NS_ASSUME_NONNULL_END

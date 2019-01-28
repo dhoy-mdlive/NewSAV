@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Message.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -16,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MessagesCell : UITableViewCell
 
 @property (nonatomic,retain) id<MessagesCellProtocol> delegate;
+@property (nonatomic,strong) Message *message;
 
 @property (nonatomic, strong) IBOutlet UIImageView *envelopeImage;
 @property (nonatomic, strong) IBOutlet UILabel *messageLabel;

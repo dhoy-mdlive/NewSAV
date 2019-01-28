@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "UpcomingApptDetailCell.h"
+#import "PastApptDetailCell.h"
+#import "Appointment.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AppointmentDetailViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UpcomingApptDetailCellProtocol>
+    
+@property (nonatomic,strong) Appointment *appointment;
 
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) IBOutlet UIButton *backButton;

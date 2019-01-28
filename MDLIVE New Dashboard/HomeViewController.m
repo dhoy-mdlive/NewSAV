@@ -10,6 +10,8 @@
 #import "PatientImageCell.h"
 #import "UpcomingApptCell.h"
 #import "MessagesCell.h"
+#import "DataModel/AppointmentsMock.h"
+#import "DataModel/MessagesMock.h"
 
 
 @interface HomeViewController ()
@@ -39,7 +41,28 @@
     _tableView.delegate = self;
     _tableView.dataSource = self;
     
-    
+    // Update badge on Appointments tab bar item to reflect numbert of upcoming appointments
+    AppointmentsMock *mock = [AppointmentsMock sharedInstance];
+    NSArray <Appointment *> *appts = [mock appointmentsAfterDate:nil];
+    UITabBarItem *tabBarItem = self.tabBarController.tabBar.items[1];
+    if (appts.count > 0) {
+        tabBarItem.badgeValue = [NSString stringWithFormat:@"%d", (int)appts.count];
+    }
+    else {
+        tabBarItem.badgeValue = nil;
+    }
+
+    // Update badge on Messages tab bar item to reflect number of unread messages
+    MessagesMock *mock2 = [MessagesMock sharedInstance];
+    NSArray *messages = [mock2 unreadMessages];
+    tabBarItem = self.tabBarController.tabBar.items[2];
+    if (messages.count > 0) {
+        tabBarItem.badgeValue = [NSString stringWithFormat:@"%d", (int)messages.count];
+    }
+    else {
+        tabBarItem.badgeValue = nil;
+    }
+
 }
 
 
