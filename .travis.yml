@@ -12,6 +12,7 @@ before_install:
 - gem install cocoapods
 - gem install xcpretty -N
 script:
+- pod install
 - set -o pipefail
 - xcodebuild -workspace "MDLIVE New Dashboard.xcworkspace" -scheme "MDLIVE New Dashboard" -sdk iphoneos ONLY_ACTIVE_ARCH=NO | xcpretty -c
 

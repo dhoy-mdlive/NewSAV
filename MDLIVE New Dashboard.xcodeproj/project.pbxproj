@@ -42,6 +42,7 @@
 		D7B42EEC21F0D61700EA25EE /* PharmacyInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B42EEB21F0D61700EA25EE /* PharmacyInfoController.m */; };
 		D7B42EEF21F0D63C00EA25EE /* PharmacyInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B42EEE21F0D63C00EA25EE /* PharmacyInfoCell.m */; };
 		D7B42EF521F0F4A000EA25EE /* PharmacyDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B42EF421F0F4A000EA25EE /* PharmacyDetailCell.m */; };
+		D7BD08BB222846E1001DD7C7 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = D7BD08BA222846E1001DD7C7 /* .travis.yml */; };
 		D7D3D4DC21FA532000FAAE80 /* MDLSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D3D4DB21FA532000FAAE80 /* MDLSearchBar.m */; };
 		D7D3D4DF21FA537D00FAAE80 /* MDLSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D3D4DE21FA537D00FAAE80 /* MDLSearchController.m */; };
 		D7DEAEA821FB5B210066BDE5 /* ChooseDoctor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DEAEA721FB5B210066BDE5 /* ChooseDoctor.storyboard */; };
@@ -144,6 +145,7 @@
 		D7B42EEE21F0D63C00EA25EE /* PharmacyInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PharmacyInfoCell.m; sourceTree = "<group>"; };
 		D7B42EF321F0F4A000EA25EE /* PharmacyDetailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PharmacyDetailCell.h; sourceTree = "<group>"; };
 		D7B42EF421F0F4A000EA25EE /* PharmacyDetailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PharmacyDetailCell.m; sourceTree = "<group>"; };
+		D7BD08BA222846E1001DD7C7 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		D7D3D4DA21FA532000FAAE80 /* MDLSearchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDLSearchBar.h; sourceTree = "<group>"; };
 		D7D3D4DB21FA532000FAAE80 /* MDLSearchBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDLSearchBar.m; sourceTree = "<group>"; };
 		D7D3D4DD21FA537D00FAAE80 /* MDLSearchController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDLSearchController.h; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 		D777F7AE21D3E73F00B45D24 = {
 			isa = PBXGroup;
 			children = (
+				D7BD08BA222846E1001DD7C7 /* .travis.yml */,
 				D777F7B921D3E73F00B45D24 /* MDLIVE New Dashboard */,
 				D777F7B821D3E73F00B45D24 /* Products */,
 				F92B74CE0AE11F3E8D7C0EEB /* Pods */,
@@ -528,6 +531,7 @@
 				D7DEAEBE21FB725E0066BDE5 /* MessagesTab.storyboard in Resources */,
 				D74B9B9E21D5556200E9FD1F /* Montserrat-Bold.ttf in Resources */,
 				D7DEAEB221FB679A0066BDE5 /* Payment.storyboard in Resources */,
+				D7BD08BB222846E1001DD7C7 /* .travis.yml in Resources */,
 				D7DEAEC421FB759A0066BDE5 /* MoreTab.storyboard in Resources */,
 				D7DEAEAE21FB63EE0066BDE5 /* YourAppointment.storyboard in Resources */,
 				D7DEAEC121FB733D0066BDE5 /* MyHealthTab.storyboard in Resources */,
